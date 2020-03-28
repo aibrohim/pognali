@@ -6,7 +6,206 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header index-header">
+      <div class="container">
+        <a href="#" class="page-header__logo">
+          <img src="https://via.placeholder.com/96x15" alt="Логотип компании Погнали" class="page-header__logo-img">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="#" class="site-list__link">о сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#" class="site-list__link">направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#" class="site-list__link">попутчики</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a href="#" class="user-list__login">авторизация</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list contacts-list">
+              <li class="contacts-list__item">
+                <a href="tel:+88005558628" class="contacts-list__link contacts-list__tel">8 800 555-86-28</a>
+              </li>
+              <li class="contacts-list__item">
+                <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__mail">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link social-list__fb"></a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link social-list__vk"></a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link social-list__insta"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main index-main">
+      <section class="intro">
+        <div class="container">
+          <h1 class="visually-hidden">Погнали агентство путешествий</h1>
+
+          <p class="intro__title">В путешествие с крутыми попутчиками!</p>
+          <ul class="inro__links links-list">
+            <li class="links-list__item">
+              <a href="tel:+88005558628" class="links-list__link"></a>
+            </li>
+            <li class="links-list__item">
+              <a href="mailto:mail@htmlacademy.ru" class="links-list__link"></a>
+            </li>
+            <li class="links-list__item links-list__item-login">
+              <a href="#" class="links-list__link">авторизация</a>
+            </li>
+          </ul>
+
+          <blockquote class="intro__quote">«Лучшее приложение, что я видел в жизни!»</blockquote>
+          <p class="into__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+
+          <ul class="intro__guide guide-list">
+            <li class="guide-list__item">Выберите направление <span class="guide-list__number">1</span></li>
+            <li class="guide-list__item">Изучите идеи путешественников <span class="guide-list__number">2</span></li>
+            <li class="guide-list__item">Находите тех, кто похож на вас <span class="guide-list__number">3</span></li>
+            <li class="guide-list__item">Путешествуйте вместе! <span class="guide-list__number">4</span></li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="about-service section">
+        <h2 class="about-service__title title">О сервисе</h2>
+
+
+        <p class="about-service__desc section__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+        <p class="about-service__slogan section__slogan">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      </section>
+
+      <section class="directions section">
+        <h2 class="directions__title section__title">
+          Направления
+        </h2>
+        <p class="directions__desc section__desc">
+          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы и чем можно там заняться.
+        </p>
+
+        <ul class="directions__list">
+          <li class="directions__item directions__item--thailand">
+            <p>
+              <img src="https://via.placeholder.com/270x110" alt="Картинка Таиланда" class="directions__img">
+            </p>
+            <h3 class="directions__title">Таиланда</h3>
+            <p class="directions__slogan">Джунгли зовут!</p>
+            <span class="directions__number">18321</span>
+          </li>
+          <li class="directions__item directions__item--france">
+            <p>
+              <img src="https://via.placeholder.com/270x110" alt="Картинка Франции" class="directions__img">
+            </p>
+            <h3 class="directions__title">Франция</h3>
+            <p class="directions__slogan">Трэ бьен, манифик!</p>
+            <span class="directions__number">12518</span>
+          </li>
+          <li class="directions__item directions__item--czech">
+            <p>
+              <img src="https://via.placeholder.com/270x110" alt="Картинка Чехии" class="directions__img">
+            </p>
+            <h3 class="directions__title">Чехия</h3>
+            <p class="directions__slogan">Закоулки старой Европы</p>
+            <span class="directions__number">5326</span>
+          </li>
+        </ul>
+
+        <a href="form.html" class="directions__button button">Показать все</a>
+      </section>
+
+      <section class="companions section">
+        <h2 class="companions__title section__title">Попутчики</h2>
+
+        <p class="companions__desc section__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p class="companions__slogan section__slogan"></p>
+
+        <ul class="companions__list">
+          <li class="companions__item">
+            <img src="https://via.placeholder.com/270x270" alt="картинка Тани Фирсовой" class="companions__img">
+            <ul class="companions__flags flags-list">
+              <li class="flags-list__item flag"></li>
+              <li class="flags-list__item flag"></li>
+              <li class="flags-list__item flag"></li>
+            </ul>
+            <p class="companions__name">Таня Фирсова</p>
+            <p class="companions__hashs">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <ul class="companions__aspects aspects-list">
+              <li class="aspect-list__item aspect-list__item--active"></li>
+              <li class="aspect-list__item"></li>
+              <li class="aspect-list__item"></li>
+              <li class="aspect-list__item"></li>
+            </ul>
+          </li>
+          <li class="companions__item">
+            <img src="https://via.placeholder.com/270x270" alt="картинка Тани Фирсовой" class="companions__img">
+            <ul class="companions__flags flags-list">
+              <li class="flags-list__item flag"></li>
+              <li class="flags-list__item flag"></li>
+            </ul>
+            <p class="companions__name">Петя Демин</p>
+            <p class="companions__hashs">#бургер #бар #футбол #концерт #крафт</p>
+            <ul class="companions__aspects aspects-list">
+              <li class="aspect-list__item aspect-list__item--active"></li>
+              <li class="aspect-list__item aspect-list__item--active"></li>
+              <li class="aspect-list__item"></li>
+              <li class="aspect-list__item aspect-list__item--active"></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="catalog.html" class="companions__button button">Показать всех</a>
+      </section>
+
+      <section class="pricing-plans">
+        <h2 class="visually-hidden">Тарифы</h2>
+
+        <div class="pricing-plans__main-link section__title">Добавьте свой профиль</div>
+
+        <ul class="plans-list">
+          <li class="plans-item">Базовое размещение Бесплатно</li>
+          <li class="plans-item">Вывод на первых позициях 99 руб./мес</li>
+          <li class="plans-item">Кастомный цвет карточки 59 руб./мес</li>
+        </ul>
+
+        <a href="plans.html" class="buisness-plans">Показать тарифы для бизнеса</a>
+      </section>
+    </main>
+
+    <footer class="page-footer index-footer">
+      <a href="#" class="page-footer__logo">
+        <img src="https://via.placeholder.com/96x15" alt="Логотип компании Погнали" class="page-footer__logo-img">
+      </a>
+
+      <ul class="footer-social">
+        <li class="footer-social__item"><a href="#" class="footer-social__fb"></a></li>
+        <li class="footer-social__item"><a href="" class="footer-social__vk"></a></li>
+        <li class="footer-social__item"><a href="" class="footer-social__insta"></a></li>
+      </ul>
+
+      <div class="page-footer__copy">
+        <p>Разработано</p>
+        <img src="https://via.placeholder.com/27x34" alt="Логотип htmlacademy">
+      </div>
+    </footer>
+
 
   </body>
 </html>
