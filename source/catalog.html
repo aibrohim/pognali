@@ -56,6 +56,111 @@
     <main class="page-main catalog-main container">
       <h1 class="page-title">Попутчики</h1>
       <section class="filtr">
+        <h2 class="visually-hidden">Филтр попутчика</h2>
+        <form action="" method="post">
+          <div class="filtr-country">
+            <h3 class="filr-title">Фильтрация по странам</h3>
+            <button type="button"></button>
+
+            <ul class="filtr-country__continent continents-list">
+              <li class="continents-list__item continents-list__item--active">Европа</li>
+              <li class="continents-list__item">Азия</li>
+              <li class="continents-list__item">Америка</li>
+              <li class="continents-list__item">Острова</li>
+            </ul>
+
+            <ul class="filtr-coutry__alphabet alphabet-list">
+              <li class="alphabet-list__item">А</li>
+              <li class="alphabet-list__item">Б</li>
+              <li class="alphabet-list__item">В</li>
+              <li class="alphabet-list__item">Г</li>
+              <li class="alphabet-list__item">Д</li>
+              <li class="alphabet-list__item">Е</li>
+              <li class="alphabet-list__item">З</li>
+              <li class="alphabet-list__item">и</li>
+              <li class="alphabet-list__item">к</li>
+              <li class="alphabet-list__item">л</li>
+              <li class="alphabet-list__item">м</li>
+              <li class="alphabet-list__item">н</li>
+              <li class="alphabet-list__item">о</li>
+              <li class="alphabet-list__item">п</li>
+              <li class="alphabet-list__item">р</li>
+              <li class="alphabet-list__item">с</li>
+              <li class="alphabet-list__item">т</li>
+              <li class="alphabet-list__item">у</li>
+              <li class="alphabet-list__item">ф</li>
+              <li class="alphabet-list__item">х</li>
+              <li class="alphabet-list__item">ч</li>
+              <li class="alphabet-list__item">ш</li>
+              <li class="alphabet-list__item">э</li>
+              <li class="alphabet-list__item">ю</li>
+              <li class="alphabet-list__item">я</li>
+            </ul>
+
+            <ul class="filtr-country__letter-countries letter-countries-list">
+              <li class="letter-countries-list__item"></li>
+            </ul>
+
+            <button class="filtr-country__button" type="button">свернуть</button>
+          </div>
+
+          <div class="filtr-companion">
+            <p class="filtr-companion__title">Подберите идеального попутчика</p>
+
+            <div class="filtr-companion__part">
+              <h3 class="filtr-title">Хобби</h3>
+            </div>
+            <div class="filtr-companion__part">
+              <h3 class="filtr-title">Музыка</h3>
+              <ul class="music-types">
+                <li class="music-types__item">
+                  <input type="checkbox" name="musicType" id="hardRock">
+                  <span class="styled-checkbox"></span>
+                  <label for="hardRock" class="music-types__name">Тяжелый рок</label>
+                </li>
+                <li class="music-types__item">
+                  <input type="checkbox" name="musicType" id="russianRock">
+                  <span class="styled-checkbox"></span>
+                  <label for="russianRock" class="music-types__name">Русский рэп</label>
+                </li>
+                <li class="music-types__item">
+                  <input type="checkbox" name="musicType" id="eurodance">
+                  <span class="styled-checkbox"></span>
+                  <label for="eurodance" class="music-types__name">Евроденс</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filtr-companion__part">
+              <h3 class="filtr-title">Еда</h3>
+            </div>
+            <div class="filtr-companion__part">
+              <h3 class="filtr-title">Транспорт</h3>
+              <ul class="transports-list transports-list--white">
+                <li class="transports-list__item"><a href="#"></a></li>
+                <li class="transports-list__item"><a href="#"></a></li>
+                <li class="transports-list__item"><a href="#"></a></li>
+                <li class="transports-list__item"><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="filtr-companion__part">
+              <h3 class="filtr-title">Левел</h3>
+
+              <div class="level-controls">
+                <input type="number" class="level-controls__input level-controls__input--min" name="min-level" value="30">
+                <input type="number" class="level-controls__input level-controls__input--max" name="max-level" value="100">
+              </div>
+
+              <div class="range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+
+                <div class="range-controls__toggler range-controls__toggler--min"></div>
+                <div class="range-controls__toggler range-controls__toggler--max"></div>
+              </div>
+            </div>
+          </div>
+        </form>
 
       </section>
 
