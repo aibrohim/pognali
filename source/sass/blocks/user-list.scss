@@ -1,0 +1,17 @@
+.user-list {
+  margin-top: 55px;
+  margin-bottom: 51px;
+
+  &__login {
+    background-color: #ffd74b;
+    color: #161c35;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+}
