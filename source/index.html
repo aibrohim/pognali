@@ -92,45 +92,63 @@
 
     <section class="about-service section">
       <div class="container">
-        <h2 class="about-service__title title">О сервисе</h2>
-        <p class="about-service__desc section__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+        <h2 class="about-service__title section-title">О сервисе</h2>
+        <p class="about-service__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
         <p class="about-service__slogan section__slogan">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
       </div>
     </section>
 
-    <section class="directions section">
+    <section class="directions">
       <div class="container">
-        <h2 class="directions__title section-title">
-          Направления
-        </h2>
-        <p class="directions__desc section__desc">
-          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы и чем можно там заняться.
-        </p>
+        <div class="section-intro">
+          <h2 class="directions__title section-title">
+            Направления
+          </h2>
+          <p class="directions__desc">
+            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы и чем можно там заняться.
+          </p>
+        </div>
 
         <ul class="directions__list">
           <li class="directions__item directions__item--thailand">
-            <p>
-              <img src="https://via.placeholder.com/270x110" alt="Картинка Таиланда" class="directions__img">
+            <p class="directions__img-container">
+              <img class="directions__img" src="img/thailand-mobile@1x.jpg" alt="Картинка Таиланда" width="270" height="110">
             </p>
-            <h3 class="directions__title">Таиланд</h3>
-            <p class="directions__slogan">Джунгли зовут!</p>
-            <span class="directions__number">18321</span>
+            <div class="directions__info">
+              <div class="directions__flag">
+                <img src="img/flag_Thailand_mini.png" alt="флаг Таиланда" width="35" height="24">
+              </div>
+              <h3 class="directions__name">Таиланд</h3>
+              <p class="directions__slogan">Джунгли зовут!</p>
+              <span class="directions__number">18321</span>
+            </div>
           </li>
           <li class="directions__item directions__item--france">
-            <p>
-              <img src="https://via.placeholder.com/270x110" alt="Картинка Франции" class="directions__img">
+            <p class="directions__img-container">
+              <img class="directions__img" src="img/france-mobile@1x.jpg" alt="Картинка Франции" width="270" height="110">
             </p>
-            <h3 class="directions__title">Франция</h3>
-            <p class="directions__slogan">Трэ бьен, манифик!</p>
-            <span class="directions__number">12518</span>
+            <div class="directions__info">
+              <div class="directions__flag">
+                <img src="img/flag_France_mini.png" alt="флаг Франции" width="35" height="24">
+              </div>
+              <h3 class="directions__name">Франция</h3>
+              <p class="directions__slogan">Трэ бьен, манифик!</p>
+              <span class="directions__number">12518</span>
+            </div>
+
           </li>
           <li class="directions__item directions__item--czech">
-            <p>
-              <img src="https://via.placeholder.com/270x110" alt="Картинка Чехии" class="directions__img">
+            <p class="directions__img-container">
+              <img class="directions__img" src="img/czech-mobile@1x.jpg" alt="Картинка Чехии" width="270" height="110">
             </p>
-            <h3 class="directions__title">Чехия</h3>
-            <p class="directions__slogan">Закоулки старой Европы</p>
-            <span class="directions__number">5326</span>
+            <div class="directions__info">
+              <div class="directions__flag">
+                <img src="img/flag_Czech_mini.png" alt="флаг Чехии" width="35" height="24">
+              </div>
+              <h3 class="directions__name">Чехия</h3>
+              <p class="directions__slogan">Закоулки старой Европы</p>
+              <span class="directions__number">5326</span>
+            </div>
           </li>
         </ul>
 
@@ -138,58 +156,67 @@
       </div>
     </section>
 
-    <section class="companions section">
+    <section class="companions">
       <div class="container">
+        <div class="section-intro">
+          <h2 class="companions__title section-title">Попутчики</h2>
 
-        <h2 class="companions__title section-title">Попутчики</h2>
-
-        <p class="companions__desc section__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__slogan section__slogan">Теперь можно легко найти единомышленников!</p>
+          <p class="companions__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="companions__slogan">Теперь можно легко найти единомышленников!</p>
+        </div>
 
         <ul class="companions__list">
           <li class="companions__item">
-            <img src="https://via.placeholder.com/270x270" alt="картинка Тани Фирсовой" class="companions__img">
-            <ul class="companions__flags flags-list">
-              <li class="flags-list__item flag"></li>
-              <li class="flags-list__item flag"></li>
-              <li class="flags-list__item flag"></li>
-            </ul>
-            <p class="companions__name">Таня Фирсова</p>
-            <ul class="companions__hashs hashs-list">
-              <li class="hashs-list__item"><a href="#">#ЗОЖ</a></li>
-              <li class="hashs-list__item"><a href="#">#ПП</a></li>
-              <li class="hashs-list__item"><a href="#">#Фитнес</a></li>
-              <li class="hashs-list__item"><a href="#">#пляж</a></li>
-              <li class="hashs-list__item"><a href="#">#авокадо</a></li>
-              <li class="hashs-list__item"><a href="#">#смузи</a></li>
-            </ul>
-            <ul class="companions__aspects aspects-list">
-              <li class="aspects-list__item aspects-list__item--active"></li>
-              <li class="aspects-list__item"></li>
-              <li class="aspects-list__item"></li>
-              <li class="aspects-list__item"></li>
-            </ul>
+            <div class="companions__img-wrapper">
+              <img src="https://via.placeholder.com/270x270" alt="картинка Тани Фирсовой" class="companions__img">
+            </div>
+            <div class="companions__content">
+              <ul class="companions__flags flags-list">
+                <li class="companions__flag"><img src="img/flag_Sri-Lanka_mini.png" width="35" height="24" alt="флаг Шри-Ланки"></li>
+                <li class="companions__flag"><img src="img/flag_Thailand_mini.png" width="35" height="24" alt="флаг Таиланда"></li>
+                <li class="companions__flag"><img src="img/flag_Seychelles_mini.png" width="35" height="24" alt="флаг Сейшеллы"></li>
+              </ul>
+              <p class="companions__name">Таня Фирсова</p>
+              <ul class="companions__hashs hashs-list">
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#ЗОЖ</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#ПП</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#Фитнес</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#пляж</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#авокадо</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#смузи</a></li>
+              </ul>
+              <ul class="companions__aspects aspects-list">
+                <li class="companions__aspect companions__aspect--plane companions__aspect--active"></li>
+                <li class="companions__aspect companions__aspect--bus"></li>
+                <li class="companions__aspect companions__aspect--bike"></li>
+                <li class="companions__aspect companions__aspect--run"></li>
+              </ul>
+            </div>
           </li>
           <li class="companions__item">
-            <img src="https://via.placeholder.com/270x270" alt="картинка Тани Фирсовой" class="companions__img">
-            <ul class="companions__flags flags-list">
-              <li class="flags-list__item flag"></li>
-              <li class="flags-list__item flag"></li>
-            </ul>
-            <p class="companions__name">Петя Демин</p>
-            <ul class="companions__hashs hashs-list">
-              <li class="hashs-list__item"><a href="#">#бургер</a></li>
-              <li class="hashs-list__item"><a href="#">#бар</a></li>
-              <li class="hashs-list__item"><a href="#">#футбол</a></li>
-              <li class="hashs-list__item"><a href="#">#концерт</a></li>
-              <li class="hashs-list__item"><a href="#">#крафт</a></li>
-            </ul>
-            <ul class="companions__aspects aspects-list">
-              <li class="aspects-list__item aspects-list__item--active"></li>
-              <li class="aspects-list__item aspects-list__item--active"></li>
-              <li class="aspects-list__item"></li>
-              <li class="aspects-list__item aspects-list__item--active"></li>
-            </ul>
+            <div class="companions__img-wrapper">
+              <img src="img/demin-desktop@1x.jpg" alt="картинка Тани Фирсовой" class="companions__img">
+            </div>
+            <div class="companions__content">
+              <ul class="companions__flags flags-list">
+                <li class="companions__flag"><img src="img/flag_Belgium_mini.png" width="35" height="24" alt="флаг Бельгии"></li>
+                <li class="companions__flag"><img src="img/flag_Czech_mini.png" width="35" height="24" alt="флаг Чехии"></li>
+              </ul>
+              <p class="companions__name">Петя Демин</p>
+              <ul class="companions__hashs hashs-list">
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#бургер</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#бар</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#футбол</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#концерт</a></li>
+                <li class="companions__hash"><a class="companions__hash-link" href="#">#крафт</a></li>
+              </ul>
+              <ul class="companions__aspects">
+                <li class="companions__aspect companions__aspect--plane companions__aspect--active"></li>
+                <li class="companions__aspect companions__aspect--bus companions__aspect--active"></li>
+                <li class="companions__aspect companions__aspect--bike"></li>
+                <li class="companions__aspect companions__aspect--run companions__aspect--active"></li>
+              </ul>
+            </div>
           </li>
         </ul>
 
@@ -201,31 +228,47 @@
       <div class="container">
         <h2 class="visually-hidden">Тарифы</h2>
 
-        <div class="pricing-plans__main-link section-title">Добавьте свой профиль</div>
+        <div class="section-intro pricing-plans__intro">
+          <div class="pricing-plans__main-link section-title">Добавьте свой профиль</div>
+        </div>
 
-        <ul class="plans-list">
-          <li class="plans-item">Базовое размещение Бесплатно</li>
-          <li class="plans-item">Вывод на первых позициях 99 руб./мес</li>
-          <li class="plans-item">Кастомный цвет карточки 59 руб./мес</li>
+        <ul class="pricing-plans__list">
+          <li class="pricing-plans__item">
+            <span class="pricing-plans__name">Базовое размещение</span>
+            <span class="pricing-plans__price">Бесплатно</span>
+            <span class="pricing-plans__number pricing-plans__number--1">1</span>
+          </li>
+          <li class="pricing-plans__item">
+            <span class="pricing-plans__name">Вывод на первых позициях</span>
+            <span class="pricing-plans__price">99 руб./мес</span>
+            <span class="pricing-plans__number pricing-plans__number--2">2</span>
+          </li>
+          <li class="pricing-plans__item">
+            <span class="pricing-plans__name">Кастомный цвет карточки</span>
+            <span class="pricing-plans__price">59 руб./мес</span>
+            <span class="pricing-plans__number pricing-plans__number--3">3</span>
+          </li>
         </ul>
 
-        <a href="plans.html" class="buisness-plans">Показать тарифы для бизнеса</a>
+        <a href="plans.html" class="pricing-plans__more">Показать тарифы для бизнеса</a>
       </div>
     </section>
 
-    <section class="callback section">
+    <section class="callback">
       <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="section-title callback__title">Заинтересовались?</p>
-        <p class="section__desc">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.</p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <input type="email" name="email" id="callbackEmail">
-          <button type="submit"></button>
+        <div class="callback__intro">
+          <p class="section-title callback__title">Заинтересовались?</p>
+          <p class="callback__desc">Зарегистрируйтесь, <br> это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="callback__login-link" href="#">авторизуйтесь</a>.</p>
+        </div>
+        <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
+          <button class="callback__button button" type="submit"></button>
         </form>
-        <p class="callback__questions">Остались вопросы? Мы с радостью на них ответим!</p>
+        <p class="callback__questions">Остались вопросы? <br> Мы с радостью на них ответим!</p>
         <div class="callback__links">
-          <a href="tel:+88005558628" class="callback__link callback__link--tel">8 800 555-86-28</a>
-          <a href="mailto:mail@htmlacademy.ru" class="callback__link callback__link--mail">mail@htmlacademy.ru</a>
+          <a href="tel:+88005558628" class="callback__link"><i class="callback__icon callback__icon--tel"></i>8 800 555-86-28</a>
+          <a href="mailto:mail@htmlacademy.ru" class="callback__link"><i class="callback__icon callback__icon--mail"></i>mail@htmlacademy.ru</a>
         </div>
       </div>
     </section>
