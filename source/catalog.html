@@ -7,12 +7,12 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header__wrapper">
       <a href="#" class="page-header__logo">
-        <img src="https://via.placeholder.com/96x15" alt="Логотип компании Погнали" class="page-header__logo-img">
+        <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
+      <button class="page-header__toggle" type="button"></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -22,7 +22,7 @@
               <a href="form.html" class="site-list__link">направления</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">попутчики</a>
+              <a href="#" class="site-list__link">попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -32,10 +32,12 @@
           </ul>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
-              <a href="tel:+88005558628" class="contacts-list__link contacts-list__tel">8 800 555-86-28</a>
+              <i class="contacts-list__icon contacts-list__icon--tel"></i>
+              <a href="tel:+88005558628" class="contacts-list__link">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__mail">mail@htmlacademy.ru</a>
+              <i class="contacts-list__icon contacts-list__icon--mail"></i>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="main-nav__list social-list">
@@ -54,8 +56,12 @@
     </div>
   </header>
 
-  <main class="page-main catalog-main container">
-    <h1 class="page-title">Попутчики</h1>
+  <main class="page-main catalog-main">
+    <h1 class="page-title">
+      <div class="page-title__container container">
+        Попутчики
+      </div>
+    </h1>
     <section class="filtr">
       <h2 class="visually-hidden">Фильтр попутчика</h2>
       <div class="filtr-country">
@@ -113,257 +119,268 @@
 
         <button class="filtr-country__button" type="button">свернуть</button>
       </div>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="filtr-companion">
-          <p class="filtr-companion__title">Подберите идеального попутчика</p>
 
-          <div class="filtr-companion__part">
-            <button class="filtr-opener">Хобби</button>
-          </div>
-          <div class="filtr-companion__part">
-            <button class="filtr-opener">Музыка</button>
-            <ul class="music-types">
-              <li class="music-types__item">
-                <input type="checkbox" name="musicType" id="hardRock">
-                <span class="styled-checkbox"></span>
-                <label for="hardRock" class="music-types__name">Тяжелый рок</label>
-              </li>
-              <li class="music-types__item">
-                <input type="checkbox" name="musicType" id="russianRock">
-                <span class="styled-checkbox"></span>
-                <label for="russianRock" class="music-types__name">Русский рэп</label>
-              </li>
-              <li class="music-types__item">
-                <input type="checkbox" name="musicType" id="eurodance">
-                <span class="styled-checkbox"></span>
-                <label for="eurodance" class="music-types__name">Евроденс</label>
-              </li>
-            </ul>
-          </div>
-          <div class="filtr-companion__part">
-            <button class="filtr-opener">Еда</button>
-          </div>
-          <div class="filtr-companion__part">
-            <button class="filtr-opener">Транспорт</button>
-            <ul class="transports-list transports-list--white">
-              <li class="transports-list__item">
-                <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
-                <span class="styled-transport-check"></span>
-              </li>
-              <li class="transports-list__item">
-                <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
-                <span class="styled-transport-check"></span>
-              </li>
-              <li class="transports-list__item">
-                <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
-                <span class="styled-transport-check"></span>
-              </li>
-              <li class="transports-list__item">
-                <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
-                <span class="styled-transport-check"></span>
-              </li>
-            </ul>
-          </div>
-          <div class="filtr-companion__part">
-            <button class="filtr-opener">Левел</button>
-            <div class="level-controls">
-              <input type="text" class="level-controls__input level-controls__input--min" name="min-level" value="30">
-              <input type="text" class="level-controls__input level-controls__input--max" name="max-level" value="100">
+      <div class="container">
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="filtr-companion">
+            <p class="filtr-companion__title">Подберите идеального попутчика</p>
+
+            <div class="filtr-companion__part">
+              <button class="filtr-opener">Хобби</button>
             </div>
-
-            <div class="range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar"></div>
+            <div class="filtr-companion__part">
+              <button class="filtr-opener">Музыка</button>
+              <ul class="music-types">
+                <li class="music-types__item">
+                  <input type="checkbox" name="musicType" id="hardRock">
+                  <span class="styled-checkbox"></span>
+                  <label for="hardRock" class="music-types__name">Тяжелый рок</label>
+                </li>
+                <li class="music-types__item">
+                  <input type="checkbox" name="musicType" id="russianRock">
+                  <span class="styled-checkbox"></span>
+                  <label for="russianRock" class="music-types__name">Русский рэп</label>
+                </li>
+                <li class="music-types__item">
+                  <input type="checkbox" name="musicType" id="eurodance">
+                  <span class="styled-checkbox"></span>
+                  <label for="eurodance" class="music-types__name">Евроденс</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filtr-companion__part">
+              <button class="filtr-opener">Еда</button>
+            </div>
+            <div class="filtr-companion__part">
+              <button class="filtr-opener">Транспорт</button>
+              <ul class="transports-list transports-list--white">
+                <li class="transports-list__item">
+                  <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
+                  <span class="styled-transport-check"></span>
+                </li>
+                <li class="transports-list__item">
+                  <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
+                  <span class="styled-transport-check"></span>
+                </li>
+                <li class="transports-list__item">
+                  <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
+                  <span class="styled-transport-check"></span>
+                </li>
+                <li class="transports-list__item">
+                  <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
+                  <span class="styled-transport-check"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="filtr-companion__part">
+              <button class="filtr-opener">Левел</button>
+              <div class="level-controls">
+                <input type="text" class="level-controls__input level-controls__input--min" name="min-level" value="30">
+                <input type="text" class="level-controls__input level-controls__input--max" name="max-level" value="100">
               </div>
 
-              <div class="range-controls__toggler range-controls__toggler--min"></div>
-              <div class="range-controls__toggler range-controls__toggler--max"></div>
-            </div>
-          </div>
-          <button class="filtr-companion__button button" type="submit"></button>
-        </div>
-      </form>
+              <div class="range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
 
+                <div class="range-controls__toggler range-controls__toggler--min"></div>
+                <div class="range-controls__toggler range-controls__toggler--max"></div>
+              </div>
+            </div>
+            <button class="filtr-companion__button button" type="submit"></button>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section class="filtred">
-      <h2 class="visually-hidden">От фильтрованные попутчики</h2>
-      <ul class="filtred-companions">
-        <li class="filtred-companions__item">
-          <img src="https://via.placeholder.com/70x70" alt="Попутчик" width="70" height="70" class="filtred-companions__img">
-          <span class="filtred-companions__badge"></span>
-          <h3 class="filtred-companions__name">Таня Фирсова</h3>
-          <span class="filtred-companions__number">1,5 m</span>
-          <ul class="filtred-companions__hashs hashs-list">
-            <li class="hashs-list__item"><a href="#">#ЗОЖ</a></li>
-            <li class="hashs-list__item"><a href="#">#ПП</a></li>
-            <li class="hashs-list__item"><a href="#">#Фитнес</a></li>
-            <li class="hashs-list__item"><a href="#">#пляж</a></li>
-            <li class="hashs-list__item"><a href="#">#авокадо</a></li>
-            <li class="hashs-list__item"><a href="#">#смузи</a></li>
-          </ul>
-          <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
-          <ul class="filtred-companions__countries countries-list">
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Шри-ланка</p>
-            </li>
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Таиланд</p>
-            </li>
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Сейшелы</p>
-            </li>
-          </ul>
-          <div>
-            <h4 class="filtred-companions__subtitle">транспорт:</h4>
-            <ul class="filtred-companions__transports transports-list">
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
+      <div class="container">
+        <h2 class="visually-hidden">От фильтрованные попутчики</h2>
+        <ul class="filtred-companions">
+          <li class="filtred-companions__item">
+            <img class="filtred-companions__img" src="https://via.placeholder.com/70x70" alt="Попутчик" width="70" height="70">
+            <span class="filtred-companions__badge"></span>
+            <h3 class="filtred-companions__name">Таня Фирсова</h3>
+            <span class="filtred-companions__number">1,5 m</span>
+            <ul class="filtred-companions__hashs">
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#ЗОЖ</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#ПП</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#Фитнес</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#пляж</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#авокадо</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#смузи</a></li>
             </ul>
-            <h4 class="filtred-companions__subtitle">левел:</h4>
-            <p class="filtred-companions__level">99</p>
-          </div>
-          <a href="#" class="filtred-companions__button button">Позвать!</a>
-        </li>
-        <li class="filtred-companions__item">
-          <img src="https://via.placeholder.com/70x70" alt="Попутчик" width="70" height="70" class="filtred-companions__img">
-          <span class="filtred-companions__badge"></span>
-          <h3 class="filtred-companions__name">Петя Демин</h3>
-          <span class="filtred-companions__number">1500</span>
-          <ul class="filtred-companions__hashs hashs-list">
-            <li class="hashs-list__item"><a href="#">#бургер</a></li>
-            <li class="hashs-list__item"><a href="#">#бар</a></li>
-            <li class="hashs-list__item"><a href="#">#футбол</a></li>
-            <li class="hashs-list__item"><a href="#">#концерт</a></li>
-            <li class="hashs-list__item"><a href="#">#крафт</a></li>
-          </ul>
-          <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
-          <ul class="filtred-companions__countries countries-list">
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Бельгия</p>
-            </li>
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Чехия</p>
-            </li>
-          </ul>
-          <div>
-            <h4 class="filtred-companions__subtitle">транспорт:</h4>
-            <ul class="filtred-companions__transports transports-list">
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
+            <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
+            <ul class="filtred-companions__countries">
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Sri-Lanka_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Шри-ланка</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Thailand_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Таиланд</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Seychelles_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Сейшелы</p>
+              </li>
             </ul>
-            <h4 class="filtred-companions__subtitle">левел:</h4>
-            <p class="filtred-companions__level">80</p>
-          </div>
-          <a href="#" class="filtred-companions__button button">Позвать!</a>
-        </li>
-        <li class="filtred-companions__item">
-          <img src="https://via.placeholder.com/70x70" alt="Попутчик" width="70" height="70" class="filtred-companions__img">
-          <span class="filtred-companions__badge"></span>
-          <h3 class="filtred-companions__name">Марк Смолов</h3>
-          <span class="filtred-companions__number">170</span>
-          <ul class="filtred-companions__hashs hashs-list">
-            <li class="hashs-list__item"><a href="#">#рэп</a></li>
-            <li class="hashs-list__item"><a href="#">#тату</a></li>
-            <li class="hashs-list__item"><a href="#">#хайпбист</a></li>
-            <li class="hashs-list__item"><a href="#">#суприм</a></li>
-            <li class="hashs-list__item"><a href="#">#кроссовки</a></li>
-          </ul>
-          <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
-          <ul class="filtred-companions__countries countries-list">
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">США</p>
-            </li>
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Австралия</p>
-            </li>
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Доминика</p>
-            </li>
-          </ul>
-          <div>
-            <h4 class="filtred-companions__subtitle">транспорт:</h4>
-            <ul class="filtred-companions__transports transports-list">
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
+            <div>
+              <h4 class="filtred-companions__subtitle">транспорт:</h4>
+              <ul class="filtred-companions__transports transports-list">
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+              </ul>
+              <h4 class="filtred-companions__subtitle">левел:</h4>
+              <p class="filtred-companions__level">99</p>
+            </div>
+            <a href="#" class="filtred-companions__button button">Позвать!</a>
+          </li>
+          <li class="filtred-companions__item">
+            <img class="filtred-companions__img" src="img/demin-mobile@1x.jpg" alt="Попутчик" width="70" height="70">
+            <span class="filtred-companions__badge"></span>
+            <h3 class="filtred-companions__name">Петя Демин</h3>
+            <span class="filtred-companions__number">1500</span>
+            <ul class="filtred-companions__hashs">
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#бургер</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#бар</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#футбол</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#концерт</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#крафт</a></li>
             </ul>
-            <h4 class="filtred-companions__subtitle">левел:</h4>
-            <p class="filtred-companions__level">25</p>
-          </div>
-          <a href="#" class="filtred-companions__button button">Позвать!</a>
-        </li>
-        <li class="filtred-companions__item">
-          <img src="https://via.placeholder.com/70x70" alt="Попутчик" width="70" height="70" class="filtred-companions__img">
-          <span class="filtred-companions__badge"></span>
-          <h3 class="filtred-companions__name">Лариса Роговая</h3>
-          <span class="filtred-companions__number">23</span>
-          <ul class="filtred-companions__hashs hashs-list">
-            <li class="hashs-list__item"><a href="#">#образование</a></li>
-            <li class="hashs-list__item"><a href="#">#карьера</a></li>
-            <li class="hashs-list__item"><a href="#">#учеба</a></li>
-            <li class="hashs-list__item"><a href="#">#линкедин</a></li>
-          </ul>
-          <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
-          <ul class="filtred-companions__countries countries-list">
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Великобритания</p>
-            </li>
-            <li class="countries-list__country">
-              <img src="https://via.placeholder.com/26x18" alt="" width="26" height="18" class="countries-list__flag">
-              <p class="countries-list__name">Германия</p>
-            </li>
-          </ul>
-          <div>
-            <h4 class="filtred-companions__subtitle">транспорт:</h4>
-            <ul class="filtred-companions__transports transports-list">
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
-              <li class="transports-list__item"><a href="#"></a></li>
+            <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
+            <ul class="filtred-companions__countries">
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Belgium_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Бельгия</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Czech_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Чехия</p>
+              </li>
             </ul>
-            <h4 class="filtred-companions__subtitle">левел:</h4>
-            <p class="filtred-companions__level">50</p>
-          </div>
-          <a href="#" class="filtred-companions__button button">Позвать!</a>
-        </li>
-      </ul>
-      <a href="3" class="filtred__more">Показать еще</a>
-      <div class="filtred-buttons">
-        <button class="filtred-buttons__btn" type="button"></button>
-        <button class="filtred-buttons__btn" type="button"></button>
+            <div>
+              <h4 class="filtred-companions__subtitle">транспорт:</h4>
+              <ul class="filtred-companions__transports transports-list">
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+              </ul>
+              <h4 class="filtred-companions__subtitle">левел:</h4>
+              <p class="filtred-companions__level">80</p>
+            </div>
+            <a href="#" class="filtred-companions__button button">Позвать!</a>
+          </li>
+          <li class="filtred-companions__item">
+            <img class="filtred-companions__img" src="img/smolov-mobile@1x.jpg" alt="Попутчик" width="70" height="70">
+            <span class="filtred-companions__badge"></span>
+            <h3 class="filtred-companions__name">Марк Смолов</h3>
+            <span class="filtred-companions__number">170</span>
+            <ul class="filtred-companions__hashs">
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#рэп</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#тату</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#хайпбист</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#кроссовки</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#суприм</a></li>
+            </ul>
+            <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
+            <ul class="filtred-companions__countries">
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Sri-Lanka_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">США</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Thailand_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Австралия</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Seychelles_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Доминика</p>
+              </li>
+            </ul>
+            <div>
+              <h4 class="filtred-companions__subtitle">транспорт:</h4>
+              <ul class="filtred-companions__transports transports-list">
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+              </ul>
+              <h4 class="filtred-companions__subtitle">левел:</h4>
+              <p class="filtred-companions__level">25</p>
+            </div>
+            <a href="#" class="filtred-companions__button button">Позвать!</a>
+          </li>
+          <li class="filtred-companions__item">
+            <img class="filtred-companions__img" src="img/rogovaya-mobile@1x.jpg" alt="Попутчик" width="70" height="70">
+            <span class="filtred-companions__badge"></span>
+            <h3 class="filtred-companions__name">Лариса Роговая</h3>
+            <span class="filtred-companions__number">23</span>
+            <ul class="filtred-companions__hashs">
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#образование</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#карьера</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#учеба</a></li>
+              <li class="filtred-companions__hash"><a class="filtred-companions__hash-link" href="#">#линкедин</a></li>
+            </ul>
+            <h4 class="filtred-companions__subtitle">хочет посетить:</h4>
+            <ul class="filtred-companions__countries">
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Sri-Lanka_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Великобритания</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Belgium_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Германия</p>
+              </li>
+              <li class="filtred-companions__country">
+                <img class="filtred-companions__flag" src="img/flag_Seychelles_mini.png" alt="" width="26" height="18">
+                <p class="filtred-companions__country-name">Сейшелы</p>
+              </li>
+            </ul>
+            <div>
+              <h4 class="filtred-companions__subtitle">транспорт:</h4>
+              <ul class="filtred-companions__transports transports-list">
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+                <li class="filtred-companions__transport"><a class="filtred-companions__transport-link" href="#"></a></li>
+              </ul>
+              <h4 class="filtred-companions__subtitle">левел:</h4>
+              <p class="filtred-companions__level">50</p>
+            </div>
+            <a href="#" class="filtred-companions__button button">Позвать!</a>
+          </li>
+        </ul>
+        <a href="3" class="filtred-companions__more">Показать еще</a>
+        <div class="filtred-companions__buttons">
+          <button class="filtred-companions__pagination-btn filtred-companions__pagination-btn--prev" type="button"></button>
+          <button class="filtred-companions__pagination-btn filtred-companions__pagination-btn--next" type="button"></button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a href="#" class="page-footer__logo">
-      <img src="https://via.placeholder.com/96x15" alt="Логотип компании Погнали" class="page-footer__logo-img">
-    </a>
+    <div class="container">
+      <a href="#" class="page-footer__logo">
+        <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" alt="Логотип компании Погнали">
+      </a>
 
-    <ul class="footer-social">
-      <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--fb"></a></li>
-      <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--vk"></a></li>
-      <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--insta"></a></li>
-    </ul>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link page-footer__social-link--fb"></a></li>
+        <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--vk"></a></li>
+        <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--insta"></a></li>
+      </ul>
 
-    <div class="page-footer__copy">
-      <p>Разработано</p>
-      <img src="https://via.placeholder.com/27x34" alt="Логотип htmlacademy">
+      <div class="page-footer__copy">
+        <p class="page-footer__copy-text">Разработано</p>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+      </div>
     </div>
   </footer>
 </body>

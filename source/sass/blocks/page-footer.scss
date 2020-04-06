@@ -1,0 +1,35 @@
+.page-footer {
+  padding-top: 38px;
+  border-radius: 30px 30px 0 0;
+  background-color: #ffffff;
+
+  &__logo {
+    display: block;
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 41px;
+  }
+
+  &__social-list {
+    @include list-reset;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 37px;
+    border-bottom: 1px solid rgba(#000000, 0.05);
+  }
+
+  &__social-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: $yellow-1;
+    border-radius: 50%;
+  }
+
+  &__copy {
+    color: #444444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
