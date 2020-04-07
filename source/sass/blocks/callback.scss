@@ -2,41 +2,41 @@
   @include section-def;
   background-color: #192144;
   z-index: 5;
+}
 
-  &__intro {
-    text-align: center;
-  }
+.callback__intro {
+  text-align: center;
+}
 
-  &__desc {
-    color: #ffffff;
-    width: 200px;
-    margin: 20px auto 30px;
-  }
+.callback__desc {
+  color: #ffffff;
+  width: 200px;
+  margin: 20px auto 30px;
+}
 
-  &__login-link {
-    color: #ffd74b;
-    text-decoration: underline;
-  }
+.callback__login-link {
+  color: #ffd74b;
+  text-decoration: underline;
+}
 
-  &__form {
-    position: relative;
-  }
+.callback__form {
+  position: relative;
+}
 
-  &__input {
-    display: block;
-    width: 100%;
-    height: 62px;
-    border: none;
-    padding: 24px;
-    border-radius: 10px;
-    color: #444444;
-    font-family: "Blogger Sans", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-  }
+.callback__input {
+  display: block;
+  width: 100%;
+  height: 62px;
+  border: none;
+  padding: 24px;
+  border-radius: 10px;
+  color: #444444;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
 
-  &__input::placeholder {
+  &::placeholder {
     opacity: 0.3;
     color: #444444;
     font-family: "Blogger Sans", "Arial", sans-serif;
@@ -44,44 +44,44 @@
     font-weight: 700;
     line-height: 18px;
   }
+}
 
-  &__button {
-    height: 62px;
-    width: 60px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.callback__button {
+  height: 62px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
-  &__questions {
-    color: #ffffff;
-    text-align: center;
-    margin-top: 30px;
-  }
+.callback__questions {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
 
-  &__link {
-    color: #ffd74b;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
-    padding-left: 61px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
+.callback__link {
+  color: #ffd74b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  padding-left: 61px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-  &__icon {
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.callback__icon {
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  &__icon::before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -90,15 +90,15 @@
     background-color: #ffd74b;
   }
 
-  &__icon--tel::before {
+  &--tel::before {
     width: 18px;
     height: 18px;
-    mask: url("../../img/contacts-phone.svg");
+    mask: url("../img/contacts-phone.svg");
   }
 
-  &__icon--mail::before {
+  &--mail::before {
     width: 18px;
     height: 13px;
-    mask: url("../../img/contacts-mail.svg");
+    mask: url("../img/contacts-mail.svg");
   }
 }

@@ -7,13 +7,14 @@
   background-color: #161c35;
   margin: 0;
   padding-top: 50px;
+}
 
-  &__container {
-    position: relative;
-    padding-bottom: 10px;
-  }
+.page-title__container {
+  position: relative;
+  padding-bottom: 10px;
+  display: block;
 
-  &__container::before {
+  &::before {
     content: "";
     width: 173px;
     height: 5px;

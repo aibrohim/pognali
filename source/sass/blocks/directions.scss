@@ -3,71 +3,71 @@
   background-color: #edeff6;
   z-index: 8;
   padding-bottom: 30px;
+}
 
-  &__title {
-    line-height: 24px;
-    margin-bottom: 20px;
-  }
+.directions__title {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
 
-  &__desc {
-    width: 195px;
-    margin-bottom: 60px;
-  }
+.directions__desc {
+  width: 195px;
+  margin-bottom: 60px;
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.directions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  &__img-container {
-    margin: 0;
-    line-height: 0;
-  }
+.directions__img-container {
+  margin: 0;
+  line-height: 0;
+}
 
-  &__img {
-    border-radius: 10px 10px 0 0;
-  }
+.directions__img {
+  border-radius: 10px 10px 0 0;
+}
 
-  &__info {
-    background-color: #ffffff;
-    border-radius: 10px;
-    position: relative;
-    top: -10px;
-    padding: 28px 26px 23px 25px;
-  }
+.directions__info {
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  top: -10px;
+  padding: 28px 26px 23px 25px;
+}
 
-  &__flag {
-    position: absolute;
-    z-index: 10;
-    top: -12px;
-    left: 25px;
-  }
+.directions__flag {
+  position: absolute;
+  z-index: 10;
+  top: -12px;
+  left: 25px;
+}
 
-  &__name {
-    color: #161c35;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 21px;
-    margin: 0;
-  }
+.directions__name {
+  color: #161c35;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+}
 
-  &__slogan {
-    opacity: 0.3;
-    color: #444444;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-  }
+.directions__slogan {
+  opacity: 0.3;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
 
-  &__number {
-    opacity: 0.3;
-    color: #444444;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding-left: 19px;
-    position: relative;
-  }
+.directions__number {
+  opacity: 0.3;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 19px;
+  position: relative;
 }

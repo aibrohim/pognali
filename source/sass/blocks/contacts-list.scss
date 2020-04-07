@@ -1,34 +1,32 @@
-.contacts-list {
-  &__item {
-    position: relative;
-  }
+.contacts-list__item {
+  position: relative;
+}
 
-  &__link {
-    color: #192144;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
-    padding-left: 60px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-transform: uppercase;
-    z-index: 3;
-  }
+.contacts-list__link {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  padding-left: 60px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 3;
+}
 
-  &__icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-  }
+.contacts-list__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
 
-  &__icon::before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -36,15 +34,15 @@
     transform: translate(-50%, -50%);
   }
 
-  &__icon--tel::before {
+  &--tel::before {
     width: 18px;
     height: 18px;
-    background: url("../../img/menu-contacts-phone.svg") 0 0 no-repeat;
+    background: url("../img/menu-contacts-phone.svg") 0 0 no-repeat;
   }
 
-  &__icon--mail::before {
+  &--mail::before {
     width: 18px;
     height: 13px;
-    background: url("../../img/menu-contacts-mail.svg") 0 0 no-repeat;
+    background: url("../img/menu-contacts-mail.svg") 0 0 no-repeat;
   }
 }

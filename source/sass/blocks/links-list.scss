@@ -1,27 +1,28 @@
 .links-list {
   padding-top: 250px;
   width: 100%;
-  background: url("../../img/traveller-illustration-mobile@1x.png") 55px 15px no-repeat;
+  background: url("../img/traveller-illustration-mobile@1x.png") 55px 15px no-repeat;
   position: relative;
   z-index: 9;
+}
 
-  &__link {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: relative;
-  }
 
-  &__link--tel {
+.links-list__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+
+  &--tel {
     background-color: $orange-1;
   }
 
-  &__link--mail {
+  &--mail {
     background-color: $yellow-2;
   }
 
-  &__link::before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -29,16 +30,25 @@
     transform: translate(-50%, -50%);
   }
 
-  &__link--tel::before {
+  &--tel::before {
     width: 18px;
     height: 18px;
-    background: url("../../img/topmenu-phone.svg") 0 0 no-repeat;
+    background: url("../img/topmenu-phone.svg") 0 0 no-repeat;
   }
 
-  &__link--mail::before {
+  &--mail::before {
     width: 18px;
     height: 14px;
-    background: url("../../img/topmenu-mail.svg") 0 0 no-repeat;
+    background: url("../img/topmenu-mail.svg") 0 0 no-repeat;
+  }
+
+  &--login {
+    color: #161c35;
+    width: 100%;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
   }
 }
 
@@ -50,13 +60,4 @@
   font-weight: 700;
   line-height: 30px;
   border-radius: 20px;
-
-  .links-list__link {
-    color: #161c35;
-    width: 100%;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-  }
 }
