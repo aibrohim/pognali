@@ -66,6 +66,7 @@
     </h1>
 
     <section class="profile">
+      <h2 class="visually-hidden">Профиль</h2>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="profile__level">80 <span>level</span></div>
         <div class="profile__img"><img src="https://via.placeholder.com/100x100" alt="Фото"></div>
@@ -133,22 +134,22 @@
             <p class="steps-list__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <label for="companionNumber" class="steps-list__label">ищу попутчиков: <span class="label-span">Чел.</span></label>
             <div class="steps-list__number">
-              <input class="steps-list__input-button steps-list__input-button--minus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--minus" type="button" value="-">
               <input class="steps-list__input" type="text" id="companionNumber" name="compnumber" value="2">
-              <input class="steps-list__input-button steps-list__input-button--plus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--plus" type="button" value="+">
             </div>
             <label for="travelDays" class="steps-list__label">Длительность: <span class="label-span">дн.</span></label>
             <div class="steps-list__number">
-              <input class="steps-list__input-button steps-list__input-button--minus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--minus" type="button" value="-">
               <input class="steps-list__input" type="text" id="travelDays" name="travelDays" value="2">
-              <input class="steps-list__input-button steps-list__input-button--plus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--plus" type="button" value="+">
             </div>
             <input class="visually-hidden step-1__checkbox" type="checkbox" name="withchildren" id="withchildren">
             <label class="withchildren-label" for="withchildren">Можно с детьми</label>
             <div class="step-1__month-year-wrapper">
-              <input class="step-1__narrow step-1__narrow--prev" type="button">
+              <input class="step-1__narrow step-1__narrow--prev" type="button" value="Прошлый месяц">
               <p class="step-1__moth-year"><span class="step-1__moth">Март</span><span class="step-1__year">2019</span></p>
-              <input class="step-1__narrow step-1__narrow--next" type="button">
+              <input class="step-1__narrow step-1__narrow--next" type="button" value="Следующий месяц">
             </div>
 
             <table class="step-1__calendar calendar">
@@ -249,7 +250,7 @@
             <ul class="step-3__entertainment entertainment-list">
               <li class="entertainment-list__item">
                 <label class="entertainment-list__label" for="bosniaEnt">Босния и герцегов<span><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
-                <textarea name="bosniaEnt" id="bosniaEnt" cols="30 " rows="10" placeholder="План действий"></textarea>
+                <textarea name="bosniaEnt" id="bosniaEnt" cols="30" rows="10" placeholder="План действий"></textarea>
               </li>
               <li class="entertainment-list__item">
                 <label class="entertainment-list__label" for="czechEnt">Чехия <span><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
