@@ -1,0 +1,48 @@
+.location {
+  @include section-def;
+  background-color: #ffd74b;
+  padding-top: 62px;
+}
+
+.location__text {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding-left: 60px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.location__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  display: inline-block;
+  border-radius: 50%;
+
+  &::before {
+    content: url("../img/contacts-location.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 22px;
+  }
+}
+
+.location__button {
+  border: 3px solid #192144;
+  color: #1d2e5b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 19px 24px;
+}

@@ -1,0 +1,24 @@
+.page-header {
+  background-color: #161c36;
+  padding-top: 27px;
+  position: relative;
+
+  &--white {
+    background-color: #ffffff;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-header__toggle {
+  padding: 0;
+  border: none;
+  width: 25px;
+  height: 11px;
+  background: url("../img/menu.svg") 0  0 no-repeat;
+}

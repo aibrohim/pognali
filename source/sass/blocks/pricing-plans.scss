@@ -1,0 +1,102 @@
+.pricing-plans {
+  @include section-def;
+  background-color: #edeff6;
+  padding-top: 67px;
+  z-index: 6;
+}
+
+.pricing-plans__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    width: 99px;
+    height: 99px;
+    display: block;
+    background: url("../img/rates@1x.png") 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+
+.pricing-plans__main-link {
+  width: 110px;
+}
+
+.pricing-plans__list {
+  @include list-reset;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: 31px;
+}
+
+.pricing-plans__item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    background-color: rgba(#000000, 0.05);
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    background-color: rgba(#000000, 0.05);
+  }
+}
+
+.pricing-plans__name {
+  display: block;
+}
+
+.pricing-plans__number {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ffffff;
+
+  &--1 {
+    background-color: $orange-2;
+  }
+
+  &--2 {
+    background-color: $yellow-2;
+  }
+
+  &--3 {
+    background-color: $yellow-1;
+  }
+}
+
+.pricing-plans__more {
+  margin-top: 30px;
+  display: block;
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}

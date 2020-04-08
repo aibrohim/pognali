@@ -1,0 +1,48 @@
+.intro {
+  padding-top: 40px;
+  background: #161c36 url("../img/globe-back-mobile@1x.jpg") center top no-repeat;
+}
+
+.intro__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.intro__links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro__blockquote {
+  position: relative;
+  top: -20px;
+  z-index: 3;
+  padding-left: 25px;
+  padding-top: 45px;
+  background-color: #161c35;
+  color: #ffffff;
+  margin-bottom: -20px;
+}
+
+.intro__quote {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  width: 160px;
+}
+
+.intro__author {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  width: 160px;
+}

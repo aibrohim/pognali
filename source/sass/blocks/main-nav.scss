@@ -1,0 +1,16 @@
+.main-nav {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 35px;
+  display: none;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

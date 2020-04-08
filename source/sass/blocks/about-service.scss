@@ -1,0 +1,23 @@
+.about-service {
+  margin-top: -43px;
+  padding-top: 30px;
+  padding-left: 45px;
+  padding-bottom: 65px;
+  background: #141b3b url("../img/about-mobile@1x.png") center top no-repeat;
+  color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 9;
+}
+
+
+.about-service__desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 210px;
+}
+
+.about-service__slogan {
+  font-weight: 700;
+  width: 210px;
+}

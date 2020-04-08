@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header__wrapper">
       <a href="#" class="page-header__logo">
-        <img src="https://via.placeholder.com/96x15" alt="Логотип компании Погнали" class="page-header__logo-img">
+        <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
+      <button class="page-header__toggle" type="button"></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="#" class="site-list__link">о сервисе</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">направления</a>
+              <a href="form.html" class="site-list__link">направления</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">попутчики</a>
+              <a href="#" class="site-list__link">попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -32,21 +34,23 @@
           </ul>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
-              <a href="tel:+88005558628" class="contacts-list__link contacts-list__tel">8 800 555-86-28</a>
+              <i class="contacts-list__icon contacts-list__icon--tel"></i>
+              <a href="tel:+88005558628" class="contacts-list__link">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__mail">mail@htmlacademy.ru</a>
+              <i class="contacts-list__icon contacts-list__icon--mail"></i>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link social-list__fb"></a>
+              <a href="#" class="social-list__link social-list__link--fb"></a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link social-list__vk"></a>
+              <a href="#" class="social-list__link social-list__link--vk"></a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link social-list__insta"></a>
+              <a href="#" class="social-list__link social-list__link--insta"></a>
             </li>
           </ul>
         </div>
@@ -55,9 +59,14 @@
   </header>
 
   <main class="page-main form-main">
-    <h1 class="page-title">Направления</h1>
+    <h1 class="page-title">
+      <span class="page-title__container container">
+        Направления
+      </span>
+    </h1>
 
     <section class="profile">
+      <h2 class="visually-hidden">Профиль</h2>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="profile__level">80 <span>level</span></div>
         <div class="profile__img"><img src="https://via.placeholder.com/100x100" alt="Фото"></div>
@@ -125,22 +134,22 @@
             <p class="steps-list__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <label for="companionNumber" class="steps-list__label">ищу попутчиков: <span class="label-span">Чел.</span></label>
             <div class="steps-list__number">
-              <input class="steps-list__input-button steps-list__input-button--minus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--minus" type="button" value="-">
               <input class="steps-list__input" type="text" id="companionNumber" name="compnumber" value="2">
-              <input class="steps-list__input-button steps-list__input-button--plus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--plus" type="button" value="+">
             </div>
             <label for="travelDays" class="steps-list__label">Длительность: <span class="label-span">дн.</span></label>
             <div class="steps-list__number">
-              <input class="steps-list__input-button steps-list__input-button--minus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--minus" type="button" value="-">
               <input class="steps-list__input" type="text" id="travelDays" name="travelDays" value="2">
-              <input class="steps-list__input-button steps-list__input-button--plus" type="button">
+              <input class="steps-list__input-button steps-list__input-button--plus" type="button" value="+">
             </div>
             <input class="visually-hidden step-1__checkbox" type="checkbox" name="withchildren" id="withchildren">
             <label class="withchildren-label" for="withchildren">Можно с детьми</label>
             <div class="step-1__month-year-wrapper">
-              <input class="step-1__narrow step-1__narrow--prev" type="button">
+              <input class="step-1__narrow step-1__narrow--prev" type="button" value="Прошлый месяц">
               <p class="step-1__moth-year"><span class="step-1__moth">Март</span><span class="step-1__year">2019</span></p>
-              <input class="step-1__narrow step-1__narrow--next" type="button">
+              <input class="step-1__narrow step-1__narrow--next" type="button" value="Следующий месяц">
             </div>
 
             <table class="step-1__calendar calendar">
@@ -241,7 +250,7 @@
             <ul class="step-3__entertainment entertainment-list">
               <li class="entertainment-list__item">
                 <label class="entertainment-list__label" for="bosniaEnt">Босния и герцегов<span><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
-                <textarea name="bosniaEnt" id="bosniaEnt" cols="30 " rows="10" placeholder="План действий"></textarea>
+                <textarea name="bosniaEnt" id="bosniaEnt" cols="30" rows="10" placeholder="План действий"></textarea>
               </li>
               <li class="entertainment-list__item">
                 <label class="entertainment-list__label" for="czechEnt">Чехия <span><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
@@ -257,19 +266,21 @@
   </main>
 
   <footer class="page-footer">
-    <a href="#" class="page-footer__logo">
-      <img src="https://via.placeholder.com/96x15" alt="Логотип компании Погнали" class="page-footer__logo-img">
-    </a>
+    <div class="container">
+      <a href="#" class="page-footer__logo">
+        <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" alt="Логотип компании Погнали">
+      </a>
 
-    <ul class="footer-social">
-      <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--fb"></a></li>
-      <li class="footer-social__item"><a href="" class="footer-social__link footer-social__link--vk"></a></li>
-      <li class="footer-social__item"><a href="" class="footer-social__link footer-social__link--insta"></a></li>
-    </ul>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link page-footer__social-link--fb"></a></li>
+        <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--vk"></a></li>
+        <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--insta"></a></li>
+      </ul>
 
-    <div class="page-footer__copy">
-      <p>Разработано</p>
-      <img src="https://via.placeholder.com/27x34" alt="Логотип htmlacademy">
+      <div class="page-footer__copy">
+        <p class="page-footer__copy-text">Разработано</p>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+      </div>
     </div>
   </footer>
 
