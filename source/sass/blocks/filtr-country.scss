@@ -1,0 +1,129 @@
+.filtr-country {
+  border-radius: 0 0 20px 20px;
+  background-color: #e2e5f2;
+  position: relative;
+  top: -30px;
+  padding-top: 30px;
+  margin-bottom: -10px;
+}
+
+.filtr-country__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 27px;
+  padding-right: 4px;
+}
+
+.filtr-country__title {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filtr-country__close {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 17px;
+  height: 3px;
+  background-color: #ff8d30;
+}
+
+.filtr-country__continents {
+  @include list-reset;
+  padding-left: 26px;
+  margin-top: 15px;
+}
+
+.filtr-country__continent {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filtr-country__continent-link {
+  opacity: 0.3;
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.filtr-country__alphabet {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  width: 224px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.filtr-country__letter {
+  flex-basis: 45px;
+
+  &:nth-child(5n) {
+    flex-basis: 44px;
+  }
+}
+
+.filtr-country__letter-link {
+  height: 41px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+
+  &--active {
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
+    color: #ffffff;
+  }
+}
+
+.filtr-country__letter-countries {
+  @include list-reset;
+  margin-left: 26px;
+  margin-top: 12px;
+}
+
+.filtr-country__letter-countries a {
+  color: #444444;
+}
+
+.filtr-country__close-button {
+  border: none;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 6px 0 6px 24px;
+  border-radius: 20px;
+  background-color: #d6daed;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 29.45px;
+  text-transform: uppercase;
+  font-family: "Blogger Sans", "Aria", sans-serif;
+}
+
+.filtr-country__body {
+  padding-bottom: 27px;
+  display: none;
+}
