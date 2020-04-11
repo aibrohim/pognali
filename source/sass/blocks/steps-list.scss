@@ -1,0 +1,191 @@
+.steps-list {
+  @include list-reset;
+  margin-top: 30px;
+  padding-bottom: 70px;
+}
+
+.steps-list__item {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 8px 23px 22px 23px;
+  margin-bottom: 10px;
+
+  &:nth-child(2) {
+    padding-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 12px;
+  }
+}
+
+.steps-list__item:last-child .steps-list__desc {
+  margin-bottom: 19px;
+}
+
+.steps-list__title {
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.steps-list__desc {
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 21px;
+}
+
+.steps-list__label {
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.steps-list__span {
+  opacity: 0.3;
+}
+
+.steps-list__number {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.steps-list__input-button {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  border: 0;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.steps-list__input-button--min {
+  left: 14px;
+}
+
+.steps-list__input-button--min::before {
+  @include center;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: #cfd0d0;
+}
+
+.steps-list__input-button--max {
+  right: 14px;
+}
+
+.steps-list__input-button--max::before {
+  @include center;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: #cfd0d0;
+}
+
+.steps-list__input-button--max::after {
+  @include center;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 14px;
+  background-color: #cfd0d0;
+}
+
+.steps-list__input {
+  @include font;
+  width: 100%;
+  height: 43px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  text-align: center;
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 13.37px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.steps-list__children {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.steps-list__styled-checkbox {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 10px;
+}
+
+.steps-list__button {
+  @include font;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.steps-list__add {
+  @include font;
+  display: block;
+  width: 100%;
+  height: 42px;
+  border-radius: 4px;
+  background-color: #edeff6;
+  border: none;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-align-last: left;
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+
+.steps-list__button-back {
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+}

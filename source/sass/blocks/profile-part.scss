@@ -1,0 +1,38 @@
+.profile-part {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.profile-part__title {
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.profile-part__hashs {
+  @include list-reset;
+  padding-top: 7px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+.profile-part__hash {
+  display: inline;
+}
+
+.profile-part__hash a {
+  color: #444444;
+}
+
+.profile-part__transports {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}

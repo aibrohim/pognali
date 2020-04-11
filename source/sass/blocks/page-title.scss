@@ -12,13 +12,17 @@
 }
 
 .page-title__container {
+  display: block;
+  padding-bottom: 12px;
+}
+
+.page-title__text {
   position: relative;
   padding-bottom: 12px;
-  display: block;
 
   &::before {
     content: "";
-    width: 173px;
+    width: 100%;
     height: 5px;
     position: absolute;
     bottom: 0;
