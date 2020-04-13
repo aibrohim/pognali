@@ -1,0 +1,27 @@
+.music-types {
+  @include list-reset;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.music-types__item {
+  margin-bottom: 7px;
+}
+
+.music-types__checkbox {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  vertical-align: middle;
+  font-size: 0;
+  margin-right: 3px;
+}
+
+.music-types__name {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}

@@ -1,0 +1,30 @@
+.step-1__month-year-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 16px;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.step-1__month-year {
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 11px 0;
+}
+
+.step-1__narrow {
+  background-color: #000000;
+  opacity: 0.3;
+  border: none;
+  width: 9px;
+  height: 18px;
+}
+
+.step-1__button {
+  margin-top: 24px;
+}

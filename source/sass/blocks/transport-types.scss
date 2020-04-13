@@ -1,0 +1,14 @@
+.transport-types {
+  @include list-reset;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.transport-types__checkbox {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}

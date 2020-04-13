@@ -1,0 +1,46 @@
+.filtr-companion {
+  background-color: $yellow-1;
+  border-radius: 20px;
+  padding: 26px 25px 22px;
+  margin-bottom: 30px;
+}
+
+.filtr-companion__title {
+  color: #1d2e5b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22.49px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.filtr-companion__opener {
+  background-color: $yellow-1;
+  border: none;
+  border-top: 1px solid #f3c72b;
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #1d2e5b;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.filtr-companion__button {
+  @include font;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  color: #161c35;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 4px;
+}

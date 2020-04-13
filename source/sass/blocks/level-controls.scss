@@ -1,0 +1,50 @@
+.level-controls {
+  display: flex;
+  z-index: 3;
+  position: relative;
+  margin-top: 2px;
+
+  &::before {
+    @include center;
+    content: "";
+    z-index: 4;
+    width: 7px;
+    height: 11px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+
+  &::after {
+    @include center;
+    position: absolute;
+    content: "";
+    z-index: 5;
+    width: 16px;
+    height: 1px;
+    background-color: #cbced9;
+  }
+}
+
+.level-controls__input {
+  display: inline-block;
+  width: 110px;
+  border: 1px solid #cbced9;
+  text-align: center;
+  padding: 8px;
+  color: #1d2e5b;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 13.49px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &:first-child {
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+}
