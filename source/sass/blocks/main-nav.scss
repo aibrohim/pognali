@@ -1,9 +1,30 @@
 .main-nav {
   flex-grow: 1;
+  flex-basis: 100%;
   background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 35px;
-  display: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    flex-basis: auto;
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .main-nav__list {

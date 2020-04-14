@@ -3,6 +3,14 @@
   justify-content: center;
   align-items: center;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 

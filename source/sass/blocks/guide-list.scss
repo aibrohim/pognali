@@ -5,6 +5,11 @@
   margin-top: 33px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .guide-list__item {
@@ -44,6 +49,59 @@
   &:not(:first-child) {
     margin-top: -20px;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+    border-radius: 0;
+
+    &:nth-child(odd) {
+      flex-basis: calc(50% + 10px);
+    }
+
+    &:nth-child(even) {
+      margin-left: -10px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &--first {
+      border-radius: 10px 0 0 0;
+    }
+
+    &--second {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &--third {
+      border-radius: 0 0 0 10px;
+    }
+
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px 0 0 10px;
+
+    &:not(:last-child) {
+      flex-basis: calc(25% + 10px);
+    }
+
+    &:last-child {
+      flex-basis: 25%;
+    }
+
+    &:not(:first-child) {
+      margin-left: -10px;
+    }
+
+    &:last-child {
+      border-radius: 10px;
+    }
+  }
 }
 
 .guide-list__text {
@@ -52,4 +110,8 @@
 
 .guide-list__number {
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

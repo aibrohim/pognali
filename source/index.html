@@ -14,6 +14,7 @@
         <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
       <button class="page-header__toggle" type="button"></button>
+      <a href="#" class="page-header__login">авторизация</a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -28,8 +29,14 @@
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__login">авторизация</a>
+            <li class="user-list__item user-list__item--tel">
+              <a href="tel:+88005558628" class="user-list__link user-list__link--tel"></a>
+            </li>
+            <li class="user-list__item user-list__item--mail">
+              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"></a>
+            </li>
+            <li class="user-list__item user-list__item--login">
+              <a href="#" class="user-list__link user-list__link--login">авторизация</a>
             </li>
           </ul>
           <ul class="main-nav__list contacts-list">
@@ -60,25 +67,27 @@
 
   <main class="page-main index-main">
     <section class="intro">
-      <div class="container">
+      <div class="container intro__container">
         <h1 class="visually-hidden">"Погнали?" агентство путешествий</h1>
 
-        <p class="intro__title">В путешествие <br> с крутыми попутчиками!</p>
-        <ul class="intro__links links-list">
-          <li class="links-list__item">
-            <a href="tel:+88005558628" class="links-list__link links-list__link--tel"></a>
-          </li>
-          <li class="links-list__item">
-            <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail"></a>
-          </li>
-          <li class="links-list__item links-list__item--login">
-            <a href="#" class="links-list__link links-list__link--login">авторизация</a>
-          </li>
-        </ul>
+        <div class="intro__info">
+          <p class="intro__title">В путешествие <br> с крутыми попутчиками!</p>
+          <ul class="intro__links links-list">
+            <li class="links-list__item">
+              <a href="tel:+88005558628" class="links-list__link links-list__link--tel"></a>
+            </li>
+            <li class="links-list__item">
+              <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail"></a>
+            </li>
+            <li class="links-list__item links-list__item--login">
+              <a href="#" class="links-list__link links-list__link--login">авторизация</a>
+            </li>
+          </ul>
 
-        <div class="intro__blockquote">
-          <blockquote class="intro__quote">«Лучшее приложение, <br> что я видел в жизни!»</blockquote>
-          <p class="intro__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          <div class="intro__blockquote">
+            <blockquote class="intro__quote">«Лучшее приложение, <br> что я видел в жизни!»</blockquote>
+            <p class="intro__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          </div>
         </div>
 
         <ul class="intro__guide guide-list">

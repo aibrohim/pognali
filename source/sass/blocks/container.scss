@@ -2,3 +2,15 @@
   width: 270px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1320px;
+  }
+}

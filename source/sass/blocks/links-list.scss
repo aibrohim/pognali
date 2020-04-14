@@ -4,6 +4,10 @@
   background: url("../img/traveller-illustration-mobile@1x.png") 55px 15px no-repeat;
   position: relative;
   z-index: 9;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 

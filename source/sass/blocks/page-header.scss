@@ -3,6 +3,16 @@
   padding-top: 27px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    background: #182044;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #161c34;
+    display: flex;
+    align-items: center;
+  }
+
   &--white {
     background-color: #ffffff;
   }
@@ -11,8 +21,8 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .page-header__toggle {
@@ -21,4 +31,24 @@
   width: 25px;
   height: 11px;
   background: url("../img/menu.svg") 0  0 no-repeat;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__login {
+  padding: 10px 20px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ffd74b;
+  color: #161c35;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
