@@ -13,6 +13,7 @@
         <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
       <button class="page-header__toggle" type="button"></button>
+      <a href="#" class="page-header__login">авторизация</a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -27,8 +28,14 @@
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__login">авторизация</a>
+            <li class="user-list__item user-list__item--tel">
+              <a href="tel:+88005558628" class="user-list__link user-list__link--tel"></a>
+            </li>
+            <li class="user-list__item user-list__item--mail">
+              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"></a>
+            </li>
+            <li class="user-list__item user-list__item--login">
+              <a href="#" class="user-list__link user-list__link--login">авторизация</a>
             </li>
           </ul>
           <ul class="main-nav__list contacts-list">
@@ -63,163 +70,209 @@
         Попутчики
       </span>
     </h1>
-    <section class="filtr">
-      <h2 class="visually-hidden">Фильтр попутчика</h2>
 
-      <div class="filtr-country">
-        <div class="container">
-          <div class="filtr-country__header">
-            <h3 class="filtr-country__title">Фильтрация по странам</h3>
-            <button class="filtr-country__close" type="button"></button>
-          </div>
+    <section class="filtr-country">
+      <div class="container">
+        <div class="filtr-country__header">
+          <h3 class="filtr-country__title">Фильтрация по странам</h3>
+          <button class="filtr-country__close" type="button"></button>
+        </div>
 
-          <div class="filtr-country__body">
-            <ul class="filtr-country__continents">
-              <li class="filtr-country__continent">
-                <a href="#" class="filtr-country__continent-link filtr-country__continent-link--active">Европа</a>
-              </li>
-              <li class="filtr-country__continent">
-                <a href="#" class="filtr-country__continent-link">Азия</a>
-              </li>
-              <li class="filtr-country__continent">
-                <a href="#" class="filtr-country__continent-link">Америка</a>
-              </li>
-              <li class="filtr-country__continent">
-                <a href="#" class="filtr-country__continent-link">Острова</a>
-              </li>
-            </ul>
+        <div class="filtr-country__body">
+          <ul class="filtr-country__continents">
+            <li class="filtr-country__continent">
+              <a href="#" class="filtr-country__continent-link filtr-country__continent-link--active">Европа</a>
+            </li>
+            <li class="filtr-country__continent">
+              <a href="#" class="filtr-country__continent-link">Азия</a>
+            </li>
+            <li class="filtr-country__continent">
+              <a href="#" class="filtr-country__continent-link">Америка</a>
+            </li>
+            <li class="filtr-country__continent">
+              <a href="#" class="filtr-country__continent-link">Острова</a>
+            </li>
+          </ul>
 
-            <ul class="filtr-country__alphabet alphabet-list">
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link filtr-country__letter-link--active" href="#">А</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">Б</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">В</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">Г</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">Д</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">Е</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">З</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">и</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">к</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">л</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">м</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">н</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">о</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">п</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">р</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">с</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">т</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">у</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">ф</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">х</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">ч</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">ш</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">э</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">ю</a>
-              </li>
-              <li class="filtr-country__letter">
-                <a class="filtr-country__letter-link" href="#">я</a>
-              </li>
-            </ul>
+          <ul class="filtr-country__alphabet alphabet-list">
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link filtr-country__letter-link--active" href="#">А</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">Б</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">В</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">Г</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">Д</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">Е</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">З</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">и</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">к</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">л</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">м</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">н</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">о</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">п</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">р</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">с</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">т</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">у</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">ф</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">х</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">ч</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">ш</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">э</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">ю</a>
+            </li>
+            <li class="filtr-country__letter">
+              <a class="filtr-country__letter-link" href="#">я</a>
+            </li>
+          </ul>
 
-            <ul class="filtr-country__letter-countries">
-              <li class="filtr-country__letter-country"><a href="/europe/france">Австралия</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Австрия</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Азербайджан</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Албания</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Алжир</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Ангола</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Андорра</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Антигуа и Барбуда</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Аргентина</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Армения</a></li>
-              <li class="filtr-country__letter-country"><a href="/europe/france">Афганистан</a></li>
-            </ul>
+          <ul class="filtr-country__letter-countries">
+            <li class="filtr-country__letter-country"><a href="/europe/france">Австралия</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Австрия</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Азербайджан</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Албания</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Алжир</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Ангола</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Андорра</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Антигуа и Барбуда</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Аргентина</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Армения</a></li>
+            <li class="filtr-country__letter-country"><a href="/europe/france">Афганистан</a></li>
+          </ul>
 
-            <button class="filtr-country__close-button" type="button">свернуть</button>
-          </div>
+          <button class="filtr-country__close-button" type="button">свернуть</button>
         </div>
       </div>
+    </section>
 
-      <div class="container">
-
+    <div class="filtr-body container">
+      <section class="filtr-companion">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="filtr-companion">
-            <p class="filtr-companion__title">Подберите идеального попутчика</p>
+          <p class="filtr-companion__title">Подберите идеального попутчика</p>
 
-            <div class="filtr-companion__part">
+          <div class="filtr-companion__part">
+            <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener" type="button">Хобби</button>
             </div>
-            <div class="filtr-companion__part">
-              <button class="filtr-companion__opener" type="button">Музыка</button>
-              <ul class="music-types">
-                <li class="music-types__item">
+            <div class="filtr-companion__part-right">
+              <ul class="filtr-checks">
+                <li class="filtr-checks__item">
                   <input class="visually-hidden" type="checkbox" name="musicType" id="hardRock">
-                  <span class="music-types__checkbox"></span>
-                  <label for="hardRock" class="music-types__name">Тяжелый рок</label>
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="hardRock" class="filtr-checks__label">Тяжелый рок</label>
                 </li>
-                <li class="music-types__item">
+                <li class="filtr-checks__item">
                   <input class="visually-hidden" type="checkbox" name="musicType" id="russianRock">
-                  <span class="music-types__checkbox"></span>
-                  <label for="russianRock" class="music-types__name">Русский рэп</label>
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="russianRock" class="filtr-checks__label">Русский рэп</label>
                 </li>
-                <li class="music-types__item">
+                <li class="filtr-checks__item">
                   <input class="visually-hidden" type="checkbox" name="musicType" id="eurodance">
-                  <span class="music-types__checkbox"></span>
-                  <label for="eurodance" class="music-types__name">Евроденс</label>
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="eurodance" class="filtr-checks__label">Евроденс</label>
                 </li>
               </ul>
             </div>
-            <div class="filtr-companion__part">
+          </div>
+          <div class="filtr-companion__part">
+            <div class="filtr-companion__part-left">
+              <button class="filtr-companion__opener" type="button">Музыка</button>
+            </div>
+            <div class="filtr-companion__part-right">
+              <ul class="filtr-checks">
+                <li class="filtr-checks__item">
+                  <input class="visually-hidden" type="checkbox" name="musicType" id="hardRock">
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="hardRock" class="filtr-checks__label">Тяжелый рок</label>
+                </li>
+                <li class="filtr-checks__item">
+                  <input class="visually-hidden" type="checkbox" name="musicType" id="russianRock">
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="russianRock" class="filtr-checks__label">Русский рэп</label>
+                </li>
+                <li class="filtr-checks__item">
+                  <input class="visually-hidden" type="checkbox" name="musicType" id="eurodance">
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="eurodance" class="filtr-checks__label">Евроденс</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filtr-companion__part">
+            <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener" type="button">Еда</button>
             </div>
-            <div class="filtr-companion__part">
+            <div class="filtr-companion__part-right">
+              <ul class="filtr-checks">
+                <li class="filtr-checks__item">
+                  <input class="visually-hidden" type="checkbox" name="musicType" id="hardRock">
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="hardRock" class="filtr-checks__label">Тяжелый рок</label>
+                </li>
+                <li class="filtr-checks__item">
+                  <input class="visually-hidden" type="checkbox" name="musicType" id="russianRock">
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="russianRock" class="filtr-checks__label">Русский рэп</label>
+                </li>
+                <li class="filtr-checks__item">
+                  <input class="visually-hidden" type="checkbox" name="musicType" id="eurodance">
+                  <span class="filtr-checks__checkbox"></span>
+                  <label for="eurodance" class="filtr-checks__label">Евроденс</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filtr-companion__part">
+            <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener" type="button">Транспорт</button>
+            </div>
+            <div class="filtr-companion__part-right">
               <ul class="transport-types transport-types--white">
                 <li class="transport-types__item">
                   <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
@@ -239,8 +292,12 @@
                 </li>
               </ul>
             </div>
-            <div class="filtr-companion__part">
+          </div>
+          <div class="filtr-companion__part">
+            <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener" type="button">Левел</button>
+            </div>
+            <div class="filtr-companion__part-right filtr-companion__level">
               <div class="level-controls">
                 <input type="text" class="level-controls__input level-controls__input--min" name="min-level" value="30">
                 <input type="text" class="level-controls__input level-controls__input--max" name="max-level" value="100">
@@ -255,14 +312,12 @@
                 <div class="range-controls__toggler range-controls__toggler--max"></div>
               </div>
             </div>
-            <button class="filtr-companion__button" type="submit">Показать</button>
           </div>
+          <button class="filtr-companion__button" type="submit">Показать</button>
         </form>
-      </div>
-    </section>
+      </section>
 
-    <section class="filtred">
-      <div class="container">
+      <section class="filtred">
         <h2 class="visually-hidden">От фильтрованные попутчики</h2>
         <ul class="filtred-companions">
           <li class="filtred-companions__item">
@@ -423,16 +478,25 @@
           </li>
         </ul>
         <a href="#" class="filtred__more">Показать еще</a>
-        <div class="filtred__buttons">
-          <button class="filtred__pagination-btn filtred__pagination-btn--prev" type="button"></button>
-          <button class="filtred__pagination-btn filtred__pagination-btn--next" type="button"></button>
+
+        <div class="filtred__pagination pagination">
+          <ul class="pagination__numbers">
+            <li class="pagination__number"><a class="pagination__number-link pagination__number-link--active">1</a></li>
+            <li class="pagination__number"><a href="#" class="pagination__number-link">2</a></li>
+            <li class="pagination__number"><a href="#" class="pagination__number-link">3</a></li>
+            <li class="pagination__number"><a href="#" class="pagination__number-link">4</a></li>
+          </ul>
+          <div class="pagination__buttons">
+            <button class="pagination__button pagination__button--prev" type="button"></button>
+            <button class="pagination__button pagination__button--next" type="button"></button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
         <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" alt="Логотип компании Погнали">
       </a>

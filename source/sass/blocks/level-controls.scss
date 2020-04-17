@@ -23,6 +23,10 @@
     height: 1px;
     background-color: #cbced9;
   }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    order: 2;
+  }
 }
 
 .level-controls__input {
@@ -46,5 +50,14 @@
 
   &:last-child {
     border-radius: 0 4px 4px 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 75px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 110px;
   }
 }

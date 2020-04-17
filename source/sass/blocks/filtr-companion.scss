@@ -3,6 +3,10 @@
   border-radius: 20px;
   padding: 26px 25px 22px;
   margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 285px;
+  }
 }
 
 .filtr-companion__title {
@@ -43,4 +47,47 @@
   line-height: 30px;
   text-transform: uppercase;
   padding: 4px;
+}
+
+.filtr-companion__part {
+  display: block;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.filtr-companion__part-left {
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 100%;
+  }
+}
+
+.filtr-companion__part-right {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.filtr-companion__level {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }

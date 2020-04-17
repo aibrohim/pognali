@@ -4,6 +4,13 @@
   padding-top: 62px;
 }
 
+.location__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .location__text {
   color: #192144;
   font-size: 16px;
@@ -14,6 +21,10 @@
   position: relative;
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .location__icon {
@@ -45,4 +56,8 @@
   font-weight: 700;
   line-height: 18px;
   padding: 19px 24px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 54px;
+  }
 }

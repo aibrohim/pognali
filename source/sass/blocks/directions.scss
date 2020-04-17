@@ -5,6 +5,16 @@
   padding-bottom: 30px;
 }
 
+.directions__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 71px;
+  }
+}
+
 .directions__title {
   line-height: 24px;
   margin-bottom: 20px;
@@ -13,12 +23,37 @@
 .directions__desc {
   width: 195px;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 337px;
+  }
+}
+
+.directions__intro {
+  @media (min-width: $desktop-width) {
+    flex-basis: 680px;
+    flex-grow: 1;
+  }
 }
 
 .directions__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 560px;
+  }
+}
+
+.directions__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .directions__img-container {
@@ -34,8 +69,13 @@
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
-  top: -10px;
+  margin-top: -10px;
   padding: 28px 26px 23px 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin: 0;
+  }
 }
 
 .directions__flag {
@@ -70,4 +110,10 @@
   text-transform: uppercase;
   padding-left: 19px;
   position: relative;
+}
+
+.directions__button {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }

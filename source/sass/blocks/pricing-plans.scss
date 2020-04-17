@@ -18,10 +18,21 @@
     background: url("../img/rates@1x.png") 0 0 no-repeat;
     background-size: cover;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .pricing-plans__main-link {
   width: 110px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .pricing-plans__list {
@@ -37,6 +48,8 @@
   padding-top: 14px;
   padding-bottom: 14px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   &::before {
     content: "";
@@ -57,10 +70,28 @@
     height: 1px;
     background-color: rgba(#000000, 0.05);
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 92px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      left: 92px;
+      width: calc(100% - 92px);
+    }
+
+    &:last-child::after {
+      left: 92px;
+      width: calc(100% - 92px);
+    }
+  }
 }
 
 .pricing-plans__name {
   display: block;
+  line-height: 39px;
 }
 
 .pricing-plans__number {
@@ -89,6 +120,13 @@
   &--3 {
     background-color: $yellow-1;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    top: 0;
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .pricing-plans__more {
@@ -99,4 +137,12 @@
   font-weight: 700;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 92px;
+    color: #132576;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -6,6 +6,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
+
+  @media screen {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 img {

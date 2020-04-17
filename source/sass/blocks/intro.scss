@@ -33,7 +33,7 @@
       width: 431px;
       height: 640px;
       bottom: 0;
-      left: 544px;
+      left: 40%;
       background: url("../img/traveller-illustration-desktop@1x.png") center bottom no-repeat;
     }
   }
@@ -53,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: baseline;
     margin-bottom: 105px;
   }
 }
@@ -100,6 +101,10 @@
     padding-left: 35px;
     padding-top: 0;
     margin-top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 

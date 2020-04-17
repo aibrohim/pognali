@@ -7,16 +7,65 @@
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 9;
-}
 
+  @media (min-width: $tablet-width) {
+    background: #192144 url("../img/about-tablet@1x.png") right center no-repeat;
+    padding-top: 43px;
+    padding-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 133px;
+    background: #192144 url("../img/about-desktop@1x.png") right bottom no-repeat;
+    padding-bottom: 160px;
+  }
+}
 
 .about-service__desc {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 210px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    margin-top: 60px;
+  }
 }
 
 .about-service__slogan {
   font-weight: 700;
   width: 210px;
+
+  @media (min-width: $tablet-width) {
+    width: 255px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    margin-top: 44px;
+  }
+}
+
+.about-service__button {
+  display: none;
+  padding-right: 126px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-top: 83px;
+  }
 }
