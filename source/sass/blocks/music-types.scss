@@ -1,14 +1,28 @@
-.music-types {
+.filtr-checks {
   @include list-reset;
   margin-top: 5px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
-.music-types__item {
+.filtr-checks__item {
   margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 169px;
+  }
 }
 
-.music-types__checkbox {
+.filtr-checks__checkbox {
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -19,9 +33,14 @@
   margin-right: 3px;
 }
 
-.music-types__name {
+.filtr-checks__label {
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

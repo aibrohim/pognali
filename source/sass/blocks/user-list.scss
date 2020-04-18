@@ -1,17 +1,84 @@
 .user-list {
   margin-top: 55px;
   margin-bottom: 51px;
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
-.user-list__login {
-  background-color: #ffd74b;
-  color: #161c35;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
+.user-list__link {
   display: block;
-  border-radius: 25px;
-  padding: 10px;
-  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+
+  &--tel {
+    background-color: $orange-1;
+  }
+
+  &--mail {
+    background-color: $yellow-2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--tel::before {
+    width: 18px;
+    height: 18px;
+    background: url("../img/topmenu-phone.svg") 0 0 no-repeat;
+  }
+
+  &--mail::before {
+    width: 18px;
+    height: 14px;
+    background: url("../img/topmenu-mail.svg") 0 0 no-repeat;
+  }
+
+  &--login {
+    color: #161c35;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &--login::before {
+    display: none;
+  }
+}
+
+.user-list__item {
+  &--tel,
+  &--mail {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--login {
+    flex-grow: 1;
+    background-color: $yellow-1;
+    border-radius: 25px;
+  }
 }

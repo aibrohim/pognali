@@ -1,3 +1,9 @@
+.filtred {
+  @media (min-width: $desktop-width) {
+    flex-basis: 950px;
+  }
+}
+
 .filtred__more {
   color: #1d2e5b;
   font-size: 17px;
@@ -9,38 +15,4 @@
   text-align: center;
   margin-top: 18px;
   margin-bottom: 21px;
-}
-
-.filtred__buttons {
-  font-size: 0;
-  position: relative;
-  line-height: 0;
-  padding-bottom: 46px;
-
-  &::before {
-    content: "";
-    width: 1px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(#000000, 0.05);
-  }
-}
-
-.filtred__pagination-btn {
-  display: inline-block;
-  background-color: #ffffff;
-  border: none;
-  width: 50%;
-  height: 50px;
-
-  &--prev {
-    border-radius: 20px 0 0 20px;
-  }
-
-  &--next {
-    border-radius: 0 20px 20px 0;
-  }
 }

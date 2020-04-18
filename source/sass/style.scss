@@ -3,6 +3,7 @@
 @import "fonts.scss";
 @import "global.scss";
 @import "blocks/container.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -14,7 +15,6 @@
 @import "blocks/guide-list.scss";
 @import "blocks/section-title.scss";
 @import "blocks/about-service.scss";
-@import "blocks/button.scss";
 @import "blocks/directions.scss";
 @import "blocks/companions.scss";
 @import "blocks/pricing-plans.scss";
@@ -24,6 +24,7 @@
 @import "blocks/page-title.scss";
 @import "blocks/page-main.scss";
 @import "blocks/filtred-companions.scss";
+@import "blocks/filtr-body.scss";
 @import "blocks/filtr-country.scss";
 @import "blocks/filtr-companion.scss";
 @import "blocks/music-types.scss";
@@ -31,6 +32,7 @@
 @import "blocks/level-controls.scss";
 @import "blocks/range-controls.scss";
 @import "blocks/filtred.scss";
+@import "blocks/pagination.scss";
 @import "blocks/profile.scss";
 @import "blocks/profile-part.scss";
 @import "blocks/my-plans.scss";

@@ -1,5 +1,9 @@
 .range-controls {
   position: relative;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .range-controls__scale {
@@ -9,6 +13,10 @@
   background-color: #cbced9;
   margin-top: 24px;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 277px;
+  }
 }
 
 .range-controls__bar {
@@ -26,14 +34,15 @@
   background-color: #1d2e5b;
   border-radius: 50%;
   position: absolute;
+  transform: translateY(-50%);
 
   &--max {
     right: 0;
-    top: -5px;
+    top: 50%;
   }
 
   &--min {
     right: 144px;
-    top: -5px;
+    top: 50%;
   }
 }

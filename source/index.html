@@ -14,6 +14,7 @@
         <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
       <button class="page-header__toggle" type="button"></button>
+      <a href="#" class="page-header__login">авторизация</a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -28,8 +29,14 @@
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__login">авторизация</a>
+            <li class="user-list__item user-list__item--tel">
+              <a href="tel:+88005558628" class="user-list__link user-list__link--tel"></a>
+            </li>
+            <li class="user-list__item user-list__item--mail">
+              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"></a>
+            </li>
+            <li class="user-list__item user-list__item--login">
+              <a href="#" class="user-list__link user-list__link--login">авторизация</a>
             </li>
           </ul>
           <ul class="main-nav__list contacts-list">
@@ -60,48 +67,51 @@
 
   <main class="page-main index-main">
     <section class="intro">
-      <div class="container">
+      <div class="container intro__container">
         <h1 class="visually-hidden">"Погнали?" агентство путешествий</h1>
 
-        <p class="intro__title">В путешествие <br> с крутыми попутчиками!</p>
-        <ul class="intro__links links-list">
-          <li class="links-list__item">
-            <a href="tel:+88005558628" class="links-list__link links-list__link--tel"></a>
-          </li>
-          <li class="links-list__item">
-            <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail"></a>
-          </li>
-          <li class="links-list__item links-list__item--login">
-            <a href="#" class="links-list__link links-list__link--login">авторизация</a>
-          </li>
-        </ul>
+        <div class="intro__info">
+          <p class="intro__title">В путешествие <br> с крутыми попутчиками!</p>
+          <ul class="intro__links links-list">
+            <li class="links-list__item">
+              <a href="tel:+88005558628" class="links-list__link links-list__link--tel"></a>
+            </li>
+            <li class="links-list__item">
+              <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail"></a>
+            </li>
+            <li class="links-list__item links-list__item--login">
+              <a href="#" class="links-list__link links-list__link--login">авторизация</a>
+            </li>
+          </ul>
 
-        <div class="intro__blockquote">
-          <blockquote class="intro__quote">«Лучшее приложение, <br> что я видел в жизни!»</blockquote>
-          <p class="intro__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          <div class="intro__blockquote">
+            <blockquote class="intro__quote">«Лучшее приложение, <br> что я видел в жизни!»</blockquote>
+            <p class="intro__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          </div>
         </div>
 
         <ul class="intro__guide guide-list">
-          <li class="guide-list__item guide-list__item--first"><span class="guide-list__text">Выберите направление </span><span class="guide-list__number">1</span></li>
-          <li class="guide-list__item guide-list__item--second"><span class="guide-list__text">Изучите идеи путешественников </span><span class="guide-list__number">2</span></li>
-          <li class="guide-list__item guide-list__item--third"><span class="guide-list__text">Находите тех, кто похож на вас </span><span class="guide-list__number">3</span></li>
-          <li class="guide-list__item guide-list__item--fourth"><span class="guide-list__text">Путешествуйте вместе! </span><span class="guide-list__number">4</span></li>
+          <li class="guide-list__item guide-list__item--first"><p class="guide-list__text">Выберите направление </p><p class="guide-list__number">1</p></li>
+          <li class="guide-list__item guide-list__item--second"><p class="guide-list__text">Изучите идеи путешественников </p><p class="guide-list__number">2</p></li>
+          <li class="guide-list__item guide-list__item--third"><p class="guide-list__text">Находите тех, кто похож на вас </p><p class="guide-list__number">3</p></li>
+          <li class="guide-list__item guide-list__item--fourth"><p class="guide-list__text">Путешествуйте вместе! </p><p class="guide-list__number">4</p></li>
         </ul>
       </div>
 
     </section>
 
     <section class="about-service section">
-      <div class="container">
+      <div class="about-service__container container">
         <h2 class="about-service__title section-title">О сервисе</h2>
         <p class="about-service__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
         <p class="about-service__slogan section__slogan">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <a href="#" class="about-service__button button">Подробнее</a>
       </div>
     </section>
 
     <section class="directions">
-      <div class="container">
-        <div class="section-intro">
+      <div class="directions__container container">
+        <div class="directions__intro section-intro">
           <h2 class="directions__title section-title">
             Направления
           </h2>
@@ -136,7 +146,6 @@
               <p class="directions__slogan">Трэ бьен, манифик!</p>
               <span class="directions__number">12518</span>
             </div>
-
           </li>
           <li class="directions__item directions__item--czech">
             <p class="directions__img-container">
@@ -158,8 +167,8 @@
     </section>
 
     <section class="companions">
-      <div class="container">
-        <div class="section-intro">
+      <div class="companions__container container">
+        <div class="companions__intro section-intro">
           <h2 class="companions__title section-title">Попутчики</h2>
 
           <p class="companions__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
@@ -169,7 +178,7 @@
         <ul class="companions__list">
           <li class="companions__item">
             <div class="companions__img-wrapper">
-              <img src="https://via.placeholder.com/270x270" alt="картинка Тани Фирсовой" class="companions__img">
+              <img src="img/firsova-desktop@1x.jpg" alt="картинка Тани Фирсовой" class="companions__img">
             </div>
             <div class="companions__content">
               <ul class="companions__flags flags-list">
@@ -260,13 +269,13 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="callback__intro">
           <p class="section-title callback__title">Заинтересовались?</p>
-          <p class="callback__desc">Зарегистрируйтесь, <br> это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="callback__login-link" href="#">авторизуйтесь</a>.</p>
+          <p class="callback__desc">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="callback__login-link" href="#">авторизуйтесь</a>.</p>
         </div>
         <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST">
           <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
           <button class="callback__button button" type="submit"></button>
         </form>
-        <p class="callback__questions">Остались вопросы? <br> Мы с радостью на них ответим!</p>
+        <p class="callback__questions">Остались вопросы? Мы с радостью на них ответим!</p>
         <div class="callback__links">
           <a href="tel:+88005558628" class="callback__link"><i class="callback__icon callback__icon--tel"></i>8 800 555-86-28</a>
           <a href="mailto:mail@htmlacademy.ru" class="callback__link"><i class="callback__icon callback__icon--mail"></i>mail@htmlacademy.ru</a>
@@ -288,7 +297,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
         <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" alt="Логотип компании Погнали">
       </a>
@@ -305,7 +314,5 @@
       </div>
     </div>
   </footer>
-
-
 </body>
 </html>

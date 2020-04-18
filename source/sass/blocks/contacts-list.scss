@@ -1,3 +1,9 @@
+.contacts-list {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .contacts-list__item {
   position: relative;
 }

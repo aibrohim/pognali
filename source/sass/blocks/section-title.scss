@@ -4,4 +4,10 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
 }

@@ -3,6 +3,15 @@
   background-color: #edeff6;
   z-index: 8;
   padding-bottom: 30px;
+  flex-shrink: 1;
+}
+
+.directions__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .directions__title {
@@ -13,12 +22,40 @@
 .directions__desc {
   width: 195px;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 337px;
+  }
+}
+
+.directions__intro {
+  @media (min-width: $desktop-width) {
+    flex-basis: 630px;
+    flex-grow: 1;
+  }
 }
 
 .directions__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 630px;
+    padding-left: 71px;
+    order: -1;
+    margin-bottom: -65px;
+  }
+}
+
+.directions__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .directions__img-container {
@@ -34,8 +71,13 @@
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
-  top: -10px;
+  margin-top: -10px;
   padding: 28px 26px 23px 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin: 0;
+  }
 }
 
 .directions__flag {
@@ -70,4 +112,11 @@
   text-transform: uppercase;
   padding-left: 19px;
   position: relative;
+}
+
+.directions__button {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 804px;
+  }
 }
