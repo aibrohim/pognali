@@ -7,6 +7,15 @@
 .companions__container {
   @media (min-width: $desktop-width) {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.companions__intro {
+  @media (min-width: $desktop-width) {
+    flex-basis: 630px;
+    padding: 0;
   }
 }
 
@@ -32,11 +41,18 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    flex-basis: 630px;
     flex-direction: row;
     padding: 0 35px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 630px;
+    padding: 0;
   }
 }
 
@@ -160,4 +176,8 @@
 
 .companions__button {
   margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -80px;
+  }
 }

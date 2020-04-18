@@ -1,6 +1,5 @@
 .about-service {
   padding-top: 35px;
-  padding-left: 45px;
   padding-bottom: 65px;
   background: #141b3b url("../img/about-mobile@1x.png") center top no-repeat;
   color: #ffffff;
@@ -21,36 +20,48 @@
   }
 }
 
-.about-service__desc {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 210px;
+.about-service__container {
+  padding-left: 24px;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
-    margin-top: 43px;
+    padding-left: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
+    padding-left: 71px;
+  }
+}
+
+.about-service__desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+    padding-right: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 590px;
     margin-top: 60px;
   }
 }
 
 .about-service__slogan {
   font-weight: 700;
-  width: 210px;
+  padding-right: 50px;
 
   @media (min-width: $tablet-width) {
-    width: 255px;
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
     margin-top: 38px;
+    padding-right: 300px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
+    padding-right: 398px;
     margin-top: 44px;
   }
 }

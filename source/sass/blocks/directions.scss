@@ -3,15 +3,14 @@
   background-color: #edeff6;
   z-index: 8;
   padding-bottom: 30px;
+  flex-shrink: 1;
 }
 
 .directions__container {
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row-reverse;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-left: 71px;
   }
 }
 
@@ -31,7 +30,7 @@
 
 .directions__intro {
   @media (min-width: $desktop-width) {
-    flex-basis: 680px;
+    flex-basis: 630px;
     flex-grow: 1;
   }
 }
@@ -42,7 +41,10 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    flex-basis: 560px;
+    flex-basis: 630px;
+    padding-left: 71px;
+    order: -1;
+    margin-bottom: -65px;
   }
 }
 
@@ -115,5 +117,6 @@
 .directions__button {
   @media (min-width: $desktop-width) {
     display: inline-block;
+    margin-left: 804px;
   }
 }
