@@ -18,6 +18,14 @@
     margin-bottom: 0;
     padding-bottom: 12px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 43px 22px 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 138px 22px 138px;
+  }
 }
 
 .steps-list__item:last-child .steps-list__desc {
@@ -37,6 +45,46 @@
   font-weight: 400;
   color: #444444;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 24px;
+  }
+}
+
+.steps-list__routes {
+  padding-top: 15px;
+  border-top: 1px solid #d6d9e6;
+  position: relative;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 329px;
+      top: 0;
+      left: 395px;
+      background-color: #d6d9e6;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 774px;
+    }
+  }
+}
+
+.steps-list__inputs {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .steps-list__label {
@@ -48,16 +96,59 @@
   letter-spacing: 2.15px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    border-top: 1px solid #eff0f4;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    flex-wrap: nowrap;
+    border-top: none;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  &--companion {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--duration {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+}
+
+.steps-list__label-name {
+  flex-basis: 219px;
 }
 
 .steps-list__span {
   opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+    order: 1;
+  }
 }
 
 .steps-list__number {
   position: relative;
-  margin-bottom: 20px;
+  margin-top: 9px;
+  flex-basis: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 181px;
+    margin-top: 0;
+    margin-right: 36px;
+  }
 }
 
 .steps-list__input-button {
@@ -132,6 +223,11 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 20px;
+  }
 }
 
 .steps-list__styled-checkbox {
@@ -147,6 +243,14 @@
   margin-right: 10px;
 }
 
+.steps-list__buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .steps-list__button {
   @include font;
   color: #161c35;
@@ -157,7 +261,13 @@
   text-align: center;
   padding: 4px;
   border-radius: 20px;
-  width: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 78px 20px 34px;
+    text-align: left;
+    display: inline-block;
+  }
 }
 
 .steps-list__add {
@@ -177,6 +287,15 @@
   text-align-last: left;
   padding-left: 12px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .steps-list__button-back {
@@ -188,4 +307,8 @@
   display: block;
   text-align: center;
   margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

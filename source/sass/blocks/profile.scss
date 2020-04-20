@@ -1,11 +1,18 @@
 .profile {
-  margin-top: 23px;
+  margin-top: 73px;
+  position: relative;
 }
 
-.profile__header {
+.profile__container {
+  position: relative;
+}
+
+.profile__form {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile__level {
@@ -13,6 +20,7 @@
   height: 100px;
   border-radius: 50%;
   border: 3px solid #ff8d30;
+  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +34,19 @@
     background-color: #cbced9;
     order: 2;
   }
+
+  @media (min-width: $tablet-width) {
+    order: -2;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    position: absolute;
+    top: -229px;
+    right: 330px;
+    z-index: 34;
+  }
 }
 
 .profile__level-number {
@@ -34,6 +55,11 @@
   font-weight: 700;
   line-height: 38px;
   order: 1;
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    color: #ffffff;
+  }
 }
 
 .profile__level-text {
@@ -48,10 +74,26 @@
 .profile__img {
   font-size: 0;
   line-height: 0;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -173px;
+    right: 95px;
+    z-index: 33;
+  }
 }
 
 .profile__img img {
   border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0;
+  }
 }
 
 .profile__set-img {
@@ -69,4 +111,15 @@
   text-transform: uppercase;
   padding: 5px;
   margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 190px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: -73px;
+    right: 95px;
+    z-index: 33;
+    margin: 0;
+  }
 }

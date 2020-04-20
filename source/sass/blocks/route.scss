@@ -2,10 +2,27 @@
   position: relative;
   margin-bottom: 22px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    margin-bottom: 15px;
+  }
 }
 
 .route:nth-child(1) {
   margin-top: 25px;
+}
+
+.route__input-wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 85px;
+  }
 }
 
 .route__input {
@@ -22,13 +39,23 @@
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+    flex-grow: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .route__more {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 135px;
+  left: 90%;
   width: 26px;
   height: 26px;
   background-color: #cbced9;
@@ -47,6 +74,18 @@
   right: 0;
   transform: translate(50%, -50%);
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-left: auto;
+    transform: translateX(5px);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-left: auto;
+    transform: translateX(3px);
+  }
 }
 
 .route__flag-wrapper {
@@ -57,6 +96,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    border: none;
+  }
 }
 
 .route__label {

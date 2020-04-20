@@ -66,7 +66,7 @@
   </header>
 
   <main class="page-main form-main">
-    <h1 class="page-title">
+    <h1 class="page-title page-title--form">
       <span class="page-title__container container">
         <span class="page-title__text">
           Направления
@@ -76,18 +76,16 @@
 
     <section class="profile">
       <h2 class="visually-hidden">Профиль</h2>
-      <div class="container">
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <div class="profile__header">
-            <div class="profile__level"><span class="profile__level-number">80</span><span class="profile__level-text">level</span></div>
-            <div class="profile__img"><img src="https://via.placeholder.com/100x100" alt="Фото"></div>
-            <label class="profile__set-img">
-              Сменить фото
-              <input type="file" name="profilePicture" class="visually-hidden">
-            </label>
-          </div>
+      <div class="profile__container container">
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="profile__level"><span class="profile__level-number">80</span><span class="profile__level-text">level</span></div>
+          <div class="profile__img"><img src="https://via.placeholder.com/100x100" alt="Фото"></div>
+          <label class="profile__set-img">
+            Сменить фото
+            <input type="file" name="profilePicture" class="visually-hidden">
+          </label>
 
-          <fieldset class="profile-part">
+          <fieldset class="profile-part profile-part--hashs">
             <legend class="profile-part__title">Тэги</legend>
             <ul class="profile-part__hashs">
               <li class="profile-part__hash"><a href="#">#бургер</a></li>
@@ -97,7 +95,7 @@
               <li class="profile-part__hash"><a href="#">#крафт</a></li>
             </ul>
           </fieldset>
-          <fieldset class="profile-part">
+          <fieldset class="profile-part profile-part--transport">
             <legend class="profile-part__title">Транспорт</legend>
             <ul class="profile-part__transports transport-types">
               <li class="transport-types__item">
@@ -131,46 +129,54 @@
             <div class="my-plans__info">
               <p class="my-plans__companions-number">3 попутчика</p>
               <p class="my-plans__day-limit">26 мар — 29 мар</p>
+              <a href="#" class="my-plans__edit">Изменить</a>
             </div>
-            <a href="#" class="my-plans__edit">Изменить</a>
           </li>
           <li class="my-plans__item">
             <h3 class="my-plans__title"><span class="my-plans__number">2.</span>Таиланд, Индонезия</h3>
             <div class="my-plans__info">
               <p class="my-plans__companions-number">1 попутчик</p>
               <p class="my-plans__day-limit">1 июл — 15 июл</p>
+              <a href="#" class="my-plans__edit">Изменить</a>
             </div>
-            <a href="#" class="my-plans__edit">Изменить</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="add-plan">
-      <div class="container">
+      <div class="add-plan__container container">
         <h2 class="plans-title add-plan__title">Добавить план:</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <ul class="add-plan__list steps-list">
             <li class="steps-list__item step-1" id="step1">
               <h3 class="steps-list__title">Шаг 1. <br> Даты пребывания</h3>
               <p class="steps-list__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <label for="companionNumber" class="steps-list__label">ищу попутчиков: <span class="steps-list__span">Чел.</span></label>
-              <div class="steps-list__number">
-                <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
-                <input class="steps-list__input" type="text" id="companionNumber" name="compnumber" value="2">
-                <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
+              <div class="steps-list__inputs">
+                <label for="companionNumber" class="steps-list__label steps-list__label--companion">
+                  <span class="steps-list__label-name">ищу попутчиков:</span>
+                  <span class="steps-list__span">Чел.</span>
+                  <div class="steps-list__number">
+                    <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
+                    <input class="steps-list__input" type="text" id="companionNumber" name="compnumber" value="2">
+                    <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
+                  </div>
+                </label>
+                <label for="travelDays" class="steps-list__label steps-list__label--duration">
+                  <span class="steps-list__label-name">Длительность:</span>
+                  <span class="steps-list__span">дн.</span>
+                  <div class="steps-list__number">
+                    <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
+                    <input class="steps-list__input" type="text" id="travelDays" name="travelDays" value="2">
+                    <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
+                  </div>
+                </label>
+                <label class="steps-list__children" for="withchildren">
+                  <input class="visually-hidden step-1__checkbox" type="checkbox" name="withchildren" id="withchildren">
+                  <span class="steps-list__styled-checkbox"></span>
+                  Можно с детьми
+                </label>
               </div>
-              <label for="travelDays" class="steps-list__label">Длительность: <span class="steps-list__span">дн.</span></label>
-              <div class="steps-list__number">
-                <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
-                <input class="steps-list__input" type="text" id="travelDays" name="travelDays" value="2">
-                <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
-              </div>
-              <label class="steps-list__children" for="withchildren">
-                <input class="visually-hidden step-1__checkbox" type="checkbox" name="withchildren" id="withchildren">
-                <span class="steps-list__styled-checkbox"></span>
-                Можно с детьми
-              </label>
               <div class="step-1__month-year-wrapper">
                 <button class="step-1__narrow step-1__narrow--prev" type="button"></button>
                 <a href="#" class="step-1__month-year"><span class="step-1__moth">Март</span> <span class="step-1__year">2019</span></a>
@@ -244,46 +250,65 @@
               </table>
               <a href="#step2" class="steps-list__button step-1__button button">Следующий шаг</a>
             </li>
+
             <li class="steps-list__item step-2" id="step2">
               <h3 class="steps-list__title">Шаг 2. <br> Маршрут</h3>
               <p class="steps-list__desc">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
-              <div class="route">
-                <input class="route__input" type="text" value="Босния и герцегов">
-                <button class="route__more" type="button"></button>
-                <div class="route__flag-wrapper"><img class="route__flag" src="https://via.placeholder.com/35x24" alt=""></div>
-                <button class="route__close" type="button" aria-label="закрыть"></button>
+              <div class="steps-list__routes">
+                <div class="route">
+                  <div class="route__input-wrapper">
+                    <input class="route__input" type="text" value="Босния и герцегов">
+                    <button class="route__more" type="button"></button>
+                  </div>
+                  <div class="route__flag-wrapper"><img class="route__flag" src="https://via.placeholder.com/35x24" alt=""></div>
+                  <button class="route__close" type="button" aria-label="закрыть"></button>
+                </div>
+                <div class="route">
+                  <div class="route__input-wrapper">
+                    <input class="route__input" type="text" value="Чехия">
+                    <button class="route__more" type="button"></button>
+                  </div>
+                  <span class="route__flag-wrapper"><img class="route__flag" src="https://via.placeholder.com/35x24" alt=""></span>
+                  <button class="route__close" type="button" aria-label="закрыть"></button>
+                </div>
+                <div class="route route--change">
+                  <div class="route__input-wrapper">
+                    <label class="route__label">Выберите страну</label>
+                    <input class="route__input" type="text" readonly>
+                    <button class="route__more" type="button"></button>
+                  </div>
+                  <button class="route__close" type="button" aria-label="закрыть"></button>
+                </div>
+                <button class="steps-list__add" type="button">Добавить страну</button>
               </div>
-              <div class="route">
-                <input class="route__input" type="text" value="Чехия">
-                <button class="route__more" type="button"></button>
-                <span class="route__flag-wrapper"><img class="route__flag" src="https://via.placeholder.com/35x24" alt=""></span>
-                <button class="route__close" type="button" aria-label="закрыть"></button>
+              <div class="steps-list__buttons">
+                <a href="#step3" class="steps-list__button button">Следующий шаг</a>
+                <a href="#step1" class="steps-list__button-back">На шаг назад</a>
               </div>
-              <div class="route route--change">
-                <label class="route__label">Выберите страну</label>
-                <input class="route__input" type="text" readonly>
-                <button class="route__more" type="button"></button>
-                <button class="route__close" type="button" aria-label="закрыть"></button>
-              </div>
-              <button class="steps-list__add" type="button">Добавить страну</button>
-              <a href="#step3" class="steps-list__button button">Следующий шаг</a>
-              <a href="#step1" class="steps-list__button-back">На шаг назад</a>
             </li>
+
             <li class="steps-list__item step-3" id="step3">
               <h3 class="steps-list__title">Шаг 3. <br> Развлечения</h3>
               <p class="steps-list__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <ul class="step-3__entertainment entertainment-list">
                 <li class="entertainment-list__item">
-                  <label class="entertainment-list__label" for="bosniaEnt">Босния и Герцегов<span class="entertainment-list__flag"><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
+                  <label class="entertainment-list__label" for="bosniaEnt">
+                    <span class="entertainment-list__label-name">Босния и Герцегов</span>
+                    <span class="entertainment-list__flag"><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span>
+                  </label>
                   <textarea class="entertainment-list__textarea" name="bosniaEnt" id="bosniaEnt" cols="30" rows="10" placeholder="План действий"></textarea>
                 </li>
                 <li class="entertainment-list__item">
-                  <label class="entertainment-list__label" for="czechEnt">Чехия <span class="entertainment-list__flag"><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
+                  <label class="entertainment-list__label" for="czechEnt">
+                    <span class="entertainment-list__label-name">Чехия</span>
+                    <span class="entertainment-list__flag"><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
                   <textarea class="entertainment-list__textarea" name="bosniaEnt" id="czechEnt" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
-              <button type="submit" class="steps-list__button button">Отправить</button>
-              <a href="#step2" class="steps-list__button-back">На шаг назад</a>
+              <div class="steps-list__buttons">
+                <button type="submit" class="steps-list__button button">Отправить</button>
+                <a href="#step2" class="steps-list__button-back">На шаг назад</a>
+              </div>
             </li>
           </ul>
         </form>

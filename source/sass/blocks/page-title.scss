@@ -11,6 +11,7 @@
   z-index: 2;
 }
 
+
 .page-title__container {
   display: block;
   padding-bottom: 12px;
@@ -31,4 +32,16 @@
     border-radius: 2px;
     background-color: #ff8d30;
   }
+}
+
+.page-title--form {
+  padding-top: 125px;
+}
+
+.page-title--form .page-title__container {
+  padding-bottom: 65px;
+}
+
+.page-title--form .page-title__text {
+  padding-bottom: 64px;
 }

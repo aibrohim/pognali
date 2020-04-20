@@ -7,6 +7,12 @@
   padding-top: 30px;
 }
 
+.add-plan__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 25px;
+  }
+}
+
 .add-plan__title {
   margin-top: 0;
 }
