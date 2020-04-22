@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <div class="container page-header__wrapper">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
       <button class="page-header__toggle" type="button"></button>
@@ -22,10 +22,10 @@
               <a href="#" class="site-list__link">о сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html" class="site-list__link">направления</a>
+              <a class="site-list__link">направления</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__link">попутчики</a>
+              <a href="catalog.html" class="site-list__link">попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -153,24 +153,25 @@
               <h3 class="steps-list__title">Шаг 1. <br> Даты пребывания</h3>
               <p class="steps-list__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
               <div class="steps-list__inputs">
-                <label for="companionNumber" class="steps-list__label steps-list__label--companion">
-                  <span class="steps-list__label-name">ищу попутчиков:</span>
+                <div class="steps-list__input-wrapper steps-list__input-wrapper--companion">
+                  <label for="companionNumber" class="steps-list__label">ищу попутчиков:</label>
                   <span class="steps-list__span">Чел.</span>
                   <div class="steps-list__number">
                     <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
                     <input class="steps-list__input" type="text" id="companionNumber" name="compnumber" value="2">
                     <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
                   </div>
-                </label>
-                <label for="travelDays" class="steps-list__label steps-list__label--duration">
-                  <span class="steps-list__label-name">Длительность:</span>
+                </div>
+                <div class="steps-list__input-wrapper steps-list__input-wrapper--duration">
+                  <label for="travelDays" class="steps-list__label">Длительность:</label>
                   <span class="steps-list__span">дн.</span>
                   <div class="steps-list__number">
                     <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
                     <input class="steps-list__input" type="text" id="travelDays" name="travelDays" value="2">
                     <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
                   </div>
-                </label>
+                </div>
+
                 <label class="steps-list__children" for="withchildren">
                   <input class="visually-hidden step-1__checkbox" type="checkbox" name="withchildren" id="withchildren">
                   <span class="steps-list__styled-checkbox"></span>
@@ -302,88 +303,88 @@
                   <label class="entertainment-list__label" for="czechEnt">
                     <span class="entertainment-list__label-name">Чехия</span>
                     <span class="entertainment-list__flag"><img src="https://via.placeholder.com/35x24" alt="" class="entertainment-list__flag flag"></span></label>
-                  <textarea class="entertainment-list__textarea" name="bosniaEnt" id="czechEnt" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                </li>
-              </ul>
-              <div class="steps-list__buttons">
-                <button type="submit" class="steps-list__button button">Отправить</button>
-                <a href="#step2" class="steps-list__button-back">На шаг назад</a>
-              </div>
-            </li>
-          </ul>
-        </form>
+                    <textarea class="entertainment-list__textarea" name="bosniaEnt" id="czechEnt" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  </li>
+                </ul>
+                <div class="steps-list__buttons">
+                  <button type="submit" class="steps-list__button button">Отправить</button>
+                  <a href="#step2" class="steps-list__button-back">На шаг назад</a>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a href="#" class="page-footer__logo">
+          <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" alt="Логотип компании Погнали">
+        </a>
+
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item"><a href="#" class="page-footer__social-link page-footer__social-link--fb"></a></li>
+          <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--vk"></a></li>
+          <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--insta"></a></li>
+        </ul>
+
+        <div class="page-footer__copy">
+          <p class="page-footer__copy-text">Разработано</p>
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+        </div>
       </div>
+    </footer>
+
+    <section class="choose-country">
+      <div class="choose-country__header">
+        <h2 class="choose-country__title">Выберите страну</h2>
+      </div>
+      <div class="choose-country__body">
+        <ul class="choose-country__alphabet">
+          <li class="choose-country__letter"><a href="#">А</a></li>
+          <li class="choose-country__letter"><a href="#">Б</a></li>
+          <li class="choose-country__letter"><a href="#">В</a></li>
+          <li class="choose-country__letter"><a href="#">Г</a></li>
+          <li class="choose-country__letter"><a href="#">Д</a></li>
+          <li class="choose-country__letter"><a href="#">Е</a></li>
+          <li class="choose-country__letter"><a href="#">З</a></li>
+          <li class="choose-country__letter"><a href="#">и</a></li>
+          <li class="choose-country__letter"><a href="#">к</a></li>
+          <li class="choose-country__letter"><a href="#">л</a></li>
+          <li class="choose-country__letter"><a href="#">м</a></li>
+          <li class="choose-country__letter"><a href="#">н</a></li>
+          <li class="choose-country__letter"><a href="#">о</a></li>
+          <li class="choose-country__letter"><a href="#">п</a></li>
+          <li class="choose-country__letter"><a href="#">р</a></li>
+          <li class="choose-country__letter"><a href="#">с</a></li>
+          <li class="choose-country__letter"><a href="#">т</a></li>
+          <li class="choose-country__letter"><a href="#">у</a></li>
+          <li class="choose-country__letter"><a href="#">ф</a></li>
+          <li class="choose-country__letter"><a href="#">х</a></li>
+          <li class="choose-country__letter"><a href="#">ч</a></li>
+          <li class="choose-country__letter"><a href="#">ш</a></li>
+          <li class="choose-country__letter"><a href="#">э</a></li>
+          <li class="choose-country__letter"><a href="#">ю</a></li>
+          <li class="choose-country__letter"><a href="#">я</a></li>
+        </ul>
+
+        <ul class="choose-country__countries">
+          <li class="choose-country__country"><a href="/europe/france">Австралия</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Австрия</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Азербайджан</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Албания</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Алжир</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Ангола</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Андорра</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Антигуа и Барбуда</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Аргентина</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Армения</a></li>
+          <li class="choose-country__country"><a href="/europe/france">Афганистан</a></li>
+        </ul>
+      </div>
+
+      <button class="choose-country__close"></button>
     </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__container container">
-      <a href="#" class="page-footer__logo">
-        <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" alt="Логотип компании Погнали">
-      </a>
-
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link page-footer__social-link--fb"></a></li>
-        <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--vk"></a></li>
-        <li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--insta"></a></li>
-      </ul>
-
-      <div class="page-footer__copy">
-        <p class="page-footer__copy-text">Разработано</p>
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
-      </div>
-    </div>
-  </footer>
-
-  <section class="choose-country">
-    <div class="choose-country__header">
-      <h2 class="choose-country__title">Выберите страну</h2>
-    </div>
-    <div class="choose-country__body">
-      <ul class="choose-country__alphabet">
-        <li class="choose-country__letter"><a href="#">А</a></li>
-        <li class="choose-country__letter"><a href="#">Б</a></li>
-        <li class="choose-country__letter"><a href="#">В</a></li>
-        <li class="choose-country__letter"><a href="#">Г</a></li>
-        <li class="choose-country__letter"><a href="#">Д</a></li>
-        <li class="choose-country__letter"><a href="#">Е</a></li>
-        <li class="choose-country__letter"><a href="#">З</a></li>
-        <li class="choose-country__letter"><a href="#">и</a></li>
-        <li class="choose-country__letter"><a href="#">к</a></li>
-        <li class="choose-country__letter"><a href="#">л</a></li>
-        <li class="choose-country__letter"><a href="#">м</a></li>
-        <li class="choose-country__letter"><a href="#">н</a></li>
-        <li class="choose-country__letter"><a href="#">о</a></li>
-        <li class="choose-country__letter"><a href="#">п</a></li>
-        <li class="choose-country__letter"><a href="#">р</a></li>
-        <li class="choose-country__letter"><a href="#">с</a></li>
-        <li class="choose-country__letter"><a href="#">т</a></li>
-        <li class="choose-country__letter"><a href="#">у</a></li>
-        <li class="choose-country__letter"><a href="#">ф</a></li>
-        <li class="choose-country__letter"><a href="#">х</a></li>
-        <li class="choose-country__letter"><a href="#">ч</a></li>
-        <li class="choose-country__letter"><a href="#">ш</a></li>
-        <li class="choose-country__letter"><a href="#">э</a></li>
-        <li class="choose-country__letter"><a href="#">ю</a></li>
-        <li class="choose-country__letter"><a href="#">я</a></li>
-      </ul>
-
-      <ul class="choose-country__countries">
-        <li class="choose-country__country"><a href="/europe/france">Австралия</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Австрия</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Азербайджан</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Албания</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Алжир</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Ангола</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Андорра</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Антигуа и Барбуда</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Аргентина</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Армения</a></li>
-        <li class="choose-country__country"><a href="/europe/france">Афганистан</a></li>
-      </ul>
-    </div>
-
-    <button class="choose-country__close"></button>
-  </section>
-</body>
-</html>
+  </body>
+  </html>
