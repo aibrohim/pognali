@@ -15,9 +15,22 @@
   border-radius: 10px;
   padding: 8px 23px 20px 23px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 40px;
   }
 }
 
@@ -27,10 +40,30 @@
   font-weight: 700;
   line-height: 16px;
   margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .my-plans__number {
   letter-spacing: 1.6px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    font-weight: 500;
+    margin-right: 35px;
+  }
 }
 
 .my-plans__info {
@@ -40,16 +73,39 @@
   line-height: 14px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    border-top: 1px solid #eff0f4;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 630px;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+  }
 }
 
 .my-plans__companions-number {
   margin: 0;
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .my-plans__day-limit {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .my-plans__edit {

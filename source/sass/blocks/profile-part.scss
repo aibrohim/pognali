@@ -3,6 +3,27 @@
   border-radius: 10px;
   margin: 0;
   margin-bottom: 15px;
+  flex-basis: 100%;
+
+  &--hashs {
+    @media (min-width: $desktop-width) {
+      flex-basis: 730px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--transport {
+    @media (min-width: $tablet-width) {
+      flex-basis: 308px;
+      order: -1;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 0;
+      flex-basis: 384px;
+    }
+  }
 }
 
 .profile-part__title {

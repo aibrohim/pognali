@@ -20,6 +20,21 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    color: #1d2e5b;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 18px;
+    justify-content: flex-start;
+  }
+}
+
+.entertainment-list__label-name {
+  @media (min-width: $desktop-width) {
+    flex-basis: 815px;
+  }
 }
 
 .entertainment-list__flag {
@@ -45,5 +60,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
   }
 }
