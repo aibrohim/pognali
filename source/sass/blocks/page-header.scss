@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     background: #182044;
+    padding-top: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +14,7 @@
     align-items: center;
   }
 
-  &--white {
+  &--opened {
     background-color: #ffffff;
   }
 }
@@ -25,20 +26,81 @@
   flex-wrap: wrap;
 }
 
+.page-header--opened .page-header__wrapper {
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+}
+
 .page-header__toggle {
   padding: 0;
   border: none;
   width: 25px;
   height: 11px;
-  background: url("../img/menu.svg") 0  0 no-repeat;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: 0;
+  background-color: transparent;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #cccccc;
+    position: absolute;
+    left: 0;
+    transition: 0.5s ease all;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &--opened {
+    width: 19px;
+    height: 19px;
+    position: relative;
+
+    &::before,
+    &::after {
+      background-color: #cccccc;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 0;
+      left: -2px;
+      width: 24px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
 .page-header__login {
-  padding: 10px 20px;
+  padding: 10px 30px;
   height: 50px;
   border-radius: 25px;
   background-color: #ffd74b;
@@ -49,7 +111,7 @@
   text-transform: uppercase;
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 

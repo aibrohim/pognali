@@ -2,6 +2,16 @@
   @include section-def;
   background-color: #192144;
   z-index: 5;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 135px;
+    padding-bottom: 60px;
+  }
+}
+
+.callback .container {
+  @include paddingly-container;
 }
 
 .callback__intro {
@@ -15,6 +25,12 @@
 
   @media (min-width: $tablet-width) {
     width: 600px;
+    margin-top: 60px;
+    margin-bottom: 68px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -40,6 +56,14 @@
   font-weight: 700;
   line-height: 18px;
 
+  @media (min-width: $tablet-width) {
+    height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+  }
+
   &::placeholder {
     opacity: 0.3;
     color: #444444;
@@ -47,6 +71,11 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -56,12 +85,33 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 81px;
+    border-radius: 0 20px 20px 0;
+    background-color: #ffd74b;
+  }
+}
+
+.callback__button svg {
+  fill: #1d2e5b;
 }
 
 .callback__questions {
   color: #ffffff;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 27px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    margin-bottom: 42px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .callback__links {
@@ -75,40 +125,52 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  padding-left: 61px;
-  height: 45px;
   display: flex;
   align-items: center;
   position: relative;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .callback__icon {
+  @include flex-center;
   width: 45px;
   height: 45px;
   background-color: #121936;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: 16px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffd74b;
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+    width: 68px;
+    height: 68px;
   }
+}
 
-  &--tel::before {
+.callback__icon-svg {
+  fill: $yellow-1;
+
+  &--tel {
     width: 18px;
     height: 18px;
-    mask: url("../img/contacts-phone.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 27px;
+    }
   }
 
-  &--mail::before {
+  &--mail {
     width: 18px;
     height: 13px;
-    mask: url("../img/contacts-mail.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 20px;
+    }
   }
 }

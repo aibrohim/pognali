@@ -5,8 +5,18 @@
   padding-top: 100px;
   padding-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 130px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .section-intro {
     padding-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -20,6 +30,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin paddingly-container {
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 @mixin font {

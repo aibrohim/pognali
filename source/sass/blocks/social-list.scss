@@ -5,6 +5,9 @@
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 125px;
+    margin-left: 20px;
+    padding-bottom: 55px;
     justify-content: flex-start;
   }
 
@@ -18,6 +21,10 @@
   padding: 5px;
   margin-right: 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -30,17 +37,32 @@
     width: 11px;
     height: 21px;
     background: url("../img/facebook.svg") 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+    }
   }
 
   &--vk {
     width: 23px;
     height: 12px;
     background: url("../img/vk.svg") 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 31px;
+      height: 16px;
+    }
   }
 
   &--insta {
     width: 18px;
     height: 18px;
     background: url("../img/instagram.svg") 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

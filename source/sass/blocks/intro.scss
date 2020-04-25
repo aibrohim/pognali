@@ -5,7 +5,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: #182044 url("../img/globe-back-tablet@1x.jpg") center center no-repeat;
+    background: #182044 url("../img/globe-back-tablet@1x.jpg") center 292px no-repeat;
     padding-top: 70px;
     padding-bottom: 96px;
   }
@@ -24,8 +24,8 @@
     @media (min-width: $tablet-width) {
       width: 372px;
       height: 451px;
-      right: 30%;
-      bottom: 206px;
+      right: 28%;
+      top: 315px;
       background: url("../img/traveller-illustration-tablet@1x.png") center center no-repeat;
     }
 
@@ -33,7 +33,7 @@
       width: 431px;
       height: 640px;
       bottom: 0;
-      left: 40%;
+      right: 405px;
       background: url("../img/traveller-illustration-desktop@1x.png") center bottom no-repeat;
     }
   }
@@ -46,7 +46,7 @@
 
 .intro__info {
   @media (min-width: $tablet-width) {
-    margin-bottom: 200px;
+    margin-bottom: 213px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +70,8 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
+    width: 400px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +102,7 @@
     background: transparent;
     padding-left: 35px;
     padding-top: 0;
-    margin-top: 90px;
+    margin-top: 108px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,11 +131,21 @@
   font-weight: 700;
   line-height: 22px;
   width: 160px;
+  margin-top: 20px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
-    width: 243px;
+    width: 250px;
+    margin-top: 45px;
+
+    br {
+      display: block;
+    }
   }
 }

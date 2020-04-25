@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     background: #192144 url("../img/about-tablet@1x.png") right center no-repeat;
-    padding-top: 43px;
+    padding-top: 40px;
     padding-bottom: 88px;
   }
 
@@ -24,7 +24,7 @@
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 45px;
+    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,11 +35,12 @@
 .about-service__desc {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-right: 38px;
+  padding-right: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 43px;
-    padding-right: 320px;
+    line-height: 33px;
+    margin-top: 40px;
+    padding-right: 330px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,8 +57,8 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
-    margin-top: 38px;
-    padding-right: 300px;
+    margin-top: 32px;
+    padding-right: 350px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +73,12 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-top: 53px;
+    margin-top: 30px;
+    padding: 29px 34px;
+    padding-right: 125px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {

@@ -54,6 +54,7 @@
     flex-basis: 50%;
     border-radius: 0;
     flex-direction: column;
+    padding: 27px 21px 25px 32px;
 
     &:nth-child(odd) {
       flex-basis: calc(50% + 10px);
@@ -81,6 +82,11 @@
 
     &:last-child {
       border-radius: 0 0 10px 10px;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      padding: 27px 21px 23px 30px;
     }
   }
 
@@ -115,14 +121,23 @@
   }
 }
 
+.guide-list__item--third .guide-list__text {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+}
+
 .guide-list__number {
   color: #ffffff;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {

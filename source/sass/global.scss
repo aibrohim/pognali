@@ -7,7 +7,7 @@ body {
   line-height: 22px;
   font-weight: 300;
 
-  @media screen {
+  @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 30px;
   }
