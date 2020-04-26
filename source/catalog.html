@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--catalog">
     <div class="container page-header__wrapper">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
-      <button class="page-header__toggle" type="button"></button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <a href="#" class="page-header__login">авторизация</a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -24,7 +26,7 @@
               <a href="form.html" class="site-list__link">направления</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">попутчики</a>
+              <a href="catalog.html" class="site-list__link">попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -40,12 +42,16 @@
           </ul>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
-              <i class="contacts-list__icon contacts-list__icon--tel"></i>
-              <a href="tel:+88005558628" class="contacts-list__link">8 800 555-86-28</a>
+              <a href="tel:+88005558628" class="contacts-list__link">
+                <span class="contacts-list__icon contacts-list__icon--tel"></span>
+                8 800 555-86-28
+              </a>
             </li>
             <li class="contacts-list__item">
-              <i class="contacts-list__icon contacts-list__icon--mail"></i>
-              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">mail@htmlacademy.ru</a>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
+                <span class="contacts-list__icon contacts-list__icon--mail"></span>
+                mail@htmlacademy.ru
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list social-list">
@@ -198,9 +204,9 @@
 
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" type="button">Хобби</button>
+              <button class="filtr-companion__opener" id="filtr-opener--hobby" type="button">Хобби</button>
             </div>
-            <div class="filtr-companion__part-right">
+            <div class="filtr-companion__part-right filtr-companion__part-right--closed" id="filtr-content--hobby">
               <ul class="filtr-checks">
                 <li class="filtr-checks__item">
                   <input class="visually-hidden" type="checkbox" name="musicType" id="hardRock">
@@ -222,9 +228,9 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" type="button">Музыка</button>
+              <button class="filtr-companion__opener" id="filtr-opener--music" type="button">Музыка</button>
             </div>
-            <div class="filtr-companion__part-right">
+            <div class="filtr-companion__part-right" id="filtr-content--music">
               <ul class="filtr-checks">
                 <li class="filtr-checks__item">
                   <input class="visually-hidden" type="checkbox" name="musicType" id="hardRock">
@@ -246,33 +252,33 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" type="button">Еда</button>
+              <button class="filtr-companion__opener" id="filtr-opener--food" type="button">Еда</button>
             </div>
-            <div class="filtr-companion__part-right">
+            <div class="filtr-companion__part-right filtr-companion__part-right--closed" id="filtr-content--food">
               <ul class="filtr-checks">
                 <li class="filtr-checks__item">
-                  <input class="visually-hidden" type="checkbox" name="musicType" id="hardRock">
+                  <input class="visually-hidden" type="checkbox" name="foodType" id="meat">
                   <span class="filtr-checks__checkbox"></span>
-                  <label for="hardRock" class="filtr-checks__label">Мясоед</label>
+                  <label for="meat" class="filtr-checks__label">Мясоед</label>
                 </li>
                 <li class="filtr-checks__item">
-                  <input class="visually-hidden" type="checkbox" name="musicType" id="russianRock">
+                  <input class="visually-hidden" type="checkbox" name="foodType" id="diet">
                   <span class="filtr-checks__checkbox"></span>
-                  <label for="russianRock" class="filtr-checks__label">Сидит на ПП</label>
+                  <label for="diet" class="filtr-checks__label">Сидит на ПП</label>
                 </li>
                 <li class="filtr-checks__item">
-                  <input class="visually-hidden" type="checkbox" name="musicType" id="eurodance">
+                  <input class="visually-hidden" type="checkbox" name="foodType" id="vegetarian">
                   <span class="filtr-checks__checkbox"></span>
-                  <label for="eurodance" class="filtr-checks__label">Веган-сыроед</label>
+                  <label for="vegetarian" class="filtr-checks__label">Веган-сыроед</label>
                 </li>
               </ul>
             </div>
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" type="button">Транспорт</button>
+              <button class="filtr-companion__opener" id="filtr-opener--transport" type="button">Транспорт</button>
             </div>
-            <div class="filtr-companion__part-right">
+            <div class="filtr-companion__part-right" id="filtr-content--transport">
               <ul class="transport-types transport-types--white">
                 <li class="transport-types__item">
                   <label class="visually-hidden"><input class="visually-hidden" type="checkbox" name="transport-type"></label>
@@ -295,9 +301,9 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" type="button">Левел</button>
+              <button class="filtr-companion__opener" id="filtr-opener--level" type="button">Левел</button>
             </div>
-            <div class="filtr-companion__part-right filtr-companion__level">
+            <div class="filtr-companion__part-right filtr-companion__level" id="filtr-content--level">
               <div class="level-controls">
                 <input type="text" class="level-controls__input level-controls__input--min" name="min-level" value="30">
                 <input type="text" class="level-controls__input level-controls__input--max" name="max-level" value="100">
@@ -513,5 +519,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/filtr-part.js"></script>
 </body>
 </html>

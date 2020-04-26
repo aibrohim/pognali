@@ -75,6 +75,10 @@
 }
 
 .filtr-companion__part-right {
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     flex-grow: 1;
   }
