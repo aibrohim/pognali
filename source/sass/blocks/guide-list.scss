@@ -91,20 +91,33 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     flex-direction: row;
+    align-items: baseline;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-right: 55px;
 
     &:not(:last-child) {
-      flex-basis: calc(25% + 10px);
+      flex-basis: calc(345px + 20px);
+    }
+
+    &:first-child {
+      flex-basis: 335px;
     }
 
     &:last-child {
-      flex-basis: 25%;
-      border-radius: 10px;
+      flex-basis: 315px;
+      border-radius: 20px;
+      padding-right: 33px;
     }
 
     &:not(:first-child) {
-      margin-left: -10px;
+      margin-left: -20px;
+    }
+
+    &:nth-last-child(2) {
+      padding-right: 55px;
     }
   }
 }
@@ -127,6 +140,10 @@
   @media (min-width: $tablet-width) {
     width: 70%;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
 }
 
 .guide-list__number {
@@ -142,5 +159,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    font-size: 24px;
   }
 }

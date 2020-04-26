@@ -11,7 +11,7 @@
   <header class="page-header">
     <div class="container page-header__wrapper">
       <a class="page-header__logo">
-        <img src="img/logo-mobile-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
+        <img src="img/logo-tablet-white@1x.png" alt="Логотип компании Погнали" class="page-header__logo-img">
       </a>
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -137,7 +137,12 @@
               </div>
               <h3 class="directions__name">Таиланд</h3>
               <p class="directions__slogan">Джунгли зовут!</p>
-              <span class="directions__number">18321</span>
+              <p class="directions__number">
+                <span>
+                  <svg class="directions__number-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><ellipse cx="10" cy="6" rx="5" ry="6"/><path d="M19.8 17.1c-.9-1.8-2.6-3.3-4.8-4.2-.6-.2-1.3-.2-1.8.1-1 .6-2 .9-3.2.9s-2.2-.3-3.2-.9c-.5-.2-1.2-.3-1.8 0-2.2.9-3.9 2.4-4.8 4.2-.7 1.3.4 2.8 1.9 2.8h15.8c1.5 0 2.6-1.5 1.9-2.9z"/></svg>
+                </span>
+                18321
+              </p>
             </div>
           </li>
           <li class="directions__item directions__item--france">
@@ -150,7 +155,12 @@
               </div>
               <h3 class="directions__name">Франция</h3>
               <p class="directions__slogan">Трэ бьен, манифик!</p>
-              <span class="directions__number">12518</span>
+              <p class="directions__number">
+                <span>
+                  <svg class="directions__number-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><ellipse cx="10" cy="6" rx="5" ry="6"/><path d="M19.8 17.1c-.9-1.8-2.6-3.3-4.8-4.2-.6-.2-1.3-.2-1.8.1-1 .6-2 .9-3.2.9s-2.2-.3-3.2-.9c-.5-.2-1.2-.3-1.8 0-2.2.9-3.9 2.4-4.8 4.2-.7 1.3.4 2.8 1.9 2.8h15.8c1.5 0 2.6-1.5 1.9-2.9z"/></svg>
+                </span>
+                12518
+              </p>
             </div>
           </li>
           <li class="directions__item directions__item--czech">
@@ -163,7 +173,12 @@
               </div>
               <h3 class="directions__name">Чехия</h3>
               <p class="directions__slogan">Закоулки старой Европы</p>
-              <span class="directions__number">5326</span>
+              <p class="directions__number">
+                <span>
+                  <svg class="directions__number-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><ellipse cx="10" cy="6" rx="5" ry="6"/><path d="M19.8 17.1c-.9-1.8-2.6-3.3-4.8-4.2-.6-.2-1.3-.2-1.8.1-1 .6-2 .9-3.2.9s-2.2-.3-3.2-.9c-.5-.2-1.2-.3-1.8 0-2.2.9-3.9 2.4-4.8 4.2-.7 1.3.4 2.8 1.9 2.8h15.8c1.5 0 2.6-1.5 1.9-2.9z"/></svg>
+                </span>
+                5326
+              </p>
             </div>
           </li>
         </ul>
@@ -248,28 +263,30 @@
           <div class="pricing-plans__main-link section-title">Добавьте свой профиль</div>
         </div>
 
-        <ul class="pricing-plans__list">
-          <li class="pricing-plans__item">
-            <span class="pricing-plans__name">Базовое размещение</span>
-            <span class="pricing-plans__price">Бесплатно</span>
-            <span class="pricing-plans__number pricing-plans__number--1">1</span>
-          </li>
-          <li class="pricing-plans__item">
-            <span class="pricing-plans__name">Вывод на первых позициях</span>
-            <span class="pricing-plans__price">99 руб./мес</span>
-            <span class="pricing-plans__number pricing-plans__number--2">2</span>
-          </li>
-          <li class="pricing-plans__item">
-            <span class="pricing-plans__name">Кастомный цвет карточки</span>
-            <span class="pricing-plans__price">59 руб./мес</span>
-            <span class="pricing-plans__number pricing-plans__number--3">3</span>
-          </li>
-        </ul>
+        <div class="pricing-plans__content">
+          <ul class="pricing-plans__list">
+            <li class="pricing-plans__item">
+              <span class="pricing-plans__name">Базовое размещение</span>
+              <span class="pricing-plans__price">Бесплатно</span>
+              <span class="pricing-plans__number pricing-plans__number--1">1</span>
+            </li>
+            <li class="pricing-plans__item">
+              <span class="pricing-plans__name">Вывод на первых позициях</span>
+              <span class="pricing-plans__price">99 руб./мес</span>
+              <span class="pricing-plans__number pricing-plans__number--2">2</span>
+            </li>
+            <li class="pricing-plans__item">
+              <span class="pricing-plans__name">Кастомный цвет карточки</span>
+              <span class="pricing-plans__price">59 руб./мес</span>
+              <span class="pricing-plans__number pricing-plans__number--3">3</span>
+            </li>
+          </ul>
 
-        <a href="plans.html" class="pricing-plans__more">
-          <span class="pricing-plans__more-icon"><svg width="17" height="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21"><path d="M16.4 15.1c-.9-1.2-2-2-3.6-2.4l-1.5 5.2c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-4.2c0-.6-.5-1.1-1.1-1.1-.6 0-1.1.5-1.1 1.1v4.2c0 .5-.4.9-.9.9s-.9-.4-.9-.9L4 12.7c-1.6.4-2.7 1.2-3.6 2.4-.2.5-.4 1.5-.4 2v2.2c0 1 .8 1.7 1.7 1.7h13.5c1 0 1.7-.8 1.7-1.7v-1.8-.4c.1-.5-.1-1.5-.5-2zM3.9 4.6c0 2.6 1.6 6.3 4.6 6.3 2.9 0 4.6-3.8 4.6-6.3 0-2.6-2-4.6-4.6-4.6C6 0 3.9 2.1 3.9 4.6z"/></svg></span>
-          Показать тарифы для бизнеса
-        </a>
+          <a href="plans.html" class="pricing-plans__more">
+            <span class="pricing-plans__more-icon"><svg width="17" height="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21"><path d="M16.4 15.1c-.9-1.2-2-2-3.6-2.4l-1.5 5.2c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-4.2c0-.6-.5-1.1-1.1-1.1-.6 0-1.1.5-1.1 1.1v4.2c0 .5-.4.9-.9.9s-.9-.4-.9-.9L4 12.7c-1.6.4-2.7 1.2-3.6 2.4-.2.5-.4 1.5-.4 2v2.2c0 1 .8 1.7 1.7 1.7h13.5c1 0 1.7-.8 1.7-1.7v-1.8-.4c.1-.5-.1-1.5-.5-2zM3.9 4.6c0 2.6 1.6 6.3 4.6 6.3 2.9 0 4.6-3.8 4.6-6.3 0-2.6-2-4.6-4.6-4.6C6 0 3.9 2.1 3.9 4.6z"/></svg></span>
+            Показать тарифы для бизнеса
+          </a>
+        </div>
       </div>
     </section>
 
@@ -283,6 +300,7 @@
         <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST">
           <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
           <button class="callback__button button" type="submit">
+            <span class="callback__button-text">Регистрация</span>
             <svg width="10" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z"/></svg>
           </button>
         </form>

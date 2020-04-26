@@ -9,6 +9,11 @@
     padding-top: 130px;
     padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 163px;
+    padding-bottom: 166px;
+  }
 }
 
 .pricing-plans__container {
@@ -49,6 +54,13 @@
   }
 }
 
+.pricing-plans__content {
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 186px;
+  }
+}
+
 .pricing-plans__list {
   @include list-reset;
   color: #444444;
@@ -58,14 +70,14 @@
   margin-top: 31px;
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 75px;
-  }
-
   &::before {
     display: none;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+
+    &::before {
       content: "";
       display: block;
       width: 198px;
@@ -76,6 +88,26 @@
       top: 50%;
       right: 0;
       transform: translateY(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 135px;
+
+    &::before {
+      width: 444px;
+      height: 148.67%;
+    }
+
+    &::after {
+      content: "";
+      width: 198px;
+      height: 198px;
+      background: url("../img/rates@1x.png") 0 0 no-repeat;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
     }
   }
 }
@@ -128,6 +160,18 @@
       width: calc(100% - 92px - 34px);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 160px;
+
+    &::before {
+      width: calc(100% - 92px - 159px);
+    }
+
+    &:last-child::after {
+      width: calc(100% - 92px - 159px);
+    }
+  }
 }
 
 .pricing-plans__name {
@@ -169,17 +213,6 @@
   line-height: 14px;
   color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-    left: 0;
-    top: 0;
-    width: 67px;
-    height: 67px;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 28px;
-    order: -1;
-  }
-
   &--1 {
     background-color: $orange-2;
   }
@@ -191,6 +224,17 @@
   &--3 {
     background-color: $yellow-1;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    top: 0;
+    width: 67px;
+    height: 67px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    order: -1;
+  }
 }
 
 .pricing-plans__more {
@@ -200,6 +244,10 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
+
+  &::after {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -211,12 +259,8 @@
     display: flex;
     align-items: center;
     position: relative;
-  }
 
-  &::after {
-    display: none;
-
-    @media (min-width: $tablet-width) {
+    &::after {
       content: "";
       display: block;
       width: 100px;
@@ -224,6 +268,14 @@
       background: url("../img/rates@1x.png") 0 0 no-repeat;
       background-size: cover;
       margin-left: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 33px;
+
+    &::after {
+      display: none;
     }
   }
 }

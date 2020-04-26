@@ -8,10 +8,20 @@
     padding-top: 135px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 164px;
+    padding-bottom: 103px;
+  }
 }
 
 .callback .container {
   @include paddingly-container;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 72px;
+    padding-right: 74px;
+  }
 }
 
 .callback__intro {
@@ -31,6 +41,10 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
   }
 }
 
@@ -56,14 +70,6 @@
   font-weight: 700;
   line-height: 18px;
 
-  @media (min-width: $tablet-width) {
-    height: 81px;
-    border-radius: 20px;
-    font-size: 24px;
-    line-height: 24px;
-    padding-left: 34px;
-  }
-
   &::placeholder {
     opacity: 0.3;
     color: #444444;
@@ -71,8 +77,16 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+
+    &::placeholder {
       font-size: 24px;
       line-height: 24px;
     }
@@ -91,6 +105,27 @@
     height: 81px;
     border-radius: 0 20px 20px 0;
     background-color: #ffd74b;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 29px 36px;
+  }
+}
+
+.callback__button-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include font;
+    display: block;
+    color: #1d2e5b;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 105px;
   }
 }
 
@@ -112,11 +147,17 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+    margin-bottom: 46px;
+  }
 }
 
 .callback__links {
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 150px;
   }
 }
 
@@ -134,6 +175,14 @@
     font-size: 28px;
     line-height: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .callback__icon {
@@ -149,6 +198,12 @@
     width: 68px;
     height: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+  }
 }
 
 .callback__icon-svg {
@@ -157,20 +212,34 @@
   &--tel {
     width: 18px;
     height: 18px;
-
-    @media (min-width: $tablet-width) {
-      width: 27px;
-      height: 27px;
-    }
   }
 
   &--mail {
     width: 18px;
     height: 13px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &--tel {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--mail {
       width: 27px;
       height: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tel {
+      width: 36px;
+      height: 36px;
+    }
+
+    &--mail {
+      width: 36px;
+      height: 26px;
     }
   }
 }

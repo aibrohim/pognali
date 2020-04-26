@@ -11,4 +11,8 @@
     margin-top: -60px;
     margin-bottom: -60px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 516px;
+  }
 }

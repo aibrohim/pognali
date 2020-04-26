@@ -10,14 +10,6 @@
     padding-top: 130px;
     border-radius: 0 0 60px 60px;
   }
-
-  .section-intro {
-    padding-left: 25px;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 0;
-    }
-  }
 }
 
 @mixin list-reset {

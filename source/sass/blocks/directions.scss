@@ -8,6 +8,11 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 220px;
+    padding-bottom: 138px;
+  }
 }
 
 .directions__container {
@@ -19,6 +24,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -43,18 +49,25 @@
     font-size: 28px;
     font-weight: 300;
     line-height: 33px;
-    margin-bottom: 105px;
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 107px;
   }
 }
 
 .directions__intro {
+  padding-left: 25px;
+
   @media (min-width: $tablet-width) {
-    padding-left: 35px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 630px;
+    flex-basis: 47.72%;
     flex-grow: 1;
+    padding-left: 170px;
   }
 }
 
@@ -69,10 +82,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 630px;
-    padding-left: 71px;
+    flex-basis: 47.72%;
+    padding-left: 35px;
     order: -1;
-    margin-bottom: -65px;
+    margin-bottom: -105px;
   }
 }
 
@@ -93,6 +106,10 @@
 
 .directions__img {
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .directions__info {
@@ -115,6 +132,11 @@
     padding-bottom: 17px;
     border-radius: 20px 0 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
 }
 
 .directions__flag {
@@ -128,6 +150,10 @@
     left: auto;
     right: 0;
     transform: translateX(50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }
 
@@ -161,27 +187,47 @@
     font-weight: 500;
     line-height: 17.68px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .directions__number {
-  opacity: 0.3;
-  color: #444444;
+  color: rgba(#444444, 0.3);
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  padding-left: 19px;
   position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 30px;
+  }
+}
+
+.directions__number-icon {
+  width: 11px;
+  height: 11px;
+  fill: #192144;
+  opacity: 0.1;
+  margin-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
   }
 }
 
 .directions__button {
   @media (min-width: $desktop-width) {
-    display: inline-block;
-    margin-left: 804px;
+    display: block;
+    margin-left: 768px;
+    padding-right: 100px;
+    margin-top: -5px;
   }
 }

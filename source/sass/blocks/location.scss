@@ -8,10 +8,20 @@
     padding-top: 107px;
     padding-bottom: 85px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 55px;
+  }
 }
 
 .location .container {
   @include paddingly-container;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 223px;
+    padding-right: 74px;
+  }
 }
 
 .location__content {
@@ -45,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: auto;
   }
 }
 
@@ -61,6 +72,12 @@
     height: 68px;
     margin-right: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
+  }
 }
 
 .location__icon-svg {
@@ -71,6 +88,11 @@
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28px;
+    height: 43px;
   }
 }
 
@@ -90,6 +112,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 54px;
+    padding-right: 64px;
   }
 }

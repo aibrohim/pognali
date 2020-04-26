@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     background: #182044 url("../img/globe-back-desktop@1x.jpg") center bottom no-repeat;
-    padding-top: 125px;
+    padding-top: 103px;
     padding-bottom: 123px;
   }
 
@@ -32,8 +32,9 @@
     @media (min-width: $desktop-width) {
       width: 431px;
       height: 640px;
+      top: auto;
       bottom: 0;
-      right: 405px;
+      right: 28.125%;
       background: url("../img/traveller-illustration-desktop@1x.png") center bottom no-repeat;
     }
   }
@@ -54,7 +55,7 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 105px;
+    margin-bottom: 98px;
   }
 }
 
@@ -78,6 +79,7 @@
     text-align: left;
     padding-left: 65px;
     width: 460px;
+    margin: 0;
   }
 }
 
@@ -106,6 +108,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 0;
+    width: 285px;
     margin-top: 0;
   }
 }
