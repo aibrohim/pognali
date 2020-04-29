@@ -27,6 +27,10 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
 }
 
 .level-controls__input {
@@ -58,6 +62,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 110px;
+    width: 96px;
   }
 }

@@ -5,7 +5,8 @@
   margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
-    flex-basis: 285px;
+    width: 285px;
+    padding: 45px;
   }
 }
 
@@ -79,8 +80,18 @@
     display: none;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-grow: 1;
+
+    &--closed {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--closed {
+      display: none;
+    }
   }
 }
 
