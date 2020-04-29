@@ -9,15 +9,14 @@
 
   @media (min-width: $tablet-width) {
     background: #192144 url("../img/about-tablet@1x.png") right center no-repeat;
-    padding-top: 40px;
+    padding-top: 43px;
     padding-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 130px;
+    padding-top: 133px;
     background: #192144 url("../img/about-desktop@1x.png") right bottom no-repeat;
-    padding-bottom: 163px;
-    border-radius: 0 0 60px 60px;
+    padding-bottom: 160px;
   }
 }
 
@@ -25,7 +24,7 @@
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 35px;
+    padding-left: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,16 +35,15 @@
 .about-service__desc {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-right: 35px;
+  padding-right: 38px;
 
   @media (min-width: $tablet-width) {
-    line-height: 33.4px;
-    margin-top: 40px;
-    padding-right: 330px;
+    margin-top: 43px;
+    padding-right: 320px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 610px;
+    padding-right: 590px;
     margin-top: 60px;
   }
 }
@@ -58,14 +56,13 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
-    margin-top: 32px;
-    padding-right: 350px;
+    margin-top: 38px;
+    padding-right: 300px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    padding-right: 830px;
-    margin-top: 38px;
+    padding-right: 398px;
+    margin-top: 44px;
   }
 }
 
@@ -75,16 +72,11 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-top: 32px;
-    padding: 28px 34px;
-    padding-right: 125px;
-    font-size: 24px;
-    line-height: 24px;
-    border-radius: 20px;
+    margin-top: 53px;
   }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    margin-top: 63px;
+    margin-top: 83px;
   }
 }
