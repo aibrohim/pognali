@@ -3,10 +3,6 @@
   padding-top: 27px;
   position: relative;
 
-  &--opened {
-    background-color: #ffffff;
-  }
-
   &--catalog {
     padding-top: 17px;
   }
@@ -14,6 +10,10 @@
   @media (min-width: $tablet-width) {
     background: #182044;
     padding-top: 39px;
+
+    &--catalog {
+      background-color: #161c35;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,10 @@
     background: #161c34;
     display: flex;
     align-items: center;
+  }
+
+  &--opened {
+    background-color: #ffffff;
   }
 }
 
@@ -37,6 +41,11 @@
   @media (min-width: $tablet-width) {
     align-items: center;
   }
+}
+
+.page-header__logo {
+  line-height: 0;
+  font-size: 0;
 }
 
 .page-header__toggle {

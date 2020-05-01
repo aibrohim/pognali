@@ -1,4 +1,12 @@
 .filtr-body {
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
