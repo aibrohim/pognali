@@ -51,11 +51,13 @@
 }
 
 .pagination__button {
-  display: block;
+  @include flex-center;
   width: 50%;
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  border: none;
 
   &:first-child {
     border-radius: 20px 0 0 20px;
@@ -64,4 +66,10 @@
   &:last-child {
     border-radius: 0 20px 20px 0;
   }
+}
+
+.pagination__button-svg {
+  width: 10px;
+  height: 20px;
+  fill: #192144;
 }

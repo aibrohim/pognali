@@ -2,21 +2,36 @@
   padding-top: 35px;
   padding-bottom: 65px;
   background: #141b3b url("../img/about-mobile@1x.png") center top no-repeat;
+  background-size: contain;
   color: #ffffff;
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 9;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
-    background: #192144 url("../img/about-tablet@1x.png") right center no-repeat;
-    padding-top: 43px;
+    background: url("../img/about-tablet@1x.png") right center no-repeat, url("../img/blue_back.svg") center top no-repeat, #192144;
+    background-size: contain, 688px 213px;
+    padding-top: 0;
     padding-bottom: 88px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-tablet@2x.png"), url("../img/blue_back.svg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 133px;
+    padding-top: 89px;
     background: #192144 url("../img/about-desktop@1x.png") right bottom no-repeat;
-    padding-bottom: 160px;
+    padding-bottom: 163px;
+    border-radius: 0 0 60px 60px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-desktop@2x.png");
+    }
   }
 }
 
@@ -24,27 +39,51 @@
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 45px;
+    padding-top: 40px;
+    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 71px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 213px;
+      height: 213px;
+      border-radius: 20px;
+      background-color: #141b3b;
+    }
+  }
+}
+
+.about-service__title {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 5;
   }
 }
 
 .about-service__desc {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-right: 38px;
+  padding-right: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 43px;
-    padding-right: 320px;
+    line-height: 33.4px;
+    margin-top: 40px;
+    padding-right: 330px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 590px;
+    padding-right: 610px;
     margin-top: 60px;
+    position: relative;
+    z-index: 5;
   }
 }
 
@@ -56,13 +95,14 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
-    margin-top: 38px;
-    padding-right: 300px;
+    margin-top: 32px;
+    padding-right: 350px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 398px;
-    margin-top: 44px;
+    width: auto;
+    padding-right: 830px;
+    margin-top: 38px;
   }
 }
 
@@ -72,11 +112,16 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-top: 53px;
+    margin-top: 32px;
+    padding: 28px 34px;
+    padding-right: 125px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    margin-top: 83px;
+    margin-top: 65px;
   }
 }

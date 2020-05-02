@@ -1,11 +1,11 @@
 .contacts-list {
+  @media (min-width: $tablet-width) {
+    margin-top: 135px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
-}
-
-.contacts-list__item {
-  position: relative;
 }
 
 .contacts-list__link {
@@ -13,24 +13,33 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  padding-left: 60px;
-  height: 45px;
   display: flex;
   align-items: center;
   position: relative;
   text-transform: uppercase;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .contacts-list__icon {
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: block;
   z-index: 1;
   border-radius: 50%;
   width: 45px;
   height: 45px;
   background-color: #121936;
+  position: relative;
+  margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 20px;
+  }
 
   &::before {
     content: "";
@@ -44,11 +53,21 @@
     width: 18px;
     height: 18px;
     background: url("../img/menu-contacts-phone.svg") 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 27px;
+    }
   }
 
   &--mail::before {
     width: 18px;
     height: 13px;
     background: url("../img/menu-contacts-mail.svg") 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 20px;
+    }
   }
 }

@@ -2,10 +2,16 @@
   flex-grow: 1;
   flex-basis: 100%;
   background-color: #ffffff;
-  padding-top: 60px;
+  padding-top: 65px;
   padding-bottom: 35px;
+  display: none;
+
+  &--opened {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
+    padding-top: 90px;
     padding-left: 57px;
     text-align: left;
   }

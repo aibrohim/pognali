@@ -4,19 +4,43 @@
   z-index: 8;
   padding-bottom: 30px;
   flex-shrink: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+    padding-bottom: 88px;
+  }
 }
 
 .directions__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-right: 35px;
+    background: url("../../img/flags-back@1x.png") top right no-repeat;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 }
 
 .directions__title {
   line-height: 24px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
 }
 
 .directions__desc {
@@ -24,14 +48,29 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    width: 337px;
+    width: 350px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 107px;
   }
 }
 
 .directions__intro {
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
   @media (min-width: $desktop-width) {
-    flex-basis: 630px;
+    flex-basis: 47.72%;
     flex-grow: 1;
+    padding-left: 170px;
   }
 }
 
@@ -39,12 +78,39 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 141px;
+    height: 141px;
+    border-radius: 20px;
+    background-color: #e2e5f2;
+    position: absolute;
+    top: -39px;
+    left: -35px;
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+
+    &::before {
+      display: block;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 630px;
-    padding-left: 71px;
+    flex-basis: 47.72%;
+    padding-left: 35px;
     order: -1;
-    margin-bottom: -65px;
+    margin-bottom: -105px;
+
+    &::before {
+      top: -72px;
+      left: -36px;
+    }
   }
 }
 
@@ -65,6 +131,12 @@
 
 .directions__img {
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 20px 20px 0;
+    width: 186px;
+    height: 140px;
+  }
 }
 
 .directions__info {
@@ -72,19 +144,48 @@
   border-radius: 10px;
   position: relative;
   margin-top: -10px;
-  padding: 28px 26px 23px 25px;
+  padding: 25px 26px 7px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    flex-direction: column;
     margin: 0;
+    padding-top: 29px;
+    padding-left: 30px;
+    padding-bottom: 17px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 }
 
 .directions__flag {
+  width: 35px;
+  height: 24px;
   position: absolute;
   z-index: 10;
   top: -12px;
   left: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    top: 15px;
+    left: auto;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+  }
 }
 
 .directions__name {
@@ -93,6 +194,11 @@
   font-weight: 700;
   line-height: 21px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .directions__slogan {
@@ -101,22 +207,58 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  margin-top: 1px;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 17.68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .directions__number {
-  opacity: 0.3;
-  color: #444444;
+  color: rgba(#444444, 0.3);
   font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
   text-transform: uppercase;
-  padding-left: 19px;
   position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.directions__number-icon {
+  width: 11px;
+  height: 11px;
+  fill: #192144;
+  opacity: 0.1;
+  margin-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+  }
 }
 
 .directions__button {
   @media (min-width: $desktop-width) {
-    display: inline-block;
-    margin-left: 804px;
+    display: block;
+    margin-left: 768px;
+    padding-right: 100px;
+    margin-top: -5px;
   }
 }

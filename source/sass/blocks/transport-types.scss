@@ -6,9 +6,43 @@
 }
 
 .transport-types__checkbox {
-  display: inline-block;
+  @include flex-center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #ffffff;
 }
+
+.transport-types__input:checked ~ .transport-types__checkbox .transport-types__svg {
+  opacity: 1;
+}
+
+.transport-types__input:focus ~ .transport-types__checkbox  {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.transport-types__svg {
+  fill: #1d2e5b;
+  opacity: 0.15;
+
+  &--plane {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--bus {
+    width: 13px;
+    height: 16px;
+  }
+
+  &--bike {
+    width: 19px;
+    height: 17px;
+  }
+
+  &--run {
+    width: 15px;
+    height: 17px;
+  }
+}
+

@@ -1,25 +1,35 @@
 .page-title {
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
   border-radius: 0 0 20px 20px;
   background-color: #161c35;
   margin: 0;
   padding-top: 50px;
   position: relative;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 
 .page-title__container {
-  display: block;
-  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-title__text {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 
   &::before {
     content: "";
@@ -32,16 +42,49 @@
     border-radius: 2px;
     background-color: #ff8d30;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-bottom: 67px;
+
+    &::before {
+      height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 65px;
+  }
 }
 
-.page-title--form {
-  padding-top: 125px;
+.page-title__back {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin: 0;
+    margin-top: 28px;
+    margin-right: 35px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 65px;
+  }
 }
 
-.page-title--form .page-title__container {
-  padding-bottom: 65px;
-}
-
-.page-title--form .page-title__text {
-  padding-bottom: 64px;
+.page-title__back-icon {
+  width: 32px;
+  height: 16px;
+  fill: #ffffff;
+  margin-left: 27px;
 }

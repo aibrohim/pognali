@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 6;
   }
 }
 
@@ -54,6 +56,7 @@
     flex-basis: 50%;
     border-radius: 0;
     flex-direction: column;
+    padding: 27px 21px 25px 32px;
 
     &:nth-child(odd) {
       flex-basis: calc(50% + 10px);
@@ -82,23 +85,41 @@
     &:last-child {
       border-radius: 0 0 10px 10px;
     }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      padding: 27px 21px 23px 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     flex-direction: row;
+    align-items: baseline;
+    padding-top: 25px;
+    padding-bottom: 31px;
+    padding-right: 55px;
 
     &:not(:last-child) {
-      flex-basis: calc(25% + 10px);
+      flex-basis: calc(345px + 20px);
+    }
+
+    &:first-child {
+      flex-basis: 335px;
     }
 
     &:last-child {
-      flex-basis: 25%;
-      border-radius: 10px;
+      flex-basis: 315px;
+      border-radius: 20px;
+      padding-right: 33px;
     }
 
     &:not(:first-child) {
-      margin-left: -10px;
+      margin-left: -20px;
+    }
+
+    &:nth-last-child(2) {
+      padding-right: 55px;
     }
   }
 }
@@ -115,17 +136,31 @@
   }
 }
 
+.guide-list__item--third .guide-list__text {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
+}
+
 .guide-list__number {
   color: #ffffff;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    font-size: 24px;
   }
 }

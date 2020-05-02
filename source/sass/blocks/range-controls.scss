@@ -14,14 +14,18 @@
   margin-top: 24px;
   margin-bottom: 26px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 277px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 191px;
   }
 }
 
 .range-controls__bar {
   background-color: #1d2e5b;
-  width: 144px;
+  width: 65%;
   height: 2px;
   border-radius: 1px;
   position: absolute;
@@ -42,7 +46,7 @@
   }
 
   &--min {
-    right: 144px;
+    right: 65%;
     top: 50%;
   }
 }

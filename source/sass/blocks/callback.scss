@@ -2,6 +2,26 @@
   @include section-def;
   background-color: #192144;
   z-index: 5;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 135px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 164px;
+    padding-bottom: 103px;
+  }
+}
+
+.callback .container {
+  @include paddingly-container;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 72px;
+    padding-right: 74px;
+  }
 }
 
 .callback__intro {
@@ -15,6 +35,16 @@
 
   @media (min-width: $tablet-width) {
     width: 600px;
+    margin-top: 60px;
+    margin-bottom: 68px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
   }
 }
 
@@ -48,6 +78,19 @@
     font-weight: 700;
     line-height: 18px;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
 }
 
 .callback__button {
@@ -56,17 +99,65 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 81px;
+    border-radius: 0 20px 20px 0;
+    background-color: #ffd74b;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 29px 36px;
+  }
+}
+
+.callback__button-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include font;
+    display: block;
+    color: #1d2e5b;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 105px;
+  }
+}
+
+.callback__button svg {
+  fill: #1d2e5b;
 }
 
 .callback__questions {
   color: #ffffff;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 27px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    margin-bottom: 42px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+    margin-bottom: 46px;
+  }
 }
 
 .callback__links {
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 150px;
   }
 }
 
@@ -75,40 +166,80 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  padding-left: 61px;
-  height: 45px;
   display: flex;
   align-items: center;
   position: relative;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .callback__icon {
+  @include flex-center;
   width: 45px;
   height: 45px;
   background-color: #121936;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: 16px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffd74b;
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+    width: 68px;
+    height: 68px;
   }
 
-  &--tel::before {
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+  }
+}
+
+.callback__icon-svg {
+  fill: $yellow-1;
+
+  &--tel {
     width: 18px;
     height: 18px;
-    mask: url("../img/contacts-phone.svg");
   }
 
-  &--mail::before {
+  &--mail {
     width: 18px;
     height: 13px;
-    mask: url("../img/contacts-mail.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    &--tel {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--mail {
+      width: 27px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tel {
+      width: 36px;
+      height: 36px;
+    }
+
+    &--mail {
+      width: 36px;
+      height: 26px;
+    }
   }
 }
