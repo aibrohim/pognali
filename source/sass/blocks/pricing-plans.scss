@@ -3,6 +3,25 @@
   background-color: #edeff6;
   padding-top: 67px;
   z-index: 6;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 130px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 163px;
+    padding-bottom: 166px;
+  }
+}
+
+.pricing-plans__container {
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .pricing-plans__intro {
@@ -35,6 +54,13 @@
   }
 }
 
+.pricing-plans__content {
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 186px;
+  }
+}
+
 .pricing-plans__list {
   @include list-reset;
   color: #444444;
@@ -42,21 +68,70 @@
   font-weight: 300;
   line-height: 22px;
   margin-top: 31px;
+  position: relative;
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 198px;
+      height: 144.67%;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 135px;
+
+    &::before {
+      width: 444px;
+      height: 148.67%;
+    }
+
+    &::after {
+      content: "";
+      width: 198px;
+      height: 198px;
+      background: url("../img/rates@1x.png") 0 0 no-repeat;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/rates@2x.png");
+      }
+    }
+  }
 }
 
 .pricing-plans__item {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 5px;
+  padding-bottom: 16px;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 74%;
     height: 1px;
     background-color: rgba(#000000, 0.05);
   }
@@ -66,38 +141,71 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 200px;
+    width: 74%;
     height: 1px;
     background-color: rgba(#000000, 0.05);
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 92px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 35px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     &::before {
       left: 92px;
-      width: calc(100% - 92px);
+      width: calc(100% - 92px - 34px);
     }
 
     &:last-child::after {
       left: 92px;
-      width: calc(100% - 92px);
+      width: calc(100% - 92px - 34px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 160px;
+
+    &::before {
+      width: calc(100% - 92px - 159px);
+    }
+
+    &:last-child::after {
+      width: calc(100% - 92px - 159px);
     }
   }
 }
 
 .pricing-plans__name {
   display: block;
-  line-height: 39px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    padding-left: 25px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+}
+
+.pricing-plans__price {
+  order: 1;
+  flex-basis: 100%;
+  line-height: 11px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    order: 0;
+  }
 }
 
 .pricing-plans__number {
-  position: absolute;
-  top: 4px;
-  right: 0;
   width: 34px;
   height: 34px;
   display: flex;
@@ -126,23 +234,74 @@
     top: 0;
     width: 67px;
     height: 67px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    order: -1;
   }
 }
 
 .pricing-plans__more {
-  margin-top: 30px;
+  margin-top: 31px;
   display: block;
   color: #192144;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  text-align: center;
+
+  &::after {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-left: 92px;
+    margin-top: 18px;
+    padding-right: 45px;
     color: #132576;
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 99px;
+      background: url("../img/rates@1x.png") 0 0 no-repeat;
+      background-size: cover;
+      margin-left: auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/rates@2x.png");
+      }
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 33px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+.pricing-plans__more-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include flex-center;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: #e2e5f2;
+    margin-right: 23px;
+  }
+}
+
+.pricing-plans__more-icon svg {
+  fill: #132576;
 }

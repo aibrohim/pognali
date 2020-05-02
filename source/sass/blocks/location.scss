@@ -2,6 +2,26 @@
   @include section-def;
   background-color: #ffd74b;
   padding-top: 62px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 107px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 55px;
+  }
+}
+
+.location .container {
+  @include paddingly-container;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 223px;
+    padding-right: 74px;
+  }
 }
 
 .location__content {
@@ -17,35 +37,62 @@
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
-  padding-left: 60px;
-  position: relative;
   margin: 0;
   margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 43px;
+
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: auto;
   }
 }
 
 .location__icon {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  @include flex-center;
   width: 45px;
   height: 45px;
   background-color: #121936;
-  display: inline-block;
   border-radius: 50%;
+  margin-right: 16px;
 
-  &::before {
-    content: url("../img/contacts-location.svg");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 14px;
-    height: 22px;
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
+  }
+}
+
+.location__icon-svg {
+  fill: $yellow-1;
+  width: 14px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28px;
+    height: 43px;
   }
 }
 
@@ -55,9 +102,16 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  padding: 19px 24px;
+  padding: 19px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 34px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-right: 54px;
+    padding-right: 64px;
   }
 }

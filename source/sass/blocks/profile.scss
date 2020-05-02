@@ -82,7 +82,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -173px;
+    top: -260px;
     right: 95px;
     z-index: 33;
   }
@@ -90,9 +90,19 @@
 
 .profile__img img {
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 7px;
+  }
 
   @media (min-width: $desktop-width) {
-    border-radius: 0;
+    border-radius: 10px 10px 0 0;
+    width: 190px;
+    height: 190px;
   }
 }
 

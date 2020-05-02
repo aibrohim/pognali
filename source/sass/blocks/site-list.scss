@@ -1,5 +1,11 @@
 .site-list {
+  flex-grow: 1;
   text-align: center;
+  position: relative;
+
+  .site-list::after {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -8,7 +14,19 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    margin-left: 145px;
+    padding-left: 145px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -30,6 +48,6 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    margin-right: 36px;
+    margin-right: 33px;
   }
 }

@@ -1,5 +1,5 @@
 .user-list {
-  margin-top: 55px;
+  margin-top: 50px;
   margin-bottom: 51px;
   flex-direction: row;
 
@@ -59,6 +59,13 @@
     line-height: 30px;
     padding: 10px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 30px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+    }
   }
 
   &--login::before {
