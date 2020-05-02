@@ -3,6 +3,10 @@
   text-align: center;
   position: relative;
 
+  .site-list::after {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: left;
   }
@@ -10,22 +14,19 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    margin-left: 145px;
-  }
-}
+    padding-left: 145px;
 
-.site-list::after {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 2px;
-    background-color: #ffffff;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+    }
   }
 }
 

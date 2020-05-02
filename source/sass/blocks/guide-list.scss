@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 6;
   }
 }
 
@@ -95,7 +97,7 @@
     flex-direction: row;
     align-items: baseline;
     padding-top: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
     padding-right: 55px;
 
     &:not(:last-child) {

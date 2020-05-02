@@ -26,6 +26,10 @@
   display: inline;
 }
 
+.filtr-checks__input:focus ~ .filtr-checks__checkbox {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .filtr-checks__checkbox {
   display: inline-block;
   width: 17px;

@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 220px;
-    padding-bottom: 138px;
+    padding-top: 150px;
+    padding-bottom: 88px;
   }
 }
 
@@ -19,6 +19,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 35px;
     padding-right: 35px;
+    background: url("../../img/flags-back@1x.png") top right no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +27,8 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 }
 
@@ -76,9 +79,26 @@
   padding: 0;
   list-style: none;
   margin-bottom: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 141px;
+    height: 141px;
+    border-radius: 20px;
+    background-color: #e2e5f2;
+    position: absolute;
+    top: -39px;
+    left: -35px;
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+
+    &::before {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -86,6 +106,11 @@
     padding-left: 35px;
     order: -1;
     margin-bottom: -105px;
+
+    &::before {
+      top: -72px;
+      left: -36px;
+    }
   }
 }
 
@@ -142,12 +167,16 @@
 }
 
 .directions__flag {
+  width: 35px;
+  height: 24px;
   position: absolute;
   z-index: 10;
   top: -12px;
   left: 25px;
 
   @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
     top: 15px;
     left: auto;
     right: 0;

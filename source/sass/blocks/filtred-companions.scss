@@ -256,7 +256,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: auto;
+    flex-basis: 236px;
     margin-left: auto;
     padding-top: 45px;
     padding-bottom: 100px;
@@ -330,6 +330,7 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 236px;
     flex-direction: row;
     align-items: center;
     position: absolute;
@@ -370,6 +371,11 @@
   height: 32px;
   border-radius: 50%;
   background-color: #edeff6;
+  opacity: 0.15;
+
+  &--active {
+    opacity: 0.8;
+  }
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
