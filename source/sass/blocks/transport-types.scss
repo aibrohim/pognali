@@ -3,6 +3,10 @@
   display: flex;
   margin-top: 5px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .transport-types__checkbox {
@@ -11,6 +15,11 @@
   height: 32px;
   border-radius: 50%;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
 }
 
 .transport-types__input:checked ~ .transport-types__checkbox .transport-types__svg {

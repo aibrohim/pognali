@@ -56,9 +56,12 @@
     border-radius: 0 4px 4px 0;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 75px;
     height: 46px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
