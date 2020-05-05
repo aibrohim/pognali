@@ -1,13 +1,18 @@
 .filtr-country {
   border-radius: 0 0 20px 20px;
   background-color: #e2e5f2;
-  position: relative;
   top: -30px;
   padding-top: 30px;
   margin-bottom: -10px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
+  }
 
   @media (min-width: $desktop-width) {
     background-color: #edeff6;
+    padding-bottom: 0;
   }
 }
 
@@ -28,6 +33,11 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
 }
 
 .filtr-country__title {
@@ -97,9 +107,13 @@
   min-height: 20px;
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    right: 37px;
+    top: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,17 +185,15 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.filtr-country__continents--header {
-  display: none;
-
-  @media (min-width: $tablet-width) {
     display: flex;
-    padding-left: 0;
-    margin-top: 0;
+    padding-left: 3px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 33px;
+    left: 339px;
   }
 }
 
@@ -216,6 +228,23 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+.filtr-country__alphabet-button-container {
+  display: none;
+
+  &--opened {
+    display: block;
+    width: 100%;
+    margin-top: 41px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--opened {
+      margin-bottom: 70px;
+    }
   }
 }
 
@@ -298,7 +327,7 @@
     }
 
     &--k {
-      margin-bottom: 38px;
+      margin-bottom: 36px;
     }
 
     &--s,
@@ -458,7 +487,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 56px;
     display: flex;
     align-items: center;
     padding: 35px;
@@ -494,11 +523,17 @@
     &--opened {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 28px;
+      padding-bottom: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 40px;
+  }
+}
+
+.filtr-country__body--opened .filtr-country__continents {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
