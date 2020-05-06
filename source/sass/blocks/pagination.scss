@@ -8,6 +8,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px;
+    padding-left: 28px;
+    padding-right: 20px;
   }
 }
 
@@ -45,7 +47,7 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    width: 60px;
+    width: 83px;
     height: 50px;
   }
 }

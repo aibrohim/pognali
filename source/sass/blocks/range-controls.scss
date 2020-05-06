@@ -30,6 +30,10 @@
   border-radius: 1px;
   position: absolute;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
 }
 
 .range-controls__toggler {
@@ -41,7 +45,7 @@
   transform: translateY(-50%);
 
   &--max {
-    right: 0px;
+    right: 0;
     top: 50%;
   }
 
@@ -53,5 +57,13 @@
   @media (min-width: $tablet-width) {
     width: 13px;
     height: 13px;
+
+    &--max {
+      right: -5px;
+    }
+
+    &--min {
+      right: 70%;
+    }
   }
 }
