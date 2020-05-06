@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     order: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .range-controls__scale {
@@ -33,6 +37,10 @@
 
   @media (min-width: $tablet-width) {
     width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 69%;
   }
 }
 
@@ -64,6 +72,18 @@
 
     &--min {
       right: 70%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--max {
+      right: 0;
+      top: 50%;
+    }
+
+    &--min {
+      right: calc(69% - 10px);
+      top: 50%;
     }
   }
 }

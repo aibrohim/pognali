@@ -21,6 +21,12 @@
     margin-top: 45px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 63px;
+    margin-bottom: 67px;
+    padding-right: 80px;
+  }
 }
 
 .filtred__more-svg {

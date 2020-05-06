@@ -21,6 +21,10 @@
   @media (min-width: $tablet-width) {
     flex-basis: 169px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .filtr-checks__input:checked ~ .filtr-checks__checkbox::before {

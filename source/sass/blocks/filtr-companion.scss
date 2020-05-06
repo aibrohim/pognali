@@ -34,6 +34,11 @@
     border-bottom: 1px solid #f3c72b;
     margin-bottom: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .filtr-companion__opener {
@@ -98,6 +103,11 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-bottom: 0;
+
+    &--level {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -129,6 +139,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     &--closed {
       display: none;
     }
