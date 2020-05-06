@@ -5,7 +5,7 @@
 .filtred-companions__item {
   background-color: #ffffff;
   margin-bottom: 11px;
-  padding: 14px 18px 72px;
+  padding: 14px 18px 75px;
   position: relative;
   border-radius: 20px;
   display: flex;
@@ -58,16 +58,14 @@
 }
 
 .filtred-companions__head-content {
-  @media (min-width: $desktop-width) {
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-}
-
-.filtred-companions__head-content {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
@@ -323,6 +321,7 @@
 .filtred-companions__transport-lvl {
   flex-grow: 1;
   display: flex;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -339,6 +338,10 @@
     right: 40px;
     bottom: 40px;
   }
+}
+
+.filtred-companions__item:first-child .filtred-companions__transport-lvl {
+  margin-top: 0;
 }
 
 .filtred-companions__transports-container {

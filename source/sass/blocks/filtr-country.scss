@@ -237,6 +237,9 @@
   &--opened {
     display: block;
     width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-top: 41px;
     padding-bottom: 24px;
   }
@@ -425,7 +428,7 @@
   &--active {
     display: block;
     position: absolute;
-    z-index: 99;
+    z-index: 9;
     bottom: -254px;
     left: 4px;
   }
