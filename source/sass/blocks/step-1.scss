@@ -7,6 +7,18 @@
   margin-bottom: 16px;
   border-top: 1px solid #cbced9;
   border-bottom: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .step-1__month-year {
@@ -15,16 +27,42 @@
   font-weight: 700;
   line-height: 20px;
   padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+  }
 }
 
 .step-1__narrow {
-  background-color: #000000;
   opacity: 0.3;
   border: none;
   width: 9px;
   height: 18px;
+
+  &--prev {
+    background: url("../img/month-arrow-left.svg") 0 0 no-repeat;
+  }
+
+  &--next {
+    background: url("../img/month-arrow-right.svg") 0 0 no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 34px;
+  }
 }
 
 .step-1__button {
-  margin-top: 24px;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+  }
 }

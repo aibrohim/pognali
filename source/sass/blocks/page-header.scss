@@ -4,7 +4,7 @@
   padding-bottom: 27px;
   position: relative;
 
-  &--catalog {
+  &--small {
     padding-top: 19px;
     padding-bottom: 19px;
   }
@@ -22,7 +22,7 @@
     background: #182044;
     padding-top: 39px;
 
-    &--catalog {
+    &--small {
       background-color: #161c35;
     }
 
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 45px;
+    padding-top: 47px;
     background: #161c34;
     display: flex;
     align-items: center;
@@ -169,8 +169,12 @@
   display: block;
 }
 
-.page-header--catalog .main-nav--opened {
+.page-header--small .main-nav--opened {
   top: 57px;
+
+  @media (min-width: $tablet-width) {
+    top: 108px;
+  }
 }
 
 .page-header__logo-img--opened {

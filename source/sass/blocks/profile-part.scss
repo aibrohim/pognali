@@ -2,25 +2,37 @@
   border: 1px solid #cbced9;
   border-radius: 10px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   flex-basis: 100%;
 
-  &--hashs {
-    @media (min-width: $desktop-width) {
-      flex-basis: 730px;
-      margin-bottom: 0;
-    }
+  &--transport {
+    padding-bottom: 15px;
+    margin-bottom: 0;
   }
 
-  &--transport {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 25px 20px;
+
+    &--hashs {
+      padding-bottom: 37px;
+    }
+
+    &--transport {
       flex-basis: 308px;
       order: -1;
       margin: 0;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      order: 0;
+  @media (min-width: $desktop-width) {
+    &--hashs {
+      flex-basis: 730px;
+      margin-bottom: 0;
+    }
+
+    &--transport {
+      order: 3;
       flex-basis: 384px;
     }
   }
@@ -34,6 +46,23 @@
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #edeff6;
+  }
+}
+
+.profile-part--hashs .profile-part__title {
+  @media (min-width: $desktop-width) {
+    left: 62px;
+  }
 }
 
 .profile-part__hashs {
@@ -41,14 +70,27 @@
   padding-top: 7px;
   padding-left: 12px;
   padding-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 19px;
+  }
 }
 
 .profile-part__hash {
-  display: inline;
+  margin-right: 6px;
 }
 
-.profile-part__hash a {
+.profile-part__hash-link {
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 
 .profile-part__transports {

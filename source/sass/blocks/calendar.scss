@@ -7,26 +7,23 @@
   display: flex;
 }
 
-.calendar td,
-.calendar th {
+.calendar__weekday,
+.calendar__item {
   flex-basis: 32px;
-  height: 30px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     flex-basis: 76px;
-    height: 70px;
   }
 
-  @media (min-width: $tablet-width) {
-    flex-basis: 142px;
+  @media (min-width: $desktop-width) {
+    flex-basis: calc(1000px / 7);
     height: 70px;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 15px;
   }
 }
 
@@ -36,6 +33,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  height: 30px;
 
   &--weekend {
     color: #ff5c23;
@@ -45,6 +43,22 @@
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1.8px;
+    height: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+    height: 60px;
+    padding-left: 15px;
+  }
+}
+
+.calendar__weekday-suffix {
+  text-transform: lowercase;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
@@ -55,30 +69,153 @@
   line-height: 18px;
   text-transform: uppercase;
   border-right: 1px solid #cbced9;
+  height: 30px;
 
   &:first-child {
     border-left: 1px solid #cbced9;
   }
 
   @media (min-width: $tablet-width) {
-    color: #1d2e5b;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 70px;
   }
 }
 
+.calendar__item--chosen {
+  opacity: 1;
+  background-color: #101d41;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 0 0 1px rgba(203, 206, 217, 1);
+  }
+}
+
+.calendar__item--chosen .calendar__link {
+  color: #ffffff;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.calendar__item--available {
+  background-color: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cbced9;
+  }
+}
+
+.calendar__item--available .calendar__link {
+  opacity: 1;
+}
+
+
+.calendar__item--available:hover,
+.calendar__item--chosen:hover {
+  background-color: #101d41;
+  box-shadow: inset 0 0 0 2px #ff5c23;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 0 0 4px #ff5c23;
+  }
+}
+
+.calendar__item--available:hover .calendar__link {
+  color: #ffffff;
+}
+
 .calendar__weekdays {
-  padding-bottom: 4px;
+  padding-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .calendar__row {
-  opacity: 0.3;
   border-bottom: 1px solid #cbced9;
 
   &:nth-child(2) {
     border-top: 1px solid #cbced9;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      margin-top: -10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      margin-top: -7px;
+    }
+  }
+}
+
+.calendar__link {
+  @include font;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    color: #1d2e5b;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px;
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.calendar__link:focus {
+  outline: none;
+  background-color: #101d41;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 2px #ff5c23;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 0 0 4px #ff5c23;
+  }
+}
+
+.calendar__link-name {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-transform: capitalize;
+  }
+}
+
+.calendar__link-first {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    text-transform: lowercase;
+    display: block;
+    margin-left: 5px;
   }
 }
