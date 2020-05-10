@@ -23,10 +23,34 @@
 
   &--tel {
     background-color: $orange-1;
+
+    &:hover {
+      background-color: #f26926;
+    }
+
+    &:focus {
+      background-color: #f26926;
+    }
+
+    &:focus::before {
+      opacity: 0.3;
+    }
   }
 
   &--mail {
     background-color: $yellow-2;
+
+    &:hover {
+      background-color: #ff8d30;
+    }
+
+    &:focus {
+      background-color: #ff8d30;
+    }
+
+    &:focus::before {
+      opacity: 0.3;
+    }
   }
 
   &::before {
@@ -59,6 +83,20 @@
     line-height: 30px;
     padding: 10px;
     text-align: center;
+
+    &:hover {
+      background-color: #ffbd30;
+      border-radius: inherit;
+    }
+
+    &:focus {
+      background-color: #ffbd30;
+      border-radius: inherit;
+    }
+
+    &:focus span {
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet-width) {
       padding: 10px 30px;

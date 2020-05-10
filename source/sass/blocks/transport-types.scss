@@ -30,7 +30,7 @@
   opacity: 1;
 }
 
-.transport-types__input:focus ~ .transport-types__checkbox  {
+.transport-types__input:focus ~ .transport-types__checkbox {
   outline: -webkit-focus-ring-color auto 1px;
 }
 
@@ -80,4 +80,3 @@
     }
   }
 }
-
