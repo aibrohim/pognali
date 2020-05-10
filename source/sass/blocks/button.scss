@@ -8,6 +8,8 @@
   display: block;
   border: none;
   border-radius: 10px;
+  transition: 0.15s;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 29px 34px;
@@ -15,4 +17,22 @@
     line-height: 24px;
     border-radius: 20px;
   }
+}
+
+.button p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #ffbd30;
+}
+
+.button:focus {
+  background-color: #ffbd30;
+}
+
+.button:focus p {
+  opacity: 0.3;
 }

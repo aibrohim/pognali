@@ -5,4 +5,14 @@
   line-height: 24px;
   margin: 0;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
+  }
 }

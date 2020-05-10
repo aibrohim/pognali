@@ -4,9 +4,17 @@
   padding: 26px 25px 22px;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    padding: 34px;
+    padding-bottom: 37px;
+    margin-bottom: 42px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 285px;
     padding: 45px;
+    margin-top: 0;
   }
 }
 
@@ -17,6 +25,20 @@
   line-height: 22.49px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f3c72b;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .filtr-companion__opener {
@@ -33,6 +55,14 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    border: none;
+    padding: 5px 0;
+  }
 }
 
 .filtr-companion__button {
@@ -48,18 +78,36 @@
   line-height: 30px;
   text-transform: uppercase;
   padding: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
 
 .filtr-companion__part {
   display: block;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
+
+    &--level {
+      margin-top: -5px;
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+      border-bottom: 1px solid #f3c72b;
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-bottom: 0;
+
+    &--level {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -68,6 +116,8 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 125px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +139,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     &--closed {
       display: none;
     }

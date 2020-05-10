@@ -2,7 +2,15 @@
   @include list-reset;
   display: flex;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .transport-types__checkbox {
@@ -11,6 +19,11 @@
   height: 32px;
   border-radius: 50%;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
 }
 
 .transport-types__input:checked ~ .transport-types__checkbox .transport-types__svg {
@@ -43,6 +56,28 @@
   &--run {
     width: 15px;
     height: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
   }
 }
 

@@ -37,7 +37,7 @@
     content: "";
     width: 143px;
     height: 143px;
-    background: url("../../img/smolov-back-desktop@1x.png") 0 0 no-repeat;
+    background: url("../img/smolov-back-desktop@1x.png") 0 0 no-repeat;
     background-size: cover;
     position: absolute;
     right: 0;
@@ -52,7 +52,7 @@
       height: 285px;
       right: 35px;
       top: -60px;
-      background-image: url("../../img/rogovaya-back-desktop@1x.png");
+      background-image: url("../img/rogovaya-back-desktop@1x.png");
     }
 
     &::before {
@@ -157,7 +157,7 @@
     &::after {
       width: 143px;
       height: 143px;
-      background-image: url("../../img/smolov-back-desktop@1x.png");
+      background-image: url("../img/smolov-back-desktop@1x.png");
       top: -96px;
     }
   }

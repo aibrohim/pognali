@@ -2,16 +2,20 @@
   border-radius: 0 0 20px 20px;
   background-color: #161c35;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 35px;
   position: relative;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 125px;
+    padding-top: 107px;
+
+    &--form {
+      padding-top: 105px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    padding-top: 96px;
     border-radius: 0 0 60px 60px;
   }
 }

@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     order: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .range-controls__scale {
@@ -25,11 +29,19 @@
 
 .range-controls__bar {
   background-color: #1d2e5b;
-  width: 65%;
+  width: 69%;
   height: 2px;
   border-radius: 1px;
   position: absolute;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 69%;
+  }
 }
 
 .range-controls__toggler {
@@ -46,7 +58,32 @@
   }
 
   &--min {
-    right: 65%;
+    right: calc(69% - 10px);
     top: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+
+    &--max {
+      right: -5px;
+    }
+
+    &--min {
+      right: 70%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--max {
+      right: 0;
+      top: 50%;
+    }
+
+    &--min {
+      right: calc(69% - 10px);
+      top: 50%;
+    }
   }
 }

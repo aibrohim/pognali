@@ -1,10 +1,27 @@
 .profile {
-  margin-top: 73px;
+  margin-top: 22px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+  }
 }
 
 .profile__container {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-left: 64px;
+  }
 }
 
 .profile__form {
@@ -38,12 +55,14 @@
   @media (min-width: $tablet-width) {
     order: -2;
     margin: 0;
+    width: 94px;
+    height: 94px;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
     position: absolute;
-    top: -229px;
+    top: -218px;
     right: 330px;
     z-index: 34;
   }
@@ -69,6 +88,10 @@
   line-height: 22.17px;
   order: 3;
   margin-top: 2px;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .profile__img {
@@ -107,6 +130,7 @@
 }
 
 .profile__set-img {
+  @include font;
   display: block;
   width: 100%;
   flex-grow: 1;
@@ -122,6 +146,17 @@
   padding: 5px;
   margin-bottom: 24px;
 
+  @media (min-width: $tablet-width) {
+    padding: 21px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 52px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 190px;
@@ -131,5 +166,12 @@
     right: 95px;
     z-index: 33;
     margin: 0;
+    padding: 14px;
+  }
+}
+
+.profile__set-img-set {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

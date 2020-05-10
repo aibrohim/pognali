@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     margin: 0;
   }
 
@@ -19,6 +20,10 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 169px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -51,6 +56,17 @@
     height: 9px;
     background: url("../img/tick.svg") 0 0 no-repeat;
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+
+    &::before {
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 
