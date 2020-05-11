@@ -167,6 +167,7 @@
 }
 
 .directions__flag {
+  @include hint;
   width: 35px;
   height: 24px;
   position: absolute;

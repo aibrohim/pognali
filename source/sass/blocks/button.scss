@@ -8,7 +8,6 @@
   display: block;
   border: none;
   border-radius: 10px;
-  transition: 0.15s;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -19,10 +18,15 @@
   }
 }
 
-.button p {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.button--big::before {
+  content: "";
+  width: 10px;
+  height: 14px;
+  background: url("../../img/triangle-arrow-right.svg") 0 0 no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 23px;
+  transform: translateY(-50%);
 }
 
 .button:hover {
@@ -33,6 +37,7 @@
   background-color: #ffbd30;
 }
 
-.button:focus p {
+.button:focus span,
+.button:focus::before {
   opacity: 0.3;
 }
