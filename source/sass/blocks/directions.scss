@@ -167,6 +167,7 @@
 }
 
 .directions__flag {
+  @include hint;
   width: 35px;
   height: 24px;
   position: absolute;
@@ -185,6 +186,15 @@
 
   @media (min-width: $desktop-width) {
     top: 23px;
+  }
+}
+
+.directions__flag-img {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
   }
 }
 
