@@ -188,6 +188,13 @@
   }
 }
 
+.directions__flag-img {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
 .directions__name {
   color: #161c35;
   font-size: 21px;

@@ -33,6 +33,18 @@
   }
 }
 
+.page-footer__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
+}
+
 .page-footer__social-list {
   @include list-reset;
   display: flex;
