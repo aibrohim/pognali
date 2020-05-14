@@ -27,6 +27,10 @@
   top: 50%;
   right: 23px;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    right: 36px;
+  }
 }
 
 .button:hover {

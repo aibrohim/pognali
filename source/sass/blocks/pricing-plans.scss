@@ -1,13 +1,13 @@
 .pricing-plans {
   @include section-def;
   background-color: #edeff6;
-  padding-top: 67px;
+  padding-top: 80px;
   z-index: 6;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     padding-top: 130px;
-    padding-bottom: 47px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,16 +18,7 @@
 
 .pricing-plans__container {
   padding-left: 25px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-  }
-}
-
-.pricing-plans__intro {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
 
   &::after {
     content: "";
@@ -36,13 +27,45 @@
     display: block;
     background: url("../img/rates@1x.png") 0 0 no-repeat;
     background-size: cover;
+    position: absolute;
+    top: -13px;
+    right: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/rates@2x.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
+
     &::after {
-      display: none;
+      width: 100px;
+      height: 99px;
+      top: auto;
+      bottom: -18px;
+      right: 45px;
     }
   }
+
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      width: 198px;
+      height: 198px;
+      position: absolute;
+      right: 75px;
+      top: 59%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.pricing-plans__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pricing-plans__main-link {
@@ -67,7 +90,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-  margin-top: 31px;
+  margin-top: 45px;
   position: relative;
 
   &::before {
@@ -97,21 +120,6 @@
     &::before {
       width: 444px;
       height: 148.67%;
-    }
-
-    &::after {
-      content: "";
-      width: 198px;
-      height: 198px;
-      background: url("../img/rates@1x.png") 0 0 no-repeat;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translate(50%, -50%);
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/rates@2x.png");
-      }
     }
   }
 }
@@ -242,8 +250,8 @@
 }
 
 .pricing-plans__more {
-  margin-top: 31px;
-  display: block;
+  margin-top: 30px;
+  display: inline-block;
   color: #192144;
   font-size: 16px;
   font-weight: 700;
@@ -255,28 +263,14 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-top: 18px;
-    padding-right: 45px;
+    margin-top: 33px;
+    padding-right: 0;
     color: #132576;
     font-size: 20px;
     line-height: 20px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 99px;
-      background: url("../img/rates@1x.png") 0 0 no-repeat;
-      background-size: cover;
-      margin-left: auto;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/rates@2x.png");
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -304,4 +298,14 @@
 
 .pricing-plans__more-icon svg {
   fill: #132576;
+}
+
+.pricing-plans__more:hover .pricing-plans__more-text,
+.pricing-plans__more:hover .pricing-plans__more-svg {
+  opacity: 0.7;
+}
+
+.pricing-plans__more:focus .pricing-plans__more-text,
+.pricing-plans__more:focus .pricing-plans__more-svg {
+  opacity: 0.3;
 }

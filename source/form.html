@@ -8,33 +8,38 @@
 </head>
 
 <body>
-  <header class="page-header page-header--small">
+
+  <header class="page-header page-header--small page-header--no-js">
     <div class="container page-header__wrapper">
       <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-              <img class="page-header__logo-img page-header__logo-img--closed" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="96" height="15" alt="Логотип компании Погнали">
+              <img class="page-header__logo-img page-header__logo-img--closed" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип компании Погнали">
             </picture>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-                  <img class="page-header__logo-img page-header__logo-img--opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип компании Погнали">
+                  <img class="page-header__logo-img page-header__logo-img--opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип компании Погнали">
                 </picture>
               </a>
-              <button class="page-header__toggle" type="button"></button>
+              <button class="page-header__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
               <a href="#" class="page-header__login">авторизация</a>
               <nav class="main-nav">
                 <div class="main-nav__wrapper">
                   <ul class="main-nav__list site-list">
                     <li class="site-list__item">
-                      <a href="#" class="site-list__link">о сервисе</a>
+                      <a href="#" class="site-list__link site-list__link--about">
+                        <span class="site-list__link-text">о сервисе</span>
+                      </a>
                     </li>
                     <li class="site-list__item">
-                      <a class="site-list__link">направления</a>
+                      <a class="site-list__link site-list__link--form">направления</a>
                     </li>
                     <li class="site-list__item">
-                      <a href="catalog.html" class="site-list__link">попутчики</a>
+                      <a href="catalog.html" class="site-list__link site-list__link--catalog">попутчики</a>
                     </li>
                   </ul>
                   <ul class="main-nav__list user-list">
@@ -45,17 +50,23 @@
                       <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"></a>
                     </li>
                     <li class="user-list__item user-list__item--login">
-                      <a href="#" class="user-list__link user-list__link--login">авторизация</a>
+                      <a href="#" class="user-list__link user-list__link--login">
+                        <span>авторизация</span>
+                      </a>
                     </li>
                   </ul>
                   <ul class="main-nav__list contacts-list">
                     <li class="contacts-list__item">
-                      <i class="contacts-list__icon contacts-list__icon--tel"></i>
-                      <a href="tel:+88005558628" class="contacts-list__link">8 800 555-86-28</a>
+                      <a href="tel:+88005558628" class="contacts-list__link">
+                        <span class="contacts-list__icon contacts-list__icon--tel"></span>
+                        8 800 555-86-28
+                      </a>
                     </li>
                     <li class="contacts-list__item">
-                      <i class="contacts-list__icon contacts-list__icon--mail"></i>
-                      <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">mail@htmlacademy.ru</a>
+                      <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
+                        <span class="contacts-list__icon contacts-list__icon--mail"></span>
+                        mail@htmlacademy.ru
+                      </a>
                     </li>
                   </ul>
                   <ul class="main-nav__list social-list">
@@ -87,13 +98,21 @@
               <h2 class="visually-hidden">Профиль</h2>
               <div class="profile__container container">
                 <form class="profile__form" action="https://echo.htmlacademy.ru" method="POST">
-                  <div class="profile__level"><span class="profile__level-number">80</span><span class="profile__level-text">level</span></div>
+                  <div class="profile__level">
+                    <svg class="profile__level-pie" width="100" height="100" stroke-dasharray="80 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                      <circle r="15.915" cx="15.915" cy="15.915" stroke-width="2"></circle>
+                    </svg>
+                    <span class="profile__level-number">80</span>
+                    <span class="profile__level-text">level</span>
+                  </div>
                   <div class="profile__img">
                     <img src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x" alt="Фото" width="100" height="100">
                   </div>
                   <label class="profile__set-img">
-                    <span class="profile__set-img-set">Сменить</span>  фото
-                    <input type="file" name="profilePicture" class="visually-hidden">
+                    <span class="profile__set-img-text">
+                      <span class="profile__set-img-set">Сменить</span>  фото
+                    </span>
+                    <input type="file" name="profilePicture" class="visually-hidden profile__set-img-input">
                   </label>
 
                   <fieldset class="profile-part profile-part--hashs">
@@ -187,7 +206,7 @@
                       <div class="steps-list__header">
                         <div class="steps-list__info">
                           <h3 class="steps-list__title">Шаг 1. <br> Даты пребывания</h3>
-                          <p class="steps-list__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                          <p class="steps-list__desc">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                         </div>
                         <ul class="steps-list__titles-list">
                           <li class="steps-list__titles-item steps-list__titles-item--active">Даты</li>
@@ -200,8 +219,8 @@
                           <label for="companionNumber" class="steps-list__label">ищу попутчиков:</label>
                           <span class="steps-list__span">Чел.</span>
                           <div class="steps-list__number">
-                            <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
                             <input class="steps-list__input" type="text" id="companionNumber" name="compnumber" value="2">
+                            <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
                             <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
                           </div>
                         </div>
@@ -209,8 +228,8 @@
                           <label for="travelDays" class="steps-list__label">Длительность:</label>
                           <span class="steps-list__span">дн.</span>
                           <div class="steps-list__number">
-                            <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
                             <input class="steps-list__input" type="text" id="travelDays" name="travelDays" value="2">
+                            <button class="steps-list__input-button steps-list__input-button--min" type="button"></button>
                             <button class="steps-list__input-button steps-list__input-button--max" type="button"></button>
                           </div>
                         </div>
@@ -223,7 +242,7 @@
                       </div>
                       <div class="step-1__month-year-wrapper">
                         <button class="step-1__narrow step-1__narrow--prev" type="button"></button>
-                        <a href="#" class="step-1__month-year"><span class="step-1__moth">Март</span> <span class="step-1__year">2019</span></a>
+                        <p class="step-1__month-year"><span class="step-1__moth">Март</span> <span class="step-1__year">2019</span></p>
                         <button class="step-1__narrow step-1__narrow--next" type="button"></button>
                       </div>
 
@@ -464,10 +483,10 @@
                           </td>
                         </tr>
                       </table>
-                      <a href="#step2" class="steps-list__button step-1__button button">
-                        <p>
+                      <a href="#step2" class="steps-list__button step-1__button button button--big">
+                        <span>
                           Следующий шаг
-                        </p>
+                        </span>
                       </a>
                     </li>
 
@@ -475,7 +494,7 @@
                       <div class="steps-list__header">
                         <div class="steps-list__info">
                           <h3 class="steps-list__title">Шаг 2. <br> Маршрут</h3>
-                          <p class="steps-list__desc">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                          <p class="steps-list__desc">Укажите страны, которые вы хотели посетить. Это&nbsp;может быть одна или сразу несколько.</p>
                         </div>
                         <ul class="steps-list__titles-list">
                           <li class="steps-list__titles-item">Даты</li>
@@ -513,13 +532,13 @@
                           </div>
                           <button class="route__close" type="button" aria-label="закрыть"></button>
                         </div>
-                        <button class="route__add" type="button">Добавить страну</button>
+                        <button class="route--add" type="button"><span>Добавить страну</span></button>
                       </div>
                       <div class="steps-list__buttons">
-                        <a href="#step3" class="steps-list__button button">
-                          <p>
+                        <a href="#step3" class="steps-list__button button button--big">
+                          <span>
                             Следующий шаг
-                          </p>
+                          </span>
                         </a>
                         <a href="#step1" class="steps-list__button-back">На шаг назад</a>
                       </div>
@@ -529,7 +548,7 @@
                       <div class="steps-list__header">
                         <div class="steps-list__info">
                           <h3 class="steps-list__title">Шаг 3. <br> Развлечения</h3>
-                          <p class="steps-list__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                          <p class="steps-list__desc">Наконец, расскажите о своих планах времяпровождения. Можно&nbsp;писать в свободной форме и ставить тэги.</p>
                         </div>
                         <ul class="steps-list__titles-list">
                           <li class="steps-list__titles-item">Даты</li>
@@ -539,33 +558,38 @@
                       </div>
                       <ul class="step-3__entertainment entertainment-list">
                         <li class="entertainment-list__item">
-                          <label class="entertainment-list__label" for="bosniaEnt">
-                            <span class="entertainment-list__label-name">Босния и Герцеговина</span>
-                            <span class="entertainment-list__flag">
-                              <img class="entertainment-list__flag flag" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг Боснии">
-                            </span>
-                          </label>
-                          <textarea class="entertainment-list__textarea" name="bosniaEnt" id="bosniaEnt" cols="30" rows="10" placeholder="План действий"></textarea>
+                          <div class="entertainment-list__country">
+                            <label class="entertainment-list__country-name" for="bosniaEnt">
+                              Босния и Герцеговина
+                            </label>
+                            <div class="entertainment-list__country-flag">
+                              <img class="entertainment-list__flag" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг Боснии">
+                            </div>
+                          </div>
+                          <textarea class="entertainment-list__textarea" required name="bosniaEnt" id="bosniaEnt" cols="30" rows="10" placeholder="План действий"></textarea>
+                          <span class="entertainment-list__textarea-error">Это поле должно быть заполнено</span>
                         </li>
                         <li class="entertainment-list__item">
                           <div class="entertainment-list__narrow">
                             <span class="entertainment-list__dot entertainment-list__dot--prev"></span>
                             <span class="entertainment-list__dot entertainment-list__dot--current"></span>
                           </div>
-                          <label class="entertainment-list__label" for="czechEnt">
-                            <span class="entertainment-list__label-name">Чехия</span>
-                            <span class="entertainment-list__flag">
-                              <img class="route__flag" width="35" height="24" src="img/flag-czech.svg" alt="Флаг Чехии">
-                            </span>
-                          </label>
-                          <textarea class="entertainment-list__textarea" name="bosniaEnt" id="czechEnt" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                          <div class="entertainment-list__country">
+                            <label class="entertainment-list__country-name" for="czechEnt">
+                              Чехия
+                            </label>
+                            <div class="entertainment-list__country-flag">
+                              <img class="entertainment-list__flag" width="35" height="24" src="img/flag-czech.svg" alt="Флаг Чехии">
+                            </div>
+                          </div>
+                          <textarea class="entertainment-list__textarea" required name="bosniaEnt" id="czechEnt" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                         </li>
                       </ul>
                       <div class="steps-list__buttons">
-                        <button type="submit" class="steps-list__button button">
-                          <p>
+                        <button type="submit" class="steps-list__button button button--big">
+                          <span>
                             Отправить
-                          </p>
+                          </span>
                         </button>
                         <a href="#step2" class="steps-list__button-back">На шаг назад</a>
                       </div>
@@ -580,9 +604,9 @@
             <div class="page-footer__container container">
               <a href="#" class="page-footer__logo">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x">
-                    <source media="(min-width: 788px)" srcset="img/logo-tablet-blue@1x.png 1x">
-                      <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип компании Погнали">
+                  <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                      <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип компании Погнали">
                     </picture>
                   </a>
 
@@ -604,10 +628,10 @@
                     </li>
                   </ul>
 
-                  <div class="page-footer__copy">
-                    <p class="page-footer__copy-text">Разработано</p>
+                  <a href="#" class="page-footer__developer">
+                    <span class="page-footer__developer-text">Разработано</span>
                     <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
-                  </div>
+                  </a>
                 </div>
               </footer>
 
@@ -662,6 +686,6 @@
                 <button class="choose-country__close"></button>
               </section>
 
-              <!-- <script src="js/menu.js"></script> -->
+              <script src="js/menu.js"></script>
             </body>
             </html>

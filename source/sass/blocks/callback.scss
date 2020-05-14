@@ -5,7 +5,7 @@
   padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 135px;
+    padding-top: 132px;
     padding-bottom: 60px;
   }
 
@@ -34,13 +34,9 @@
   margin: 20px auto 30px;
 
   @media (min-width: $tablet-width) {
-    width: 600px;
+    width: 100%;
     margin-top: 60px;
     margin-bottom: 68px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -48,9 +44,24 @@
   }
 }
 
+.callback__desc br:first-child {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .callback__login-link {
   color: #ffd74b;
   text-decoration: underline;
+}
+
+.callback__login-link:hover {
+  color: $orange-1;
+}
+
+.callback__login-link:focus {
+  color: $orange-1;
+  opacity: 0.3;
 }
 
 .callback__form {
@@ -93,6 +104,26 @@
   }
 }
 
+.callback__input:hover {
+  background-color: #edeff6;
+}
+
+.callback__input:focus {
+  background-color: #192144;
+  box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 1);
+  color: #ffffff;
+}
+
+.callback__input:focus::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.callback__input:invalid {
+  background-color: #ffefef;
+  color: #ff0000;
+}
+
 .callback__button {
   height: 62px;
   width: 60px;
@@ -133,6 +164,10 @@
   fill: #1d2e5b;
 }
 
+.callback__button:focus svg {
+  opacity: 0.3;
+}
+
 .callback__questions {
   color: #ffffff;
   text-align: center;
@@ -140,8 +175,8 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
-    margin-bottom: 42px;
+    margin-top: 60px;
+    margin-bottom: 43px;
 
     br {
       display: none;
@@ -149,8 +184,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 68px;
+    margin-top: 65px;
     margin-bottom: 46px;
+    line-height: 33px;
   }
 }
 
@@ -242,4 +278,22 @@
       height: 26px;
     }
   }
+}
+
+.callback__link:hover {
+  color: #ffbd30;
+}
+
+.callback__link:hover .callback__icon-svg {
+  fill: #ffbd30;
+}
+
+.callback__link:focus {
+  color: #ffbd30;
+  opacity: 0.3;
+}
+
+.callback__link:focus .callback__icon-svg {
+  fill: #ffbd30;
+  opacity: 0.3;
 }

@@ -27,7 +27,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 70px;
+    padding-top: 72px;
     padding-bottom: 50px;
   }
 }
@@ -52,7 +52,7 @@
     font-size: 28px;
     font-weight: 300;
     line-height: 33px;
-    margin-bottom: 110px;
+    margin-bottom: 108px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,7 +162,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 }
 
@@ -228,7 +228,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 }
 
@@ -267,6 +267,6 @@
     display: block;
     margin-left: 768px;
     padding-right: 100px;
-    margin-top: -5px;
+    margin-top: -8px;
   }
 }

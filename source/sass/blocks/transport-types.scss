@@ -26,14 +26,6 @@
   }
 }
 
-.transport-types__input:checked ~ .transport-types__checkbox .transport-types__svg {
-  opacity: 1;
-}
-
-.transport-types__input:focus ~ .transport-types__checkbox {
-  outline: -webkit-focus-ring-color auto 1px;
-}
-
 .transport-types__svg {
   fill: #1d2e5b;
   opacity: 0.15;
@@ -79,4 +71,29 @@
       height: 21px;
     }
   }
+}
+
+.transport-types__input:checked ~ .transport-types__checkbox .transport-types__svg {
+  opacity: 1;
+}
+
+.transport-types__input:checked ~ .transport-types__checkbox:hover .transport-types__svg {
+  opacity: 0.7;
+}
+
+.transport-types__checkbox:hover .transport-types__svg {
+  opacity: 0.3;
+}
+
+.transport-types__input:focus ~ .transport-types__checkbox {
+  outline: -webkit-focus-ring-color auto 1px;
+  background-color: #e2e5f1;
+}
+
+.transport-types__input:checked:focus ~ .transport-types__checkbox .transport-types__svg {
+  opacity: 0.3;
+}
+
+.transport-types__input:focus ~ .transport-types__checkbox .transport-types__svg {
+  opacity: 0.1;
 }
