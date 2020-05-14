@@ -76,6 +76,6 @@
   }
 }
 
-.site-list__link:hover {
+.site-list__link[href]:hover {
   transform: translateY(-100%);
 }

@@ -31,15 +31,17 @@
                 <div class="main-nav__wrapper">
                   <ul class="main-nav__list site-list">
                     <li class="site-list__item">
-                      <a href="#" class="site-list__link site-list__link--about">
-                        <span class="site-list__link-text">о сервисе</span>
+                      <a href="index.html" class="site-list__link site-list__link--about" data-hover="о сервисе">
+                        о сервисе
                       </a>
                     </li>
                     <li class="site-list__item">
-                      <a class="site-list__link site-list__link--form">направления</a>
+                      <a class="site-list__link site-list__link--form" data-hover="направления">
+                        направления
+                      </a>
                     </li>
                     <li class="site-list__item">
-                      <a href="catalog.html" class="site-list__link site-list__link--catalog">попутчики</a>
+                      <a href="catalog.html" class="site-list__link site-list__link--catalog" data-hover="попутчики">попутчики</a>
                     </li>
                   </ul>
                   <ul class="main-nav__list user-list">
@@ -115,16 +117,11 @@
                     <input type="file" name="profilePicture" class="visually-hidden profile__set-img-input">
                   </label>
 
-                  <fieldset class="profile-part profile-part--hashs">
-                    <legend class="profile-part__title">Тэги</legend>
-                    <ul class="profile-part__hashs">
-                      <li class="profile-part__hash"><a href="#" class="profile-part__hash-link">#бургер</a></li>
-                      <li class="profile-part__hash"><a href="#" class="profile-part__hash-link">#бар</a></li>
-                      <li class="profile-part__hash"><a href="#" class="profile-part__hash-link">#футбол</a></li>
-                      <li class="profile-part__hash"><a href="#" class="profile-part__hash-link">#концерт</a></li>
-                      <li class="profile-part__hash"><a href="#" class="profile-part__hash-link">#крафт</a></li>
-                    </ul>
-                  </fieldset>
+                  <div class="profile-part profile-part--hashs">
+                    <p class="profile-part__title">Тэги</p>
+                    <textarea class="profile-part__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+                  </div>
+
                   <fieldset class="profile-part profile-part--transport">
                     <legend class="profile-part__title">Транспорт</legend>
                     <ul class="profile-part__transports transport-types transport-types--white">
