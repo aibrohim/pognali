@@ -32,6 +32,7 @@
 
 .site-list__item {
   position: relative;
+  overflow: hidden;
 }
 
 .site-list__link {
@@ -40,11 +41,30 @@
   font-weight: 500;
   line-height: 36px;
   text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  transition: 0.15s ease all;
+
+  &::before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #ffd74b;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    transform: translate3d(0, 0, 0);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     font-weight: 500;
     line-height: 71.01px;
+
+    &::before {
+      font: inherit;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -54,4 +74,8 @@
     line-height: 30px;
     margin-right: 33px;
   }
+}
+
+.site-list__link[href]:hover {
+  transform: translateY(-100%);
 }

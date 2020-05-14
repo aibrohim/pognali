@@ -7,6 +7,10 @@
     margin-top: 52px;
     padding-bottom: 123px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 133px;
+  }
 }
 
 .steps-list__item {
@@ -25,7 +29,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 30px 43px 55px 43px;
+    padding: 30px 43px 56px 43px;
     border-radius: 30px;
     margin-bottom: 40px;
 
@@ -35,7 +39,7 @@
     }
 
     &:last-child {
-      padding-bottom: 55px;
+      padding-bottom: 53px;
     }
   }
 
@@ -48,6 +52,10 @@
       padding-bottom: 105px;
       margin-bottom: 47px;
     }
+
+    &:last-child {
+      padding-bottom: 106px;
+    }
   }
 }
 
@@ -58,11 +66,11 @@
 .steps-list__item:nth-child(2) .steps-list__desc {
   @media (min-width: $tablet-width) {
     padding-right: 140px;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 }
 
@@ -88,6 +96,10 @@
     line-height: 36px;
     letter-spacing: -0.25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
+  }
 }
 
 .steps-list__title br {
@@ -106,11 +118,12 @@
     font-size: 20px;
     line-height: 24px;
     margin-top: 36px;
-    margin-bottom: 43px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 576px;
+    width: 580px;
+    padding-right: 0;
     margin-bottom: 56px;
   }
 }
@@ -246,7 +259,7 @@
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 1.6px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -266,7 +279,7 @@
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 1.6px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -415,7 +428,7 @@
   vertical-align: middle;
   font-size: 0;
   line-height: 0;
-  margin-right: 10px;
+  margin-right: 9px;
   position: relative;
 
   &::before {
@@ -440,16 +453,12 @@
   }
 }
 
-.steps-list__tick-checkbox:checked ~ .steps-list__styled-checkbox::before {
-  display: block;
-}
-
 .steps-list__buttons {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 48px;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -461,6 +470,10 @@
 .steps-list__item:last-child .steps-list__buttons {
   @media (min-width: $tablet-width) {
     margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
   }
 }
 
@@ -504,6 +517,14 @@
       transform: translateY(-50%);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 0 28px 31px;
+
+    &::before {
+      right: 38px;
+    }
+  }
 }
 
 .steps-list__button-back {
@@ -536,4 +557,51 @@
       background: url("../img/triangle-arrow-left.svg") 0 0 no-repeat;
     }
   }
+}
+
+
+.steps-list__number:hover .steps-list__input {
+  border: 1px solid #959bb2;
+}
+
+.steps-list__number:hover .steps-list__input-button::after,
+.steps-list__number:hover .steps-list__input-button::before {
+  background-color: #959bb2;
+}
+
+.steps-list__number:focus-within .steps-list__input {
+  border: 1px solid #161c35;
+}
+
+.steps-list__number:focus-within .steps-list__input-button::after,
+.steps-list__number:focus-within .steps-list__input-button::before {
+  border: 1px solid #161c35;
+}
+
+.steps-list__input-button:focus {
+  opacity: 0.1;
+}
+
+.steps-list__tick-checkbox:checked ~ .steps-list__styled-checkbox::before {
+  display: block;
+}
+
+.steps-list__styled-checkbox:hover {
+  border: 1px solid #959bb2;
+}
+
+.steps-list__tick-checkbox:focus ~ .steps-list__styled-checkbox {
+  background-color: #e2e5f1;
+}
+
+.steps-list__tick-checkbox:focus ~ .steps-list__styled-checkbox::before {
+  opacity: 0.3;
+}
+
+.steps-list__button-back:hover {
+  opacity: 0.7;
+}
+
+.steps-list__button-back:focus {
+  opacity: 0.3;
 }

@@ -103,6 +103,8 @@
   font-weight: 700;
   line-height: 18px;
   padding: 19px 21px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 26px 34px;
@@ -112,6 +114,37 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 64px;
+    padding-right: 34px;
+    min-width: 324px;
   }
+}
+
+.location__button-icon {
+  margin-left: auto;
+}
+
+.location__button-svg {
+  width: 10px;
+  height: 14px;
+  fill: #1d2e5b;
+}
+
+.location__button:hover {
+  background-color: #192144;
+  color: #ffffff;
+}
+
+.location__button:hover .location__button-svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.location__button:focus {
+  background-color: #192144;
+  color: #ffffff;
+}
+
+.location__button:focus .location__button-svg {
+  fill: #ffffff;
+  opacity: 0.3;
 }

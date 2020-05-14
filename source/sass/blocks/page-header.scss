@@ -71,6 +71,18 @@
   font-size: 0;
 }
 
+.page-header__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
+}
+
 .page-header__toggle {
   padding: 0;
   border: none;

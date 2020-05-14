@@ -19,7 +19,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 20px;
+    padding-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,6 +101,7 @@
 
 .my-plans__number {
   letter-spacing: 1.6px;
+  margin-right: 2px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -109,6 +110,7 @@
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,6 +127,7 @@
   line-height: 14px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+  padding-left: 2px;
 
   @media (min-width: $tablet-width) {
     display: flex;

@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 32px;
-    padding-top: 27px;
+    padding-top: 25px;
     border-top: 1px solid #d6d9e6;
     margin-top: 34px;
   }
@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 36px;
     padding-top: 69px;
+    margin-left: -3px;
   }
 }
 
@@ -27,7 +28,7 @@
   }
 }
 
-.entertainment-list__label {
+.entertainment-list__country {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,11 +52,11 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 18px;
-    justify-content: flex-start;
+    padding-right: 86px;
   }
 }
 
-.entertainment-list__label-name {
+.entertainment-list__country-name {
   word-wrap: normal;
   position: relative;
   flex-grow: 1;
@@ -72,14 +73,30 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 815px;
+    flex-grow: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.entertainment-list__country-flag {
+  font-size: 0;
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    bottom: -5px;
   }
 }
 
 .entertainment-list__flag {
-  font-size: 0;
-  line-height: 0;
-
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
@@ -97,6 +114,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  position: relative;
 
   &::placeholder {
     opacity: 0.3;
@@ -121,7 +139,8 @@
 
   @media (min-width: $desktop-width) {
     width: 730px;
-    padding: 23px 22px;
+    padding: 23px 26px;
+    padding-right: 16px;
   }
 }
 
@@ -193,5 +212,45 @@
     height: 15px;
     left: 0;
     transform: translateX(-50%);
+  }
+}
+
+.entertainment-list__textarea:hover {
+  border: 1px solid #959bb2;
+}
+
+.entertainment-list__textarea:focus {
+  border: 1px solid #959bb2;
+  outline: none;
+}
+
+.entertainment-list__textarea:invalid {
+  border: 1px solid #f47e7e;
+}
+
+.entertainment-list__textarea-error {
+  display: none;
+}
+
+.entertainment-list__textarea:invalid ~ .entertainment-list__textarea-error {
+  color: #ff0000;
+  background-color: #ffefef;
+  display: block;
+  width: 218px;
+  position: absolute;
+  bottom: 7px;
+  left: 1px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 18px 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 497px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 728px;
   }
 }

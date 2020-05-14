@@ -248,7 +248,7 @@
 
   @media (min-width: $tablet-width) {
     right: auto;
-    left: 325px;
+    left: 320px;
   }
 
   @media (min-width: $desktop-width) {
@@ -257,7 +257,7 @@
   }
 }
 
-.route__add {
+.route--add {
   @include font;
   display: block;
   width: 100%;
@@ -331,4 +331,36 @@
       right: -44px;
     }
   }
+}
+
+.route__input-wrapper--change:hover .route__input {
+  border: 1px solid #959bb2;
+}
+
+.route__input-wrapper--change:hover .route__more {
+  opacity: 0.5;
+}
+
+.route__close:hover::before {
+  opacity: 0.5;
+}
+
+.route__close:focus::before {
+  opacity: 0.05;
+}
+
+.route--add:hover {
+  background-color: #dfe3f0;
+}
+
+.route--add:focus {
+  outline: none;
+}
+
+.route--add:focus span {
+  opacity: 0.3;
+}
+
+.route--add:focus::before {
+  opacity: 0.1;
 }
