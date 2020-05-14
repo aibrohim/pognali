@@ -236,7 +236,7 @@
   color: #ff0000;
   background-color: #ffefef;
   display: block;
-  width: calc(100% - 2px);
+  width: 218px;
   position: absolute;
   bottom: 7px;
   left: 1px;
@@ -245,4 +245,12 @@
   font-weight: 400;
   line-height: 24px;
   padding: 18px 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 497px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 728px;
+  }
 }
