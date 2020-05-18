@@ -3,15 +3,17 @@
   margin-top: 5px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     flex-shrink: 0;
     margin: 0;
+    margin-right: -17px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-right: 0;
   }
 }
 
@@ -19,11 +21,14 @@
   margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 169px;
+    flex-basis: calc(100% / 3);
+    margin-bottom: 3.5px;
+    margin-top: 3.5px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 10px;
+    margin-top: 0;
   }
 }
 
@@ -37,13 +42,13 @@
 
 .filtr-checks__checkbox {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   border-radius: 4px;
   background-color: #ffffff;
   vertical-align: middle;
   font-size: 0;
-  margin-right: 3px;
+  margin-right: 5px;
   position: relative;
 
   &::before {

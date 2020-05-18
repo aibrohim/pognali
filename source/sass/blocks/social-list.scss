@@ -31,12 +31,15 @@
 }
 
 .social-list__link {
-  display: block;
+  @include flex-center;
+}
+
+.social-list__icon {
+  fill: #192144;
 
   &--fb {
     width: 11px;
     height: 21px;
-    background: url("../img/facebook.svg") 0 0 no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 14px;
@@ -47,7 +50,6 @@
   &--vk {
     width: 23px;
     height: 12px;
-    background: url("../img/vk.svg") 0 0 no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 31px;
@@ -58,7 +60,6 @@
   &--insta {
     width: 18px;
     height: 18px;
-    background: url("../img/instagram.svg") 0 0 no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 24px;

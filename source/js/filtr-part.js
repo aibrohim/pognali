@@ -11,20 +11,25 @@ var levelContent = document.querySelector("#filtr-content--level");
 
 hobbyOpener.addEventListener('click', function(){
   hobbyContent.classList.toggle('filtr-companion__part-right--closed');
+  hobbyOpener.classList.toggle('filtr-companion__opener--clicked');
 })
 
 musicOpener.addEventListener('click', function(){
   musicContent.classList.toggle('filtr-companion__part-right--closed');
+  musicOpener.classList.toggle('filtr-companion__opener--clicked');
 })
 
 foodOpener.addEventListener('click', function(){
   foodContent.classList.toggle('filtr-companion__part-right--closed');
+  foodOpener.classList.toggle('filtr-companion__opener--clicked');
 })
 
 transportOpener.addEventListener('click', function(){
   transportContent.classList.toggle('filtr-companion__part-right--closed');
+  transportOpener.classList.toggle('filtr-companion__opener--clicked');
 })
 
 levelOpener.addEventListener('click', function(){
   levelContent.classList.toggle('filtr-companion__part-right--closed');
+  levelOpener.classList.toggle('filtr-companion__opener--clicked');
 })

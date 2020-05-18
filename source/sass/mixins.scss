@@ -51,6 +51,7 @@
     bottom: -15px;
     left: 50%;
     transform: translate(-50%, 100%);
+    z-index: 10;
     display: block;
     padding: 10px;
     border-radius: 4px;
@@ -68,7 +69,8 @@
     position: absolute;
     bottom: -30px;
     left: 50%;
-    background-color: #101d41;
     transform: rotate(45deg) translateX(-50%);
+    z-index: 10;
+    background-color: #101d41;
   }
 }

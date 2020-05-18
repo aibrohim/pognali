@@ -68,3 +68,12 @@
     width: 96px;
   }
 }
+
+.level-controls__input:hover {
+  border-color: #959bb2;
+}
+
+.level-controls__input:focus {
+  outline: none;
+  border-color: #161c35;
+}

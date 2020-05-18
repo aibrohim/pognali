@@ -93,3 +93,11 @@
   fill: #ffffff;
   margin-left: 27px;
 }
+
+.page-title__back:hover {
+  opacity: 0.6;
+}
+
+.page-title__back:focus {
+  opacity: 0.3;
+}

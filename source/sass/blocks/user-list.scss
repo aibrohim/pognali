@@ -15,7 +15,7 @@
 }
 
 .user-list__link {
-  display: block;
+  @include flex-center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -51,26 +51,6 @@
     &:focus::before {
       opacity: 0.3;
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &--tel::before {
-    width: 18px;
-    height: 18px;
-    background: url("../img/topmenu-phone.svg") 0 0 no-repeat;
-  }
-
-  &--mail::before {
-    width: 18px;
-    height: 14px;
-    background: url("../img/topmenu-mail.svg") 0 0 no-repeat;
   }
 
   &--login {
@@ -125,5 +105,19 @@
     flex-grow: 1;
     background-color: $yellow-1;
     border-radius: 25px;
+  }
+}
+
+.user-list__icon {
+  fill: #161c35;
+
+  &--tel {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--mail {
+    width: 18px;
+    height: 14px;
   }
 }
