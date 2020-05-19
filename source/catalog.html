@@ -65,14 +65,15 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--tel">
-              <a href="tel:+805558628" class="user-list__link user-list__link--tel">
+              <a href="tel:+805558628" class="user-list__link user-list__link--tel" aria-label="Позвонить">
                 <svg class="user-list__icon user-list__icon--tel">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
             </li>
             <li class="user-list__item user-list__item--mail">
-              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail">
+              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"
+                aria-label="Написать на почту">
                 <svg class="user-list__icon user-list__icon--mail">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
@@ -154,7 +155,8 @@
       <div class="filtr-country__container container">
         <div class="filtr-country__header">
           <h3 class="filtr-country__title">Фильтрация по странам<span class="filtr-country__title-dots">:</span></h3>
-          <button class="filtr-country__button filtr-country__button--opened" type="button">
+          <button class="filtr-country__button filtr-country__button--opened" type="button"
+            aria-label="открыть/закрыть филбтпцию по странам">
             <div class="filtr-country__button-closed">
               <p class="filtr-country__button-text">Показать все</p>
               <span class="filtr-country__button-icon">
@@ -484,9 +486,7 @@
             </ul>
             <button class="filtr-country__close-button" type="button">
               <svg class="filtr-country__close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-                <path
-                  d="M10.3 9l7.4-7.4c.4-.4.4-.9 0-1.3s-.9-.4-1.3 0L9 7.7 1.6.3C1.2-.1.7-.1.3.3s-.4.9 0 1.3L7.7 9 .3 16.4c-.4.4-.4.9 0 1.3s.9.4 1.3 0L9 10.3l7.4 7.4c.4.4.9.4 1.3 0s.4-.9 0-1.3L10.3 9z">
-                </path>
+                <use xlink:href="#icon-menu-close"></use>
               </svg>
               <span>
                 свернуть
@@ -504,7 +504,8 @@
 
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" id="filtr-opener--hobby" type="button">Хобби</button>
+              <button class="filtr-companion__opener" id="filtr-opener--hobby" type="button"
+                aria-label="Открыть или закрыть часть филтра">Хобби</button>
             </div>
             <div class="filtr-companion__part-right filtr-companion__part-right--closed" id="filtr-content--hobby">
               <ul class="filtr-checks">
@@ -535,7 +536,7 @@
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener filtr-companion__opener--clicked" id="filtr-opener--music"
-                type="button">Музыка</button>
+                type="button" aria-label="Открыть или закрыть часть филтра">Музыка</button>
             </div>
             <div class="filtr-companion__part-right" id="filtr-content--music">
               <ul class="filtr-checks">
@@ -565,7 +566,8 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" id="filtr-opener--food" type="button">Еда</button>
+              <button class="filtr-companion__opener" id="filtr-opener--food" type="button"
+                aria-label="Открыть или закрыть часть филтра">Еда</button>
             </div>
             <div class="filtr-companion__part-right filtr-companion__part-right--closed" id="filtr-content--food">
               <ul class="filtr-checks">
@@ -596,13 +598,14 @@
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener filtr-companion__opener--clicked" id="filtr-opener--transport"
-                type="button">Транспорт</button>
+                type="button" aria-label="Открыть или закрыть часть филтра">Транспорт</button>
             </div>
             <div class="filtr-companion__part-right" id="filtr-content--transport">
               <ul class="transport-types transport-types--white">
                 <li class="transport-types__item">
                   <label>
-                    <input class="visually-hidden transport-types__input" type="checkbox" name="byPlane" checked>
+                    <input class="visually-hidden transport-types__input" type="checkbox" name="byPlane"
+                      aria-label="Авиаперелет" checked>
                     <span class="transport-types__checkbox">
                       <svg class="transport-types__svg transport-types__svg--plane">
                         <use xlink:href="#icon-plane"></use>
@@ -612,7 +615,8 @@
                 </li>
                 <li class="transport-types__item">
                   <label>
-                    <input class="visually-hidden transport-types__input" type="checkbox" name="byBus" checked>
+                    <input class="visually-hidden transport-types__input" type="checkbox" name="byBus"
+                      aria-label="Автотранспорт  " checked>
                     <span class="transport-types__checkbox">
                       <svg class="transport-types__svg transport-types__svg--bus">
                         <use xlink:href="#icon-bus"></use>
@@ -622,7 +626,8 @@
                 </li>
                 <li class="transport-types__item">
                   <label>
-                    <input class="visually-hidden transport-types__input" type="checkbox" name="byBike">
+                    <input class="visually-hidden transport-types__input" type="checkbox" aria-label="Велосипед"
+                      name="byBike">
                     <span class="transport-types__checkbox">
                       <svg class="transport-types__svg transport-types__svg--bike">
                         <use xlink:href="#icon-bike"></use>
@@ -632,7 +637,8 @@
                 </li>
                 <li class="transport-types__item">
                   <label>
-                    <input class="visually-hidden transport-types__input" type="checkbox" name="byFoot" checked>
+                    <input class="visually-hidden transport-types__input" type="checkbox" name="byFoot"
+                      aria-label="Пешком" checked>
                     <span class="transport-types__checkbox">
                       <svg class="transport-types__svg transport-types__svg--run">
                         <use xlink:href="#icon-run"></use>
@@ -646,13 +652,14 @@
           <div class="filtr-companion__part filtr-companion__part--level">
             <div class="filtr-companion__part-left">
               <button class="filtr-companion__opener filtr-companion__opener--clicked" id="filtr-opener--level"
-                type="button">Левел</button>
+                type="button" aria-label="Открыть или закрыть часть филтра">Левел</button>
             </div>
             <div class="filtr-companion__part-right filtr-companion__level" id="filtr-content--level">
               <div class="level-controls">
-                <input type="text" class="level-controls__input level-controls__input--min" name="min-level" value="30">
-                <input type="text" class="level-controls__input level-controls__input--max" name="max-level"
-                  value="100">
+                <input type="text" class="level-controls__input level-controls__input--min" name="min-level" value="30"
+                  aria-label="минимальный уровень попутчика">
+                <input type="text" class="level-controls__input level-controls__input--max" name="max-level" value="100"
+                  aria-label="максимальный уровень попутчика">
               </div>
 
               <div class="range-controls">
@@ -660,8 +667,8 @@
                   <div class="range-controls__bar"></div>
                 </div>
 
-                <button type="button" class="range-controls__toggler range-controls__toggler--min"></button>
-                <button type="button" class="range-controls__toggler range-controls__toggler--max"></button>
+                <button type="button" class="range-controls__toggler range-controls__toggler--min" aria-label="установить минимальный уровень попутчика"></button>
+                <button type="button" class="range-controls__toggler range-controls__toggler--max" aria-label="установить максимальный уровень попутчика"></button>
               </div>
             </div>
           </div>
@@ -698,7 +705,8 @@
                 <a href="#" class="filtred-companions__name">Таня <span
                     class="filtred-companions__surname">Фирсова</span></a>
                 <div class="filtred-companions__like-add-number">
-                  <button class="filtred-companions__like filtred-companions__like--active">
+                  <button class="filtred-companions__like filtred-companions__like--active"
+                    aria-label="Добавить в нравится">
                     <svg class="filtred-companions__like-svg filtred-companions__like-svg--active">
                       <use xlink:href="#icon-heart-active"></use>
                     </svg>
@@ -819,7 +827,7 @@
                 <a href="#" class="filtred-companions__name">Петя <span
                     class="filtred-companions__surname">Демин</span></a>
                 <div class="filtred-companions__like-add-number">
-                  <button class="filtred-companions__like">
+                  <button class="filtred-companions__like" aria-label="Добавить в нравится">
                     <svg class="filtred-companions__like-svg">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -923,7 +931,8 @@
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                   <img class="filtred-companions__img" src="img/smolov-mobile@1x.jpg"
                     srcset="img/smolov-mobile@1x.jpg 1x, img/smolov-mobile@2x.jpg 2x" alt="Попутчик" width="70"
@@ -934,7 +943,7 @@
                 <a href="#" class="filtred-companions__name">Марк <span
                     class="filtred-companions__surname">Смолов</span></a>
                 <div class="filtred-companions__like-add-number">
-                  <button class="filtred-companions__like">
+                  <button class="filtred-companions__like" aria-label="Добавить в нравится">
                     <svg class="filtred-companions__like-svg">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -1045,8 +1054,10 @@
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
                   <img class="filtred-companions__img" src="img/rogovaya-mobile@1x.jpg"
                     srcset="img/rogovaya-mobile@1x.jpg 1x, img/rogovaya-mobile@2x.jpg 2x" alt="Попутчик" width="70"
                     height="70">
@@ -1057,7 +1068,7 @@
                     class="filtred-companions__surname">Роговая</span>
                 </a>
                 <div class="filtred-companions__like-add-number">
-                  <button class="filtred-companions__like">
+                  <button class="filtred-companions__like" aria-label="Добавить в нравится">
                     <svg class="filtred-companions__like-svg">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -1172,12 +1183,12 @@
             <li class="pagination__number"><a href="#" class="pagination__number-link">4</a></li>
           </ul>
           <div class="pagination__buttons">
-            <button class="pagination__button pagination__button--prev" type="button">
+            <button class="pagination__button pagination__button--prev" type="button" aria-label="Предедущая страница отфильтрованных попутчиков">
               <svg class="pagination__button-svg">
                 <use xlink:href="#icon-triangle-arrow-left"></use>
               </svg>
             </button>
-            <button class="pagination__button pagination__button--next" type="button">
+            <button class="pagination__button pagination__button--next" type="button" aria-label="Следующая страница отфильтрованных попутчиков">
               <svg class="pagination__button-svg">
                 <use xlink:href="#icon-triangle-arrow-right"></use>
               </svg>
