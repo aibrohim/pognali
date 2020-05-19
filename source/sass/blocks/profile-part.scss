@@ -71,6 +71,14 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #edeff6;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    top: auto;
+    transform: translate(-50%, 50%);
+    height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     left: 62px;

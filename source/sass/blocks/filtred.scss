@@ -4,6 +4,10 @@
   }
 }
 
+.filtred__more-wrapper {
+  text-align: center;
+}
+
 .filtred__more {
   color: #1d2e5b;
   font-size: 17px;
@@ -12,14 +16,15 @@
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 21px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-bottom: 50px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,4 +57,12 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 75px;
   }
+}
+
+.filtred__more:hover {
+  opacity: 0.6;
+}
+
+.filtred__more:focus {
+  opacity: 0.3;
 }

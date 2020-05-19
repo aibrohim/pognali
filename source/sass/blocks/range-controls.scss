@@ -51,6 +51,8 @@
   border-radius: 50%;
   position: absolute;
   transform: translateY(-50%);
+  border: none;
+  padding: 0;
 
   &--max {
     right: 0;
@@ -86,4 +88,16 @@
       top: 50%;
     }
   }
+}
+
+.range-controls__toggler:hover {
+  width: 19px;
+  height: 19px;
+}
+
+.range-controls__toggler:active {
+  outline: none;
+  width: 19px;
+  height: 19px;
+  box-shadow: 0 3px 7px rgba(29, 46, 91, 0.35);
 }

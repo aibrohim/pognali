@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 25px;
-    margin-bottom: 79px;
+    margin-bottom: 75px;
   }
 }
 
@@ -83,4 +83,16 @@
   width: 10px;
   height: 20px;
   fill: #192144;
+}
+
+.pagination__number-link[href]:hover {
+  opacity: 0.6;
+}
+
+.pagination__button:hover .pagination__button-svg {
+  opacity: 0.6;
+}
+
+.pagination__button:focus .pagination__button-svg {
+  opacity: 0.3;
 }

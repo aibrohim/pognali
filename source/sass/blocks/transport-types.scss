@@ -10,11 +10,13 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 15px;
+    margin-top: 0;
   }
 }
 
 .transport-types__checkbox {
   @include flex-center;
+  @include hint;
   width: 32px;
   height: 32px;
   border-radius: 50%;

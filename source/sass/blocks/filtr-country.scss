@@ -8,11 +8,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 13px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #edeff6;
     padding-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -25,6 +26,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -76,7 +78,7 @@
     height: auto;
     position: relative;
     margin: 0;
-    padding-left: 44px;
+    padding-left: 40px;
     margin-left: 20px;
     clip: auto;
     font-size: 20px;
@@ -108,7 +110,7 @@
   display: flex;
   align-items: center;
   position: absolute;
-  right: 0;
+  right: 5px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -183,6 +185,7 @@
   @include list-reset;
   padding-left: 26px;
   margin-top: 15px;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -211,6 +214,14 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &--asia {
+      margin-right: 28px;
+    }
+
+    &--america {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -234,6 +245,7 @@
 
 .filtr-country__alphabet-button-container {
   display: none;
+  padding-bottom: 27px;
 
   &--opened {
     display: block;
@@ -246,9 +258,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--opened {
-      margin-bottom: 70px;
-    }
+    padding-bottom: 44px;
   }
 }
 
@@ -496,10 +506,14 @@
     align-items: center;
     padding: 35px;
     justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 27px;
+    padding-right: 42px;
   }
 }
 
@@ -516,7 +530,6 @@
 }
 
 .filtr-country__body {
-  padding-bottom: 27px;
   display: none;
 
   &--opened {
@@ -540,4 +553,32 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.filtr-country__button:hover {
+  opacity: 0.6;
+}
+
+.filtr-country__button:focus {
+  opacity: 0.3;
+}
+
+.filtr-country__continent-link:hover {
+  opacity: 0.6;
+}
+
+.filtr-country__continent-link:focus {
+  opacity: 1;
+}
+
+.filtr-country__close-button:hover {
+  background-color: #c8cee8;
+}
+
+.filtr-country__close-button:focus {
+  background-color: #c8cee8;
+}
+
+.filtr-country__close-button:focus * {
+  opacity: 0.3;
 }

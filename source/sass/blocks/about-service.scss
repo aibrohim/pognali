@@ -29,7 +29,7 @@
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 44px;
+    padding-top: 38px;
     padding-left: 35px;
     background: url("../img/blue_back.svg") center top no-repeat, #192144;
     background-size: 688px 213px;
@@ -102,9 +102,21 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 610px;
-    margin-top: 60px;
+    margin-top: 58px;
     position: relative;
     z-index: 5;
+  }
+}
+
+.about-service__desc br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -133,7 +145,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-top: 32px;
+    margin-top: 30px;
     padding: 28px 34px;
     padding-right: 125px;
     font-size: 24px;
@@ -143,6 +155,6 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    margin-top: 65px;
+    margin-top: 66px;
   }
 }
