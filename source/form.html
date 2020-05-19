@@ -179,8 +179,8 @@
             <ul class="profile-part__transports transport-types transport-types--white">
               <li class="transport-types__item">
                 <label>
-                  <input class="visually-hidden transport-types__input" type="checkbox" name="byPlane" checked="">
-                  <span class="transport-types__checkbox">
+                  <input class="visually-hidden transport-types__input" type="checkbox" aria-label="Авиаперелет" name="byPlane" checked>
+                  <span class="transport-types__checkbox" data-title="Авиаперелет">
                     <svg class="transport-types__svg transport-types__svg--plane">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
@@ -189,8 +189,8 @@
               </li>
               <li class="transport-types__item">
                 <label>
-                  <input class="visually-hidden transport-types__input" checked="" type="checkbox" name="byBus">
-                  <span class="transport-types__checkbox">
+                  <input class="visually-hidden transport-types__input" aria-label="Автотранспорт" checked type="checkbox" name="byBus">
+                  <span class="transport-types__checkbox" data-title="Автотранспорт">
                     <svg class="transport-types__svg transport-types__svg--bus">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
@@ -199,8 +199,8 @@
               </li>
               <li class="transport-types__item">
                 <label>
-                  <input class="visually-hidden transport-types__input" type="checkbox" name="byBike">
-                  <span class="transport-types__checkbox">
+                  <input class="visually-hidden transport-types__input" type="checkbox" aria-label="Велосипед" name="byBike">
+                  <span class="transport-types__checkbox" data-title="Велосипед">
                     <svg class="transport-types__svg transport-types__svg--bike">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
@@ -209,8 +209,8 @@
               </li>
               <li class="transport-types__item">
                 <label>
-                  <input class="visually-hidden transport-types__input" checked="" type="checkbox" name="byFoot">
-                  <span class="transport-types__checkbox">
+                  <input class="visually-hidden transport-types__input" checked aria-label="Пешком" type="checkbox" name="byFoot">
+                  <span class="transport-types__checkbox" data-title="Пешком">
                     <svg class="transport-types__svg transport-types__svg--run">
                       <use xlink:href="#icon-run"></use>
                     </svg>
@@ -293,7 +293,7 @@
                 </div>
 
                 <label class="steps-list__children" for="withchildren">
-                  <input class="visually-hidden steps-list__tick-checkbox" checked="" type="checkbox"
+                  <input class="visually-hidden steps-list__tick-checkbox" checked type="checkbox"
                     name="withchildren" id="withchildren">
                   <span class="steps-list__styled-checkbox"></span>
                   Можно с детьми

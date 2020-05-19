@@ -16,6 +16,7 @@
 
 .transport-types__checkbox {
   @include flex-center;
+  @include hint;
   width: 32px;
   height: 32px;
   border-radius: 50%;
