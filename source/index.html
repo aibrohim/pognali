@@ -18,6 +18,11 @@
     <div class="container page-header__wrapper">
       <a class="page-header__logo">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
           <source media="(min-width: 1440px)"
             srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
@@ -26,6 +31,11 @@
             alt="Логотип компании Погнали">
         </picture>
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-header__logo-img page-header__logo-img--opened" src="img/logo-mobile-blue@1x.png"
@@ -50,19 +60,21 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link site-list__link--catalog" data-hover="попутчики">попутчики</a>
+              <a href="catalog.html" class="site-list__link site-list__link--catalog"
+                data-hover="попутчики">попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--tel">
-              <a href="tel:+805558628" class="user-list__link user-list__link--tel">
+              <a href="tel:+805558628" class="user-list__link user-list__link--tel" aria-label="Позвонить">
                 <svg class="user-list__icon user-list__icon--tel">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
             </li>
             <li class="user-list__item user-list__item--mail">
-              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail">
+              <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"
+                aria-label="Написать на почту">
                 <svg class="user-list__icon user-list__icon--mail">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
@@ -96,21 +108,21 @@
           </ul>
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
+              <a href="#" class="social-list__link" aria-label="Facebook">
                 <svg class="social-list__icon social-list__icon--fb">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
+              <a href="#" class="social-list__link" aria-label="Vkontakte">
                 <svg class="social-list__icon social-list__icon--vk">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
+              <a href="#" class="social-list__link" aria-label="instagram">
                 <svg class="social-list__icon social-list__icon--insta">
                   <use xlink:href="#icon-instagram"></use>
                 </svg>
@@ -131,14 +143,15 @@
           <p class="intro__title">В путешествие <br> с крутыми попутчиками!</p>
           <ul class="intro__links links-list">
             <li class="links-list__item">
-              <a href="tel:+88005558628" class="links-list__link links-list__link--tel">
+              <a href="tel:+88005558628" class="links-list__link links-list__link--tel" aria-label="Позвонить">
                 <svg class="links-list__icon links-list__icon--tel">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
             </li>
             <li class="links-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail">
+              <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail"
+                aria-label="Написать на почту">
                 <svg class="links-list__icon links-list__icon--mail">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
@@ -204,6 +217,9 @@
           <li class="directions__item directions__item--thailand">
             <p class="directions__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/thailand-mobile@1x.jpg 1x, img/thailand-mobile@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
                 <img class="directions__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x"
@@ -230,6 +246,9 @@
           <li class="directions__item directions__item--france">
             <p class="directions__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/france-mobile@1x.jpg 1x, img/france-mobile@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
                 <img class="directions__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg"
                   alt="Картинка Чехии" width="270" height="110">
@@ -254,6 +273,9 @@
           <li class="directions__item directions__item--czech">
             <p class="directions__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/czech-mobile@1x.jpg 1x, img/czech-mobile@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                 <img class="directions__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg"
                   alt="Картинка Чехии" width="270" height="110">
@@ -294,8 +316,12 @@
         <ul class="companions__list">
           <li class="companions__item">
             <div class="companions__img-wrapper">
-              <img class="companions__img" width="270" height="270" src="img/firsova-desktop@1x.jpg"
-                srcset="img/firsova-desktop@2x.jpg 2x" alt="картинка Тани Фирсовой">
+              <picture>
+                <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x"
+                  srcset="img/firsova-desktop@2x.jpg 2x">
+                <img class="companions__img" width="270" height="270" src="img/firsova-desktop@1x.jpg"
+                  srcset="img/firsova-desktop@2x.jpg 2x" alt="картинка Тани Фирсовой">
+              </picture>
               <div class="companions__lvl">
                 <svg class="companions__lvl-pie" width="60" height="60" stroke-dasharray="99 100"
                   viewBox="0 0 31.83 31.83" aria-hidden="true">
@@ -349,8 +375,12 @@
           </li>
           <li class="companions__item">
             <div class="companions__img-wrapper">
-              <img class="companions__img" width="270" height="270" src="img/demin-desktop@1x.jpg"
-                alt="картинка Тани Фирсовой">
+              <picture>
+                <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x"
+                  srcset="img/demin-desktop@2x.jpg 2x">
+                <img class="companions__img" width="270" height="270" src="img/demin-desktop@1x.jpg"
+                  srcset="img/demin-desktop@2x.jpg 2x" alt="картинка Пети Демина">
+              </picture>
               <div class="companions__lvl">
                 <svg class="companions__lvl-pie" width="60" height="60" stroke-dasharray="80 100"
                   viewBox="0 0 31.83 31.83" aria-hidden="true">
@@ -520,8 +550,13 @@
 
   <footer class="page-footer">
     <div class="page-footer__container container">
-      <a href="#" class="page-footer__logo">
+      <a class="page-footer__logo">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
@@ -531,21 +566,21 @@
 
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link">
+          <a href="#" class="page-footer__social-link" aria-label="Facebook">
             <svg class="page-footer__social-icon page-footer__social-icon--fb">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link">
+          <a href="#" class="page-footer__social-link" aria-label="Vkontakte">
             <svg class="page-footer__social-icon page-footer__social-icon--vk">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link">
+          <a href="#" class="page-footer__social-link" aria-label="instagram">
             <svg class="page-footer__social-icon page-footer__social-icon--insta">
               <use xlink:href="#icon-instagram"></use>
             </svg>
@@ -553,7 +588,7 @@
         </li>
       </ul>
 
-      <a href="#" class="page-footer__developer">
+      <a href="#" class="page-footer__developer" aria-label="Разработано в htmlacademy">
         <span class="page-footer__developer-text">Разработано</span>
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
       </a>
