@@ -590,11 +590,11 @@
   border: 1px solid #959bb2;
 }
 
-.steps-list__tick-checkbox:focus ~ .steps-list__styled-checkbox {
+.steps-list__tick-checkbox:active ~ .steps-list__styled-checkbox {
   background-color: #e2e5f1;
 }
 
-.steps-list__tick-checkbox:focus ~ .steps-list__styled-checkbox::before {
+.steps-list__tick-checkbox:active ~ .steps-list__styled-checkbox::before {
   opacity: 0.3;
 }
 

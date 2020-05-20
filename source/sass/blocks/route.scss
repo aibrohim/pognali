@@ -354,14 +354,10 @@
   background-color: #dfe3f0;
 }
 
-.route--add:focus {
-  outline: none;
-}
-
-.route--add:focus span {
+.route--add:active span {
   opacity: 0.3;
 }
 
-.route--add:focus::before {
+.route--add:active::before {
   opacity: 0.1;
 }

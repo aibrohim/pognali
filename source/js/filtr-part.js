@@ -9,27 +9,33 @@ var foodContent = document.querySelector("#filtr-content--food");
 var transportContent = document.querySelector("#filtr-content--transport");
 var levelContent = document.querySelector("#filtr-content--level");
 
+hobbyContent.classList.add("filtr-companion__part-right--closed");
+hobbyOpener.classList.remove("filtr-companion__opener--opened");
+
+foodContent.classList.add("filtr-companion__part-right--closed");
+foodOpener.classList.remove("filtr-companion__opener--opened");
+
 hobbyOpener.addEventListener('click', function(){
   hobbyContent.classList.toggle('filtr-companion__part-right--closed');
-  hobbyOpener.classList.toggle('filtr-companion__opener--clicked');
+  hobbyOpener.classList.toggle('filtr-companion__opener--opened');
 })
 
 musicOpener.addEventListener('click', function(){
   musicContent.classList.toggle('filtr-companion__part-right--closed');
-  musicOpener.classList.toggle('filtr-companion__opener--clicked');
+  musicOpener.classList.toggle('filtr-companion__opener--opened');
 })
 
 foodOpener.addEventListener('click', function(){
   foodContent.classList.toggle('filtr-companion__part-right--closed');
-  foodOpener.classList.toggle('filtr-companion__opener--clicked');
+  foodOpener.classList.toggle('filtr-companion__opener--opened');
 })
 
 transportOpener.addEventListener('click', function(){
   transportContent.classList.toggle('filtr-companion__part-right--closed');
-  transportOpener.classList.toggle('filtr-companion__opener--clicked');
+  transportOpener.classList.toggle('filtr-companion__opener--opened');
 })
 
 levelOpener.addEventListener('click', function(){
   levelContent.classList.toggle('filtr-companion__part-right--closed');
-  levelOpener.classList.toggle('filtr-companion__opener--clicked');
+  levelOpener.classList.toggle('filtr-companion__opener--opened');
 })

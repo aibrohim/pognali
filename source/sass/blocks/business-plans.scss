@@ -1,0 +1,114 @@
+@keyframes opening {
+  0% {
+    transform: translate(3000px, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.business-plans {
+  width: 270px;
+  min-height: 443px;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding-top: 30px;
+  display: none;
+  flex-direction: column;
+
+  &--opened {
+    display: flex;
+    animation: opening 0.3s;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    min-height: 526px;
+    border-radius: 30px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+  }
+}
+
+.business-plans__table {
+  width: 100%;
+  padding: 0 25px;
+  margin-bottom: auto;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 91px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.business-plans__title {
+  color: $orange-1;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.business-plans__row {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(#000000, 0.05);
+
+  &:first-child {
+    border-top: 1px solid rgba(#000000, 0.05);
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 13px 0;
+  }
+}
+
+.business-plans__close {
+  @include font;
+  border-radius: 0 0 20px 20px;
+  background-color: #f3f4f8;
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: initial;
+  }
+}

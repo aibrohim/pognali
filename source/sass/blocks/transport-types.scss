@@ -83,19 +83,26 @@
   opacity: 0.7;
 }
 
+.transport-types__input:hover ~ .transport-types__checkbox {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
 .transport-types__checkbox:hover .transport-types__svg {
   opacity: 0.3;
 }
 
 .transport-types__input:focus ~ .transport-types__checkbox {
   outline: -webkit-focus-ring-color auto 1px;
+}
+
+.transport-types__input:active ~ .transport-types__checkbox {
   background-color: #e2e5f1;
 }
 
-.transport-types__input:checked:focus ~ .transport-types__checkbox .transport-types__svg {
+.transport-types__input:checked:active ~ .transport-types__checkbox .transport-types__svg {
   opacity: 0.3;
 }
 
-.transport-types__input:focus ~ .transport-types__checkbox .transport-types__svg {
+.transport-types__input:active ~ .transport-types__checkbox .transport-types__svg {
   opacity: 0.1;
 }

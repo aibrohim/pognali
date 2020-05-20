@@ -79,3 +79,8 @@
 .site-list__link[href]:hover {
   transform: translateY(-100%);
 }
+
+.site-list__link[href]:focus {
+  opacity: 0.3;
+  color: $yellow-1;
+}
