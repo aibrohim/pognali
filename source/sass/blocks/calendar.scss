@@ -9,18 +9,18 @@
 
 .calendar__weekday,
 .calendar__item {
-  flex-basis: 32px;
+  width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 76px;
+    width: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: calc(1000px / 7);
+    width: calc(1000px / 7);
     height: 70px;
     align-items: flex-start;
     justify-content: flex-start;

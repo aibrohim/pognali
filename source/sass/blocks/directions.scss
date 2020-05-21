@@ -68,7 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 47.72%;
+    width: 47.72%;
     flex-grow: 1;
     padding-left: 170px;
   }
@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 47.72%;
+    width: 47.72%;
     padding-left: 35px;
     order: -1;
     margin-bottom: -105px;

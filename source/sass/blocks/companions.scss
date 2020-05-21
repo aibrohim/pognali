@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 47.72%;
+    width: 47.72%;
     padding: 0;
     padding-left: 68px;
     margin-top: -8px;
@@ -176,7 +176,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 630px;
+    width: 630px;
     flex-direction: row;
     justify-content: space-between;
 
@@ -189,7 +189,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 47.72%;
+    width: 47.72%;
     flex-grow: 1;
     padding: 0;
     padding-left: 59px;

@@ -590,6 +590,10 @@
   border: 1px solid #959bb2;
 }
 
+.steps-list__tick-checkbox:focus ~ .steps-list__styled-checkbox {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .steps-list__tick-checkbox:active ~ .steps-list__styled-checkbox {
   background-color: #e2e5f1;
 }
