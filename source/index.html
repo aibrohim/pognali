@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -42,7 +44,7 @@
             srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип компании Погнали">
         </picture>
       </a>
-      <button class="page-header__toggle" type="button">
+      <button type="button" class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <a href="#" class="page-header__login">авторизация</a>
@@ -493,8 +495,10 @@
             скорее <a class="callback__login-link" href="#">авторизуйтесь</a>.</p>
         </div>
         <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
-          <button class="callback__button button" type="submit">
+          <label>
+            <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
+          </label>
+          <button type="button" class="callback__button button" type="submit">
             <span class="callback__button-text">Регистрация</span>
             <svg width="10" height="14">
               <use xlink:href="#icon-triangle-arrow-right"></use>
@@ -548,7 +552,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe class="map__iframe"
+      <iframe class="map__iframe" title="Локация оффиса Погнали?"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A513d47270dbc6bf9cded56c739b387f7a560a59ffd3d7a9c5e9b29e0f3d3ce03&amp;source=constructor"></iframe>
     </section>
   </main>
@@ -623,7 +627,7 @@
         </tr>
       </tbody>
     </table>
-    <button class="business-plans__close" type="button">Закрыть окно</button>
+    <button type="button" class="business-plans__close" type="button">Закрыть окно</button>
   </div>
 
   <script src="js/menu.js"></script>
