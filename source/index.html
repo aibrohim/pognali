@@ -495,10 +495,11 @@
             скорее <a class="callback__login-link" href="#">авторизуйтесь</a>.</p>
         </div>
         <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST">
-          <label>
+          <label for="#callbackEmail">
+            <span class="visually-hidden">Email</span>
             <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
           </label>
-          <button type="button" class="callback__button button" type="submit">
+          <button class="callback__button button" aria-label="submit" type="submit">
             <span class="callback__button-text">Регистрация</span>
             <svg width="10" height="14">
               <use xlink:href="#icon-triangle-arrow-right"></use>
