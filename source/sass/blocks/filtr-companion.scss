@@ -144,16 +144,16 @@
 }
 
 .filtr-companion__part-left {
-  flex-basis: 100%;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 125px;
+    width: 125px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 100%;
+    width: 100%;
   }
 }
 

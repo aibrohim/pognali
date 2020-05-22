@@ -178,7 +178,6 @@
   @media (min-width: $tablet-width) {
     width: 630px;
     flex-direction: row;
-    justify-content: space-between;
 
     &::after {
       width: 143px;
@@ -220,6 +219,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     border-radius: 20px;
+    margin-right: 48px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
   }
 }
 

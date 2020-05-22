@@ -28,6 +28,8 @@
       width: 308px;
       order: -1;
       margin: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -35,11 +37,13 @@
     &--hashs {
       width: 730px;
       margin-bottom: 0;
+      margin-right: auto;
     }
 
     &--transport {
       order: 3;
       width: 384px;
+      margin: 0;
     }
   }
 }

@@ -467,16 +467,6 @@
   }
 }
 
-.steps-list__item:last-child .steps-list__buttons {
-  @media (min-width: $tablet-width) {
-    margin-top: 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 50px;
-  }
-}
-
 .steps-list__button {
   @include font;
   color: #161c35;
@@ -500,7 +490,7 @@
     line-height: 24px;
     text-align: left;
     display: inline-block;
-    text-transform: initial;
+    text-transform: none;
     width: 285px;
 
     &::before {
@@ -542,7 +532,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
-    text-transform: initial;
+    text-transform: none;
     padding-left: 33px;
     position: relative;
 
