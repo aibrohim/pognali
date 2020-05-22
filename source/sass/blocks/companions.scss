@@ -386,13 +386,13 @@
 
   &::before {
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     background-color: #f97676;
     border-radius: 4px;
     position: absolute;
     top: 50%;
-    left: -22px;
+    left: -20px;
     transform: translateY(-50%);
   }
 
@@ -408,6 +408,11 @@
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 21px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+    }
   }
 }
 
@@ -429,6 +434,14 @@
 
   @media (min-width: $tablet-width) {
     width: 222px;
+  }
+}
+
+.companions__item:nth-child(2) .companions__hashs {
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
 
