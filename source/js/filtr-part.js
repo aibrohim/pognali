@@ -9,12 +9,6 @@ var foodContent = document.querySelector("#filtr-content--food");
 var transportContent = document.querySelector("#filtr-content--transport");
 var levelContent = document.querySelector("#filtr-content--level");
 
-hobbyContent.classList.add("filtr-companion__part-right--closed");
-hobbyOpener.classList.remove("filtr-companion__opener--opened");
-
-foodContent.classList.add("filtr-companion__part-right--closed");
-foodOpener.classList.remove("filtr-companion__opener--opened");
-
 hobbyOpener.addEventListener('click', function(){
   hobbyContent.classList.toggle('filtr-companion__part-right--closed');
   hobbyOpener.classList.toggle('filtr-companion__opener--opened');
