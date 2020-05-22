@@ -104,16 +104,6 @@
 .filtr-country__button-wrapper {
   position: absolute;
   right: 5px;
-}
-
-.filtr-country__button {
-  border: none;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  min-height: 20px;
-  display: flex;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -124,6 +114,16 @@
   @media (min-width: $desktop-width) {
     margin-right: 35px;
   }
+}
+
+.filtr-country__button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .filtr-country__button-text {
