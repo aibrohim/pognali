@@ -56,6 +56,14 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .page-header--opened .page-header__wrapper {
@@ -112,6 +120,11 @@
 
   &::after {
     bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 166px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {

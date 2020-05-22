@@ -198,3 +198,11 @@
     letter-spacing: 2px;
   }
 }
+
+.my-plans__edit:hover {
+  opacity: 0.6;
+}
+
+.my-plans__edit:focus {
+  opacity: 0.1;
+}

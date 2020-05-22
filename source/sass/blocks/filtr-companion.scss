@@ -91,7 +91,7 @@
   }
 }
 
-.filtr-companion__opener--clicked::before {
+.filtr-companion__opener--opened::before {
   transform: rotate(180deg) translateY(50%);
 }
 
@@ -144,16 +144,16 @@
 }
 
 .filtr-companion__part-left {
-  flex-basis: 100%;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 125px;
+    width: 125px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 100%;
+    width: 100%;
   }
 }
 

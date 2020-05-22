@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -41,6 +40,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-right: auto;
 
   &::before {
     content: "";

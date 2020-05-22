@@ -48,8 +48,10 @@
   align-items: center;
   justify-content: space-between;
   min-width: 47px;
+  margin-right: 18px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 0;
     min-width: 73px;
   }
 

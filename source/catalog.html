@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,7 +16,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header page-header--small">
+  <header class="page-header page-header--no-js page-header--small">
     <div class="container page-header__wrapper">
       <a href="index.html" class="page-header__logo">
         <picture>
@@ -23,6 +25,7 @@
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
           <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+
           <source media="(min-width: 1440px)"
             srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
@@ -36,6 +39,7 @@
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
           <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-header__logo-img page-header__logo-img--opened" src="img/logo-mobile-blue@1x.png"
@@ -66,7 +70,7 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--tel">
               <a href="tel:+805558628" class="user-list__link user-list__link--tel" aria-label="Позвонить">
-                <svg class="user-list__icon user-list__icon--tel">
+                <svg class="user-list__icon user-list__icon--tel" width="18" height="18">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
@@ -74,20 +78,24 @@
             <li class="user-list__item user-list__item--mail">
               <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"
                 aria-label="Написать на почту">
-                <svg class="user-list__icon user-list__icon--mail">
+                <svg class="user-list__icon user-list__icon--mail" width="18" height="14">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
               </a>
             </li>
             <li class="user-list__item user-list__item--login">
-              <a href="#" class="user-list__link user-list__link--login">авторизация</a>
+              <a href="#" class="user-list__link user-list__link--login">
+                <span>
+                  авторизация
+                </span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
               <a href="tel:+88005558628" class="contacts-list__link">
                 <span class="contacts-list__icon">
-                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--phone">
+                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--phone" width="18" height="18">
                     <use xlink:href="#icon-contacts-phone"></use>
                   </svg>
                 </span>
@@ -97,7 +105,7 @@
             <li class="contacts-list__item">
               <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
                 <span class="contacts-list__icon">
-                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--mail">
+                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--mail" width="18" height="13">
                     <use xlink:href="#icon-contacts-mail"></use>
                   </svg>
                 </span>
@@ -107,22 +115,22 @@
           </ul>
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-list__icon social-list__icon--fb">
+              <a href="#" class="social-list__link" aria-label="Facebook">
+                <svg class="social-list__icon social-list__icon--fb" width="11" height="21">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-list__icon social-list__icon--vk">
+              <a href="#" class="social-list__link" aria-label="Vkontakte">
+                <svg class="social-list__icon social-list__icon--vk" width="23" height="12">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-list__icon social-list__icon--insta">
+              <a href="#" class="social-list__link" aria-label="instagram">
+                <svg class="social-list__icon social-list__icon--insta" width="18" height="18">
                   <use xlink:href="#icon-instagram"></use>
                 </svg>
               </a>
@@ -136,14 +144,14 @@
   <main class="page-main catalog-main">
     <div class="page-title">
       <div class="page-title__container container">
-        <h1 class="page-title__text page-title--catalog">
+        <h1 class="page-title__text">
           Попутчики
         </h1>
 
         <a href="index.html" class="page-title__back">
           На главную
           <span>
-            <svg class="page-title__back-icon">
+            <svg class="page-title__back-icon" width="32" height="16">
               <use xlink:href="#icon-return"></use>
             </svg>
           </span>
@@ -155,25 +163,26 @@
       <div class="filtr-country__container container">
         <div class="filtr-country__header">
           <h3 class="filtr-country__title">Фильтрация по странам<span class="filtr-country__title-dots">:</span></h3>
-          <button class="filtr-country__button filtr-country__button--opened" type="button"
-            aria-label="открыть/закрыть филбтпцию по странам">
-            <div class="filtr-country__button-closed">
-              <p class="filtr-country__button-text">Показать все</p>
+          <div class="filtr-country__button-wrapper filtr-country__button-wrapper--opened">
+            <button class="filtr-country__button filtr-country__button--closed" type="button"
+              aria-label="открыть/закрыть филбтпцию по странам">
+              <span class="filtr-country__button-text">Показать все</span>
               <span class="filtr-country__button-icon">
-                <svg class="filtr-country__button-svg">
+                <svg class="filtr-country__button-svg" width="17" height="3">
                   <use xlink:href="#icon-dots"></use>
                 </svg>
               </span>
-            </div>
-            <div class="filtr-country__button-opened">
-              <p class="filtr-country__button-text">Свернуть</p>
+            </button>
+            <button class="filtr-country__button filtr-country__button--opened" type="button"
+              aria-label="открыть/закрыть филбтпцию по странам">
+              <span class="filtr-country__button-text">Свернуть</span>
               <span class="filtr-country__button-icon">
-                <svg class="filtr-country__button-svg">
+                <svg class="filtr-country__button-svg filtr-country__button-svg--opened" width="12" height="12">
                   <use xlink:href="#icon-menu-close"></use>
                 </svg>
               </span>
-            </div>
-          </button>
+            </button>
+          </div>
         </div>
 
         <div class="filtr-country__body filtr-country__body--opened">
@@ -195,8 +204,7 @@
           <div class="filtr-country__alphabet-button-container filtr-country__alphabet-button-container--opened">
             <ul class="filtr-country__alphabet">
               <li class="filtr-country__letter filtr-country__letter--a">
-                <button type="button" class="filtr-country__letter-link filtr-country__letter-link--active"
-                  href="#">А</button>
+                <button type="button" class="filtr-country__letter-link filtr-country__letter-link--active">А</button>
                 <ul class="filtr-country__letter-countries filtr-country__letter-countries--active">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Австралия</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Австрия</a></li>
@@ -212,7 +220,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--b">
-                <button type="button" class="filtr-country__letter-link" href="#">Б</button>
+                <button type="button" class="filtr-country__letter-link">Б</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Багамские Острова</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Бангладеш</a></li>
@@ -234,7 +242,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--v">
-                <button type="button" class="filtr-country__letter-link" href="#">В</button>
+                <button type="button" class="filtr-country__letter-link">В</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Вануату</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Великобритания</a></li>
@@ -245,7 +253,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--g">
-                <button type="button" class="filtr-country__letter-link" href="#">Г</button>
+                <button type="button" class="filtr-country__letter-link">Г</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Габон</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Гаити</a></li>
@@ -263,7 +271,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--d">
-                <button type="button" class="filtr-country__letter-link" href="#">Д</button>
+                <button type="button" class="filtr-country__letter-link">Д</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Дания</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Джибути</a></li>
@@ -272,20 +280,20 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--ye">
-                <button type="button" class="filtr-country__letter-link" href="#">Е</button>
+                <button type="button" class="filtr-country__letter-link">Е</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Египет</a></li>
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--z">
-                <button type="button" class="filtr-country__letter-link" href="#">З</button>
+                <button type="button" class="filtr-country__letter-link">З</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Замбия</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Зимбабве</a></li>
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--i">
-                <button type="button" class="filtr-country__letter-link" href="#">и</button>
+                <button type="button" class="filtr-country__letter-link">и</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Израиль</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Индия</a></li>
@@ -300,7 +308,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--k">
-                <button type="button" class="filtr-country__letter-link" href="#">к</button>
+                <button type="button" class="filtr-country__letter-link">к</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Кабо-Верде</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Казахстан</a></li>
@@ -317,7 +325,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--l">
-                <button type="button" class="filtr-country__letter-link" href="#">л</button>
+                <button type="button" class="filtr-country__letter-link">л</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Лаос</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Латвия</a></li>
@@ -331,7 +339,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--m">
-                <button type="button" class="filtr-country__letter-link" href="#">м</button>
+                <button type="button" class="filtr-country__letter-link">м</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Маврикий</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Мавритания</a></li>
@@ -345,7 +353,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--n">
-                <button type="button" class="filtr-country__letter-link" href="#">н</button>
+                <button type="button" class="filtr-country__letter-link">н</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Намибия</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Науру</a></li>
@@ -359,14 +367,14 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--o">
-                <button type="button" class="filtr-country__letter-link" href="#">о</button>
+                <button type="button" class="filtr-country__letter-link">о</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">ОАЭ</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Оман</a></li>
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--p">
-                <button type="button" class="filtr-country__letter-link" href="#">п</button>
+                <button type="button" class="filtr-country__letter-link">п</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Пакистан</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Паламу</a></li>
@@ -379,7 +387,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--r">
-                <button type="button" class="filtr-country__letter-link" href="#">р</button>
+                <button type="button" class="filtr-country__letter-link">р</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Руанда</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Руанда</a></li>
@@ -387,7 +395,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--s">
-                <button type="button" class="filtr-country__letter-link" href="#">с</button>
+                <button type="button" class="filtr-country__letter-link">с</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Сальвадор</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Самоа</a></li>
@@ -404,7 +412,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--t">
-                <button type="button" class="filtr-country__letter-link" href="#">т</button>
+                <button type="button" class="filtr-country__letter-link">т</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Таджикистан</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Таиланд</a></li>
@@ -419,7 +427,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--u">
-                <button type="button" class="filtr-country__letter-link" href="#">у</button>
+                <button type="button" class="filtr-country__letter-link">у</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Уганда</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Узбекистан</a></li>
@@ -428,7 +436,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--f">
-                <button type="button" class="filtr-country__letter-link" href="#">ф</button>
+                <button type="button" class="filtr-country__letter-link">ф</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Фиджи</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Филиппины</a></li>
@@ -437,13 +445,13 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--x">
-                <button type="button" class="filtr-country__letter-link" href="#">х</button>
+                <button type="button" class="filtr-country__letter-link">х</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Хорватия</a></li>
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--ch">
-                <button type="button" class="filtr-country__letter-link" href="#">ч</button>
+                <button type="button" class="filtr-country__letter-link">ч</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Чад</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Черногория</a></li>
@@ -452,7 +460,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--sh">
-                <button type="button" class="filtr-country__letter-link" href="#">ш</button>
+                <button type="button" class="filtr-country__letter-link">ш</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Швейцария</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Швеция</a></li>
@@ -460,7 +468,7 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--e">
-                <button type="button" class="filtr-country__letter-link" href="#">э</button>
+                <button type="button" class="filtr-country__letter-link">э</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Эквадор</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Эритрея</a></li>
@@ -470,14 +478,14 @@
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--yu">
-                <button type="button" class="filtr-country__letter-link" href="#">ю</button>
+                <button type="button" class="filtr-country__letter-link">ю</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">ЮАР</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Южный Судан</a></li>
                 </ul>
               </li>
               <li class="filtr-country__letter filtr-country__letter--ya">
-                <button type="button" class="filtr-country__letter-link" href="#">я</button>
+                <button type="button" class="filtr-country__letter-link">я</button>
                 <ul class="filtr-country__letter-countries">
                   <li class="filtr-country__letter-country"><a href="/europe/france">Ямайка</a></li>
                   <li class="filtr-country__letter-country"><a href="/europe/france">Япония</a></li>
@@ -485,7 +493,7 @@
               </li>
             </ul>
             <button class="filtr-country__close-button" type="button">
-              <svg class="filtr-country__close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+              <svg class="filtr-country__close-icon" width="12" height="12">
                 <use xlink:href="#icon-menu-close"></use>
               </svg>
               <span>
@@ -499,15 +507,16 @@
 
     <div class="filtr-body container">
       <section class="filtr-companion">
+        <h2 class="visually-hidden">Филтр попутчиков</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p class="filtr-companion__title">Подберите идеального попутчика</p>
 
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" id="filtr-opener--hobby" type="button"
+              <button class="filtr-companion__opener filtr-companion__opener--opened" id="filtr-opener--hobby" type="button"
                 aria-label="Открыть или закрыть часть филтра">Хобби</button>
             </div>
-            <div class="filtr-companion__part-right filtr-companion__part-right--closed" id="filtr-content--hobby">
+            <div class="filtr-companion__part-right" id="filtr-content--hobby">
               <ul class="filtr-checks">
                 <li class="filtr-checks__item">
                   <label class="filtr-checks__label">
@@ -535,7 +544,7 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener filtr-companion__opener--clicked" id="filtr-opener--music"
+              <button class="filtr-companion__opener filtr-companion__opener--opened" id="filtr-opener--music"
                 type="button" aria-label="Открыть или закрыть часть филтра">Музыка</button>
             </div>
             <div class="filtr-companion__part-right" id="filtr-content--music">
@@ -566,7 +575,7 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener" id="filtr-opener--food" type="button"
+              <button class="filtr-companion__opener filtr-companion__opener--opened" id="filtr-opener--food" type="button"
                 aria-label="Открыть или закрыть часть филтра">Еда</button>
             </div>
             <div class="filtr-companion__part-right filtr-companion__part-right--closed" id="filtr-content--food">
@@ -597,7 +606,7 @@
           </div>
           <div class="filtr-companion__part">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener filtr-companion__opener--clicked" id="filtr-opener--transport"
+              <button class="filtr-companion__opener filtr-companion__opener--opened" id="filtr-opener--transport"
                 type="button" aria-label="Открыть или закрыть часть филтра">Транспорт</button>
             </div>
             <div class="filtr-companion__part-right" id="filtr-content--transport">
@@ -607,7 +616,7 @@
                     <input class="visually-hidden transport-types__input" type="checkbox" name="byPlane"
                       aria-label="Авиаперелет" checked>
                     <span class="transport-types__checkbox" data-title="Авиаперелет">
-                      <svg class="transport-types__svg transport-types__svg--plane">
+                      <svg class="transport-types__svg transport-types__svg--plane" width="19" height="21">
                         <use xlink:href="#icon-plane"></use>
                       </svg>
                     </span>
@@ -618,7 +627,7 @@
                     <input class="visually-hidden transport-types__input" type="checkbox" name="byBus"
                       aria-label="Автотранспорт" checked>
                     <span class="transport-types__checkbox" data-title="Автотранспорт">
-                      <svg class="transport-types__svg transport-types__svg--bus">
+                      <svg class="transport-types__svg transport-types__svg--bus" width="17" height="21">
                         <use xlink:href="#icon-bus"></use>
                       </svg>
                     </span>
@@ -629,7 +638,7 @@
                     <input class="visually-hidden transport-types__input" type="checkbox" aria-label="Велосипед"
                       name="byBike">
                     <span class="transport-types__checkbox" data-title="Велосипед">
-                      <svg class="transport-types__svg transport-types__svg--bike">
+                      <svg class="transport-types__svg transport-types__svg--bike" width="24" height="21">
                         <use xlink:href="#icon-bike"></use>
                       </svg>
                     </span>
@@ -640,7 +649,7 @@
                     <input class="visually-hidden transport-types__input" type="checkbox" name="byFoot"
                       aria-label="Пешком" checked>
                     <span class="transport-types__checkbox" data-title="Пешком">
-                      <svg class="transport-types__svg transport-types__svg--run">
+                      <svg class="transport-types__svg transport-types__svg--run" width="20" height="21">
                         <use xlink:href="#icon-run"></use>
                       </svg>
                     </span>
@@ -651,7 +660,7 @@
           </div>
           <div class="filtr-companion__part filtr-companion__part--level">
             <div class="filtr-companion__part-left">
-              <button class="filtr-companion__opener filtr-companion__opener--clicked" id="filtr-opener--level"
+              <button class="filtr-companion__opener filtr-companion__opener--opened" id="filtr-opener--level"
                 type="button" aria-label="Открыть или закрыть часть филтра">Левел</button>
             </div>
             <div class="filtr-companion__part-right filtr-companion__level" id="filtr-content--level">
@@ -667,8 +676,10 @@
                   <div class="range-controls__bar"></div>
                 </div>
 
-                <button type="button" class="range-controls__toggler range-controls__toggler--min" aria-label="установить минимальный уровень попутчика"></button>
-                <button type="button" class="range-controls__toggler range-controls__toggler--max" aria-label="установить максимальный уровень попутчика"></button>
+                <button type="button" class="range-controls__toggler range-controls__toggler--min"
+                  aria-label="установить минимальный уровень попутчика"></button>
+                <button type="button" class="range-controls__toggler range-controls__toggler--max"
+                  aria-label="установить максимальный уровень попутчика"></button>
               </div>
             </div>
           </div>
@@ -707,7 +718,8 @@
                 <div class="filtred-companions__like-add-number">
                   <button class="filtred-companions__like filtred-companions__like--active"
                     aria-label="Добавить в нравится">
-                    <svg class="filtred-companions__like-svg filtred-companions__like-svg--active">
+                    <svg class="filtred-companions__like-svg filtred-companions__like-svg--active" width="13"
+                      height="11">
                       <use xlink:href="#icon-heart-active"></use>
                     </svg>
                   </button>
@@ -764,22 +776,26 @@
                 <ul class="filtred-companions__transports transports-list">
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Авиаперелет">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane" width="14"
+                      height="16">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport" data-title="Автотранспорт">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus" width="13"
+                      height="16">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport" data-title="Велосипед">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike" width="19"
+                      height="17">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport" data-title="Пешком">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run" width="15"
+                      height="17">
                       <use xlink:href="#icon-run"></use>
                     </svg>
                   </li>
@@ -828,7 +844,7 @@
                     class="filtred-companions__surname">Демин</span></a>
                 <div class="filtred-companions__like-add-number">
                   <button class="filtred-companions__like" aria-label="Добавить в нравится">
-                    <svg class="filtred-companions__like-svg">
+                    <svg class="filtred-companions__like-svg" width="13" height="11">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
                   </button>
@@ -878,23 +894,27 @@
                 <ul class="filtred-companions__transports transports-list">
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Авиаперелет">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane" width="14"
+                      height="16">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Автотранспорт">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus" width="13"
+                      height="16">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport" data-title="Велосипед">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike" width="19"
+                      height="17">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport filtred-companions__transport--active" data-title="Пешком">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run" width="15"
+                      height="17">
                       <use xlink:href="#icon-run"></use>
                     </svg>
                   </li>
@@ -944,7 +964,7 @@
                     class="filtred-companions__surname">Смолов</span></a>
                 <div class="filtred-companions__like-add-number">
                   <button class="filtred-companions__like" aria-label="Добавить в нравится">
-                    <svg class="filtred-companions__like-svg">
+                    <svg class="filtred-companions__like-svg" width="13" height="11">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
                   </button>
@@ -998,25 +1018,29 @@
                 <ul class="filtred-companions__transports transports-list">
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Авиаперелет">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane" width="14"
+                      height="16">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport" data-title="Автотранспорт">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus" width="13"
+                      height="16">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
 
                   </li>
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Велосипед">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike" width="19"
+                      height="17">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
 
                   </li>
                   <li class="filtred-companions__transport" data-title="Пешком">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run" width="15"
+                      height="17">
                       <use xlink:href="#icon-run"></use>
                     </svg>
                   </li>
@@ -1069,7 +1093,7 @@
                 </a>
                 <div class="filtred-companions__like-add-number">
                   <button class="filtred-companions__like" aria-label="Добавить в нравится">
-                    <svg class="filtred-companions__like-svg">
+                    <svg class="filtred-companions__like-svg" width="13" height="11">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
                   </button>
@@ -1081,8 +1105,7 @@
                   </a>
                 </div>
                 <ul class="filtred-companions__hashs">
-                  <li class="filtred-companions__hash"><a class="filtred-companions__hash-link"
-                      href="#">#образование</a></li>
+                  <li class="filtred-companions__hash">#образование</li>
                   <li class="filtred-companions__hash">#карьера
                   </li>
                   <li class="filtred-companions__hash">#учеба</li>
@@ -1118,25 +1141,29 @@
                 <ul class="filtred-companions__transports transports-list">
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Авиаперелет">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--plane" width="14"
+                      height="16">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
                   </li>
                   <li class="filtred-companions__transport filtred-companions__transport--active"
                     data-title="Автотранспорт">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bus" width="13"
+                      height="16">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
 
                   </li>
                   <li class="filtred-companions__transport" data-title="Велосипед">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--bike" width="19"
+                      height="17">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
 
                   </li>
                   <li class="filtred-companions__transport" data-title="Пешком">
-                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run">
+                    <svg class="filtred-companions__transport-svg filtred-companions__transport-svg--run" width="15"
+                      height="17">
                       <use xlink:href="#icon-run"></use>
                     </svg>
                   </li>
@@ -1167,7 +1194,7 @@
 
         <div class="filtred__more-wrapper">
           <a href="#" class="filtred__more">
-            <svg class="filtred__more-svg">
+            <svg class="filtred__more-svg" width="18" height="18">
               <use xlink:href="#icon-show-more-plus"></use>
             </svg>
             Показать еще
@@ -1183,13 +1210,15 @@
             <li class="pagination__number"><a href="#" class="pagination__number-link">4</a></li>
           </ul>
           <div class="pagination__buttons">
-            <button class="pagination__button pagination__button--prev" type="button" aria-label="Предедущая страница отфильтрованных попутчиков">
-              <svg class="pagination__button-svg">
+            <button class="pagination__button pagination__button--prev" type="button"
+              aria-label="Предедущая страница отфильтрованных попутчиков">
+              <svg class="pagination__button-svg" width="10" height="20">
                 <use xlink:href="#icon-triangle-arrow-left"></use>
               </svg>
             </button>
-            <button class="pagination__button pagination__button--next" type="button" aria-label="Следующая страница отфильтрованных попутчиков">
-              <svg class="pagination__button-svg">
+            <button class="pagination__button pagination__button--next" type="button"
+              aria-label="Следующая страница отфильтрованных попутчиков">
+              <svg class="pagination__button-svg" width="10" height="20">
                 <use xlink:href="#icon-triangle-arrow-right"></use>
               </svg>
             </button>
@@ -1207,7 +1236,7 @@
             srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
@@ -1218,28 +1247,28 @@
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="Facebook">
-            <svg class="page-footer__social-icon page-footer__social-icon--fb">
+            <svg class="page-footer__social-icon page-footer__social-icon--fb" width="11" height="21">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="Vkontakte">
-            <svg class="page-footer__social-icon page-footer__social-icon--vk">
+            <svg class="page-footer__social-icon page-footer__social-icon--vk" width="23" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="instagram">
-            <svg class="page-footer__social-icon page-footer__social-icon--insta">
+            <svg class="page-footer__social-icon page-footer__social-icon--insta" width="18" height="18">
               <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <a href="#" class="page-footer__developer" aria-label="Разработано в htmlacademy">
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__developer" aria-label="Разработано в htmlacademy">
         <span class="page-footer__developer-text">Разработано</span>
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
       </a>

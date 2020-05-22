@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,7 +16,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header page-header--no-js">
     <div class="container page-header__wrapper">
       <a class="page-header__logo">
         <picture>
@@ -67,7 +69,7 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--tel">
               <a href="tel:+805558628" class="user-list__link user-list__link--tel" aria-label="Позвонить">
-                <svg class="user-list__icon user-list__icon--tel">
+                <svg class="user-list__icon user-list__icon--tel" width="18" height="18">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
@@ -75,20 +77,24 @@
             <li class="user-list__item user-list__item--mail">
               <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"
                 aria-label="Написать на почту">
-                <svg class="user-list__icon user-list__icon--mail">
+                <svg class="user-list__icon user-list__icon--mail" width="18" height="14">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
               </a>
             </li>
             <li class="user-list__item user-list__item--login">
-              <a href="#" class="user-list__link user-list__link--login">авторизация</a>
+              <a href="#" class="user-list__link user-list__link--login">
+                <span>
+                  авторизация
+                </span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
               <a href="tel:+88005558628" class="contacts-list__link">
                 <span class="contacts-list__icon">
-                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--phone">
+                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--phone" width="18" height="18">
                     <use xlink:href="#icon-contacts-phone"></use>
                   </svg>
                 </span>
@@ -98,7 +104,7 @@
             <li class="contacts-list__item">
               <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
                 <span class="contacts-list__icon">
-                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--mail">
+                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--mail" width="18" height="13">
                     <use xlink:href="#icon-contacts-mail"></use>
                   </svg>
                 </span>
@@ -109,21 +115,21 @@
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
               <a href="#" class="social-list__link" aria-label="Facebook">
-                <svg class="social-list__icon social-list__icon--fb">
+                <svg class="social-list__icon social-list__icon--fb" width="11" height="21">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link" aria-label="Vkontakte">
-                <svg class="social-list__icon social-list__icon--vk">
+                <svg class="social-list__icon social-list__icon--vk" width="23" height="12">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link" aria-label="instagram">
-                <svg class="social-list__icon social-list__icon--insta">
+                <svg class="social-list__icon social-list__icon--insta" width="18" height="18">
                   <use xlink:href="#icon-instagram"></use>
                 </svg>
               </a>
@@ -144,7 +150,7 @@
           <ul class="intro__links links-list">
             <li class="links-list__item">
               <a href="tel:+88005558628" class="links-list__link links-list__link--tel" aria-label="Позвонить">
-                <svg class="links-list__icon links-list__icon--tel">
+                <svg class="links-list__icon links-list__icon--tel" width="18" height="18">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
@@ -152,7 +158,7 @@
             <li class="links-list__item">
               <a href="mailto:mail@htmlacademy.ru" class="links-list__link links-list__link--mail"
                 aria-label="Написать на почту">
-                <svg class="links-list__icon links-list__icon--mail">
+                <svg class="links-list__icon links-list__icon--mail" width="18" height="14">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
               </a>
@@ -235,7 +241,7 @@
               <p class="directions__slogan">Джунгли зовут!</p>
               <p class="directions__number">
                 <span>
-                  <svg class="directions__number-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <svg class="directions__number-icon" width="11" height="11">
                     <use xlink:href="#icon-user"></use>
                   </svg>
                 </span>
@@ -262,7 +268,7 @@
               <p class="directions__slogan">Трэ бьен, манифик!</p>
               <p class="directions__number">
                 <span>
-                  <svg class="directions__number-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <svg class="directions__number-icon" width="11" height="11">
                     <use xlink:href="#icon-user"></use>
                   </svg>
                 </span>
@@ -289,7 +295,7 @@
               <p class="directions__slogan">Закоулки старой Европы</p>
               <p class="directions__number">
                 <span>
-                  <svg class="directions__number-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <svg class="directions__number-icon" width="11" height="11">
                     <use xlink:href="#icon-user"></use>
                   </svg>
                 </span>
@@ -317,8 +323,7 @@
           <li class="companions__item">
             <div class="companions__img-wrapper">
               <picture>
-                <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x"
-                  srcset="img/firsova-desktop@2x.jpg 2x">
+                <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
                 <img class="companions__img" width="270" height="270" src="img/firsova-desktop@1x.jpg"
                   srcset="img/firsova-desktop@2x.jpg 2x" alt="картинка Тани Фирсовой">
               </picture>
@@ -351,22 +356,23 @@
               </ul>
               <ul class="companions__aspects aspects-list">
                 <li class="companions__aspect" data-title="Авиаперелет">
-                  <svg class="companions__aspect-icon companions__aspect-icon--plane companions__aspect-icon--active">
+                  <svg class="companions__aspect-icon companions__aspect-icon--plane companions__aspect-icon--active"
+                    width="19" height="21">
                     <use xlink:href="#icon-plane"></use>
                   </svg>
                 </li>
                 <li class="companions__aspect" data-title="Автотранспорт">
-                  <svg class="companions__aspect-icon companions__aspect-icon--bus">
+                  <svg class="companions__aspect-icon companions__aspect-icon--bus" width="17" height="21">
                     <use xlink:href="#icon-bus"></use>
                   </svg>
                 </li>
                 <li class="companions__aspect" data-title="Велосипед">
-                  <svg class="companions__aspect-icon companions__aspect-icon--bike">
+                  <svg class="companions__aspect-icon companions__aspect-icon--bike" width="24" height="21">
                     <use xlink:href="#icon-bike"></use>
                   </svg>
                 </li>
                 <li class="companions__aspect" data-title="Пешком">
-                  <svg class="companions__aspect-icon companions__aspect-icon--run">
+                  <svg class="companions__aspect-icon companions__aspect-icon--run" width="20" height="21">
                     <use xlink:href="#icon-run"></use>
                   </svg>
                 </li>
@@ -376,8 +382,7 @@
           <li class="companions__item">
             <div class="companions__img-wrapper">
               <picture>
-                <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x"
-                  srcset="img/demin-desktop@2x.jpg 2x">
+                <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
                 <img class="companions__img" width="270" height="270" src="img/demin-desktop@1x.jpg"
                   srcset="img/demin-desktop@2x.jpg 2x" alt="картинка Пети Демина">
               </picture>
@@ -407,22 +412,25 @@
               </ul>
               <ul class="companions__aspects aspects-list">
                 <li class="companions__aspect" data-title="Авиаперелет">
-                  <svg class="companions__aspect-icon companions__aspect-icon--plane companions__aspect-icon--active">
+                  <svg class="companions__aspect-icon companions__aspect-icon--plane companions__aspect-icon--active"
+                    width="19" height="21">
                     <use xlink:href="#icon-plane"></use>
                   </svg>
                 </li>
                 <li class="companions__aspect" data-title="Автотранспорт">
-                  <svg class="companions__aspect-icon companions__aspect-icon--bus companions__aspect-icon--active">
+                  <svg class="companions__aspect-icon companions__aspect-icon--bus companions__aspect-icon--active"
+                    width="17" height="21">
                     <use xlink:href="#icon-bus"></use>
                   </svg>
                 </li>
                 <li class="companions__aspect" data-title="Велосипед">
-                  <svg class="companions__aspect-icon companions__aspect-icon--bike">
+                  <svg class="companions__aspect-icon companions__aspect-icon--bike" width="24" height="21">
                     <use xlink:href="#icon-bike"></use>
                   </svg>
                 </li>
                 <li class="companions__aspect" data-title="Пешком">
-                  <svg class="companions__aspect-icon companions__aspect-icon--run companions__aspect-icon--active">
+                  <svg class="companions__aspect-icon companions__aspect-icon--run companions__aspect-icon--active"
+                    width="20" height="21">
                     <use xlink:href="#icon-run"></use>
                   </svg>
                 </li>
@@ -464,14 +472,13 @@
             </li>
           </ul>
 
-          <a href="plans.html" class="pricing-plans__more">
-            <span class="pricing-plans__more-icon">
-              <svg class="pricing-plans__more-svg" width="17" height="21" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17 21">
+          <a href="plans.html" class="pricing-plans__business">
+            <span class="pricing-plans__business-icon">
+              <svg class="pricing-plans__business-svg" width="17" height="21">
                 <use xlink:href="#icon-business"></use>
               </svg>
             </span>
-            <span class="pricing-plans__more-text">
+            <span class="pricing-plans__business-text">
               Показать тарифы для бизнеса
             </span>
           </a>
@@ -488,11 +495,14 @@
             скорее <a class="callback__login-link" href="#">авторизуйтесь</a>.</p>
         </div>
         <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="callback__input" type="email" name="email" id="callbackEmail" placeholder="E-mail">
-          <button class="callback__button button" type="submit">
+          <label>
+            <span class="visually-hidden">Email</span>
+            <input class="callback__input" type="email" name="email" placeholder="E-mail">
+          </label>
+          <button class="callback__button button" aria-label="submit" type="submit">
             <span class="callback__button-text">Регистрация</span>
-            <svg width="10" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
-              <path d="M0 14V.1l10 7z"></path>
+            <svg width="10" height="14">
+              <use xlink:href="#icon-triangle-arrow-right"></use>
             </svg>
           </button>
         </form>
@@ -500,7 +510,7 @@
         <div class="callback__links">
           <a href="tel:+88005558628" class="callback__link">
             <span class="callback__icon">
-              <svg class="callback__icon-svg callback__icon-svg--tel">
+              <svg class="callback__icon-svg callback__icon-svg--tel" width="18" height="18">
                 <use xlink:href="#icon-contacts-phone"></use>
               </svg>
             </span>
@@ -508,7 +518,7 @@
           </a>
           <a href="mailto:mail@htmlacademy.ru" class="callback__link">
             <span class="callback__icon">
-              <svg class="callback__icon-svg callback__icon-svg--mail">
+              <svg class="callback__icon-svg callback__icon-svg--mail" width="18" height="13">
                 <use xlink:href="#icon-contacts-mail"></use>
               </svg>
             </span>
@@ -519,21 +529,21 @@
     </section>
 
     <section class="location">
-      <h2 class="visually-hidden">Локачия</h2>
+      <h2 class="visually-hidden">Локация</h2>
       <div class="container">
         <div class="location__content">
           <p class="location__text">
             <span class="location__icon">
-              <svg class="location__icon-svg">
+              <svg class="location__icon-svg" width="14" height="22">
                 <use xlink:href="#icon-contacts-location"></use>
               </svg>
             </span>
             ул. Большая <br> Конюшенная, 19/8
           </p>
-          <a href="#" class="location__button button">
+          <a href="https://clck.ru/NZZNh" class="location__button button">
             <span>Проложить маршрут</span>
             <span class="location__button-icon">
-              <svg class="location__button-svg">
+              <svg class="location__button-svg" width="10" height="14">
                 <use xlink:href="#icon-triangle-arrow-right"></use>
               </svg>
             </span>
@@ -543,7 +553,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe class="map__iframe"
+      <iframe class="map__iframe" title="Локация оффиса Погнали?"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A513d47270dbc6bf9cded56c739b387f7a560a59ffd3d7a9c5e9b29e0f3d3ce03&amp;source=constructor"></iframe>
     </section>
   </main>
@@ -556,7 +566,7 @@
             srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
@@ -567,35 +577,62 @@
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="Facebook">
-            <svg class="page-footer__social-icon page-footer__social-icon--fb">
+            <svg class="page-footer__social-icon page-footer__social-icon--fb" width="11" height="21">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="Vkontakte">
-            <svg class="page-footer__social-icon page-footer__social-icon--vk">
+            <svg class="page-footer__social-icon page-footer__social-icon--vk" width="23" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="instagram">
-            <svg class="page-footer__social-icon page-footer__social-icon--insta">
+            <svg class="page-footer__social-icon page-footer__social-icon--insta" width="18" height="18">
               <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <a href="#" class="page-footer__developer" aria-label="Разработано в htmlacademy">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer"
+        aria-label="Разработано в htmlacademy">
         <span class="page-footer__developer-text">Разработано</span>
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
       </a>
     </div>
   </footer>
 
+  <div class="business-plans">
+    <table class="business-plans__table">
+      <caption class="business-plans__title">Бизнес-тарифы</caption>
+      <tbody class="business-plans__main-table">
+        <tr class="business-plans__row">
+          <td class="business-plans__cell">Реклама у блоггера</td>
+          <td class="business-plans__cell business-plans__cell--price">300 000 руб./пост</td>
+        </tr>
+        <tr class="business-plans__row">
+          <td class="business-plans__cell">Накрутка подписчиков</td>
+          <td class="business-plans__cell business-plans__cell--price">от 1 руб./шт.</td>
+        </tr>
+        <tr class="business-plans__row">
+          <td class="business-plans__cell">Лайки от ботов</td>
+          <td class="business-plans__cell business-plans__cell--price">от 20 коп./лайк</td>
+        </tr>
+        <tr class="business-plans__row">
+          <td class="business-plans__cell">Ваш продакт-плейсмент</td>
+          <td class="business-plans__cell business-plans__cell--price">Индивидуально</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="business-plans__close" type="button">Закрыть окно</button>
+  </div>
+
   <script src="js/menu.js"></script>
+  <script src="js/business.js"></script>
   <script src="js/map.js"></script>
   <script src="js/picturefill.js"></script>
 </body>

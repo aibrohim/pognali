@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,7 +16,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header page-header--small">
+  <header class="page-header page-header--no-js page-header--small">
     <div class="container page-header__wrapper">
       <a href="index.html" class="page-header__logo">
         <picture>
@@ -67,7 +69,7 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--tel">
               <a href="tel:+805558628" class="user-list__link user-list__link--tel" aria-label="Позвонить">
-                <svg class="user-list__icon user-list__icon--tel">
+                <svg class="user-list__icon user-list__icon--tel" width="18" height="18">
                   <use xlink:href="#icon-topmenu-phone"></use>
                 </svg>
               </a>
@@ -75,20 +77,24 @@
             <li class="user-list__item user-list__item--mail">
               <a href="mailto:mail@htmlacademy.ru" class="user-list__link user-list__link--mail"
                 aria-label="Написать на почту">
-                <svg class="user-list__icon user-list__icon--mail">
+                <svg class="user-list__icon user-list__icon--mail" width="18" height="14">
                   <use xlink:href="#icon-topmenu-mail"></use>
                 </svg>
               </a>
             </li>
             <li class="user-list__item user-list__item--login">
-              <a href="#" class="user-list__link user-list__link--login">авторизация</a>
+              <a href="#" class="user-list__link user-list__link--login">
+                <span>
+                  авторизация
+                </span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
               <a href="tel:+88005558628" class="contacts-list__link">
                 <span class="contacts-list__icon">
-                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--phone">
+                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--phone" width="18" height="18">
                     <use xlink:href="#icon-contacts-phone"></use>
                   </svg>
                 </span>
@@ -98,7 +104,7 @@
             <li class="contacts-list__item">
               <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
                 <span class="contacts-list__icon">
-                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--mail">
+                  <svg class="contacts-list__icon-svg contacts-list__icon-svg--mail" width="18" height="13">
                     <use xlink:href="#icon-contacts-mail"></use>
                   </svg>
                 </span>
@@ -108,22 +114,22 @@
           </ul>
           <ul class="main-nav__list social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-list__icon social-list__icon--fb">
+              <a href="#" class="social-list__link" aria-label="Facebook">
+                <svg class="social-list__icon social-list__icon--fb" width="11" height="21">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-list__icon social-list__icon--vk">
+              <a href="#" class="social-list__link" aria-label="Vkontakte">
+                <svg class="social-list__icon social-list__icon--vk" width="23" height="12">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-list__icon social-list__icon--insta">
+              <a href="#" class="social-list__link" aria-label="instagram">
+                <svg class="social-list__icon social-list__icon--insta" width="18" height="18">
                   <use xlink:href="#icon-instagram"></use>
                 </svg>
               </a>
@@ -164,7 +170,9 @@
           </div>
           <label class="profile__set-img">
             <span class="profile__set-img-text">
-              <span class="profile__set-img-set">Сменить</span> фото
+              <span>
+                <span class="profile__set-img-set">Сменить</span> фото
+              </span>
             </span>
             <input type="file" name="profilePicture" class="visually-hidden profile__set-img-input">
           </label>
@@ -181,7 +189,7 @@
                 <label>
                   <input class="visually-hidden transport-types__input" type="checkbox" aria-label="Авиаперелет" name="byPlane" checked>
                   <span class="transport-types__checkbox" data-title="Авиаперелет">
-                    <svg class="transport-types__svg transport-types__svg--plane">
+                    <svg class="transport-types__svg transport-types__svg--plane" width="19" height="21">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
                   </span>
@@ -191,7 +199,7 @@
                 <label>
                   <input class="visually-hidden transport-types__input" aria-label="Автотранспорт" checked type="checkbox" name="byBus">
                   <span class="transport-types__checkbox" data-title="Автотранспорт">
-                    <svg class="transport-types__svg transport-types__svg--bus">
+                    <svg class="transport-types__svg transport-types__svg--bus" width="17" height="21">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
                   </span>
@@ -201,7 +209,7 @@
                 <label>
                   <input class="visually-hidden transport-types__input" type="checkbox" aria-label="Велосипед" name="byBike">
                   <span class="transport-types__checkbox" data-title="Велосипед">
-                    <svg class="transport-types__svg transport-types__svg--bike">
+                    <svg class="transport-types__svg transport-types__svg--bike" width="24" height="21">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
                   </span>
@@ -211,7 +219,7 @@
                 <label>
                   <input class="visually-hidden transport-types__input" checked aria-label="Пешком" type="checkbox" name="byFoot">
                   <span class="transport-types__checkbox" data-title="Пешком">
-                    <svg class="transport-types__svg transport-types__svg--run">
+                    <svg class="transport-types__svg transport-types__svg--run" width="20" height="21">
                       <use xlink:href="#icon-run"></use>
                     </svg>
                   </span>
@@ -677,7 +685,7 @@
             srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
@@ -688,28 +696,28 @@
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="Facebook">
-            <svg class="page-footer__social-icon page-footer__social-icon--fb">
+            <svg class="page-footer__social-icon page-footer__social-icon--fb" width="11" height="21">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="Vkontakte">
-            <svg class="page-footer__social-icon page-footer__social-icon--vk">
+            <svg class="page-footer__social-icon page-footer__social-icon--vk" width="23" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link" aria-label="instagram">
-            <svg class="page-footer__social-icon page-footer__social-icon--insta">
+            <svg class="page-footer__social-icon page-footer__social-icon--insta" width="18" height="18">
               <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <a href="#" class="page-footer__developer" aria-label="Разработано в htmlacademy">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer" aria-label="Разработано в htmlacademy">
         <span class="page-footer__developer-text">Разработано</span>
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
       </a>
@@ -768,6 +776,6 @@
   </section>
 
   <script src="js/menu.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
-
 </html>

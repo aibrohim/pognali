@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 47.72%;
+    width: 47.72%;
     padding: 0;
     padding-left: 68px;
     margin-top: -8px;
@@ -176,9 +176,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 630px;
+    width: 630px;
     flex-direction: row;
-    justify-content: space-between;
 
     &::after {
       width: 143px;
@@ -189,7 +188,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 47.72%;
+    width: 47.72%;
     flex-grow: 1;
     padding: 0;
     padding-left: 59px;
@@ -220,6 +219,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     border-radius: 20px;
+    margin-right: 48px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
   }
 }
 
@@ -378,13 +386,13 @@
 
   &::before {
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     background-color: #f97676;
     border-radius: 4px;
     position: absolute;
     top: 50%;
-    left: -22px;
+    left: -20px;
     transform: translateY(-50%);
   }
 
@@ -400,6 +408,11 @@
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 21px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+    }
   }
 }
 
@@ -421,6 +434,14 @@
 
   @media (min-width: $tablet-width) {
     width: 222px;
+  }
+}
+
+.companions__item:nth-child(2) .companions__hashs {
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
 

@@ -121,3 +121,7 @@
     height: 14px;
   }
 }
+
+.user-list__link:focus * {
+  opacity: 0.3;
+}
